@@ -9,3 +9,9 @@ require 'purdie/bernard'
 require 'purdie/config'
 
 require 'purdie/services/soundcloud'
+
+module Purdie
+  def Purdie.strip_scheme url
+    url.match(/http[s]?:\/\/(.*)/)[1]
+  end
+end

@@ -11,5 +11,10 @@ module Purdie
     it 'connects to soundcloud', :vcr do
       b = Bernard.new File.join(File.dirname(__FILE__), '..', '.purdie')
     end
+
+    it 'strips a scheme' do
+      expect(Purdie.strip_scheme 'http://foo.bar/stuff').to eq 'foo.bar/stuff'
+      expect(Purdie.strip_scheme 'https://bar.foo/stuff').to eq 'bar.foo/stuff'
+    end
   end
 end

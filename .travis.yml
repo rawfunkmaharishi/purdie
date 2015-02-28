@@ -4,4 +4,4 @@ rvm:
 - 2.1.5
 env:
   global:
-    secure: mVOTPzF5AOokBVUmC8rqGb1ZSQc8RnWfarni5fEBzmdoQ1zz++X3V3WSWfB1YebK5UEGOppngu7dgAn5okkcQI+ohBk9yvWv2WMSWGwE3/ZHq2tKxo2TAvHbfS1vPCLFilzaF3D3csf9l89Z0Kyv+wY78un+ZFcS2UwCjL/7uwk=
+  - secure: mVOTPzF5AOokBVUmC8rqGb1ZSQc8RnWfarni5fEBzmdoQ1zz++X3V3WSWfB1YebK5UEGOppngu7dgAn5okkcQI+ohBk9yvWv2WMSWGwE3/ZHq2tKxo2TAvHbfS1vPCLFilzaF3D3csf9l89Z0Kyv+wY78un+ZFcS2UwCjL/7uwk=
