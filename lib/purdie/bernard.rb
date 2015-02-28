@@ -4,14 +4,29 @@ module Purdie
   class Bernard
     attr_reader :config
 
-    def initialize config_file = '~/.purdie'
-      defaults = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', 'config/defaults.yaml')
-      @config = defaults.merge YAML.load File.read config_file
+    def initialize config_file = File.join(File.dirname(__FILE__), '..', '.purdie')
+      @config = Config.new config_file
     end
 
     def fetch
-      FileUtils.mkdir '_data'
-      FileUtils.touch '_data/sounds.yaml'
+      s = Purdie::Services::SoundCloud.new @config
+      sounds = []
+
+      sources = Dir.entries(@config['source-dir']).select { |e| e !~ /^\./ }
+      sources.each do |source|
+        lines = File.readlines "#{@config['source-dir']}/#{source}"
+        lines.each do |line|
+          case line
+            when /soundcloud/
+              sounds.push s.refine line
+          end
+        end
+      end
+
+      FileUtils.mkdir @config['output-dir']
+      sf = File.open '_data/sounds.yaml', 'w'
+      sf.write sounds.to_yaml
+      sf.close
     end
   end
 end

@@ -17,9 +17,15 @@ module Purdie
         expect(track['id']). to eq 193008299
       end
 
-      it 'renders YAML' do
-        yaml = @sc.yamlise 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
-        expect(yaml).to eq "---\ntitle: Hexaflexagon\nid: 193008299\nlocation: Islington Academy\ndate: '2015-02-18'\nlicense: Attribution-NonCommercial-ShareAlike\nlicense_url: http://creativecommons.org/licenses/by-nc-sa/4.0/\n"
+      it 'refines the data' do
+        refined = @sc.refine 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
+        expect(refined).to eq({
+          "title"=>"Hexaflexagon",
+          "id"=>193008299,
+          "location"=>"Islington Academy",
+          "date"=>"2015-02-18",
+          "license"=>"Attribution-NonCommercial-ShareAlike",
+          "license_url"=>"http://creativecommons.org/licenses/by-nc-sa/4.0/"})
       end
     end
   end

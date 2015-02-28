@@ -23,7 +23,7 @@ module Purdie
         end[0]
       end
 
-      def yamlise url
+      def refine url
         track = get_track url
         results = {}
         results['title'] = track['title']
@@ -33,7 +33,7 @@ module Purdie
         results['license'] = @config['license-lookups'][track['license']]['full-name']
         results['license_url'] = @config['license-lookups'][track['license']]['url']
 
-        results.to_yaml
+        results
       end
     end
   end
