@@ -1,0 +1,7 @@
+[![Build Status](http://img.shields.io/travis/rawfunkmaharishi/purdie.svg?style=flat-square)](https://travis-ci.org/rawfunkmaharishi/purdie)
+[![Dependency Status](http://img.shields.io/gemnasium/rawfunkmaharishi/purdie.svg?style=flat-square)](https://gemnasium.com/rawfunkmaharishi/purdie)
+[![Coverage Status](http://img.shields.io/coveralls/rawfunkmaharishi/purdie.svg?style=flat-square)](https://coveralls.io/r/rawfunkmaharishi/purdie)
+[![Code Climate](http://img.shields.io/codeclimate/github/rawfunkmaharishi/purdie.svg?style=flat-square)](https://codeclimate.com/github/rawfunkmaharishi/purdie)
+[![Gem Version](http://img.shields.io/gem/v/purdie.svg?style=flat-square)](https://rubygems.org/gems/purdie)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://rawfunkmaharishi.mit-license.org)
+[![Badges](http://img.shields.io/:badges-7/7-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
