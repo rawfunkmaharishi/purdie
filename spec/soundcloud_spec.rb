@@ -12,7 +12,14 @@ module Purdie
       end
 
       it 'extracts a track' do
-        expect(@sc.get_track 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1').to be_a Hash
+        track = @sc.get_track 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
+        expect(track).to be_a Hash
+        expect(track['id']). to eq 193008299
+      end
+
+      it 'renders YAML' do
+        yaml = @sc.yamlise 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
+        expect(yaml).to eq "---\ntitle: Hexaflexagon\nid: 193008299\nlocation: Islington Academy\ndate: '2015-02-18'\nlicense: cc-by-nc-sa\n"
       end
     end
   end
