@@ -6,7 +6,7 @@ Feature: Soundcloud
     """
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     """
-    When I successfully run `purdie fetch -c ../../.purdie`
+    When I successfully run `purdie fetch`
     Then a file named "_data/sounds.yaml" should exist
     And the file "_data/sounds.yaml" should contain:
     """
@@ -25,7 +25,7 @@ Feature: Soundcloud
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
     """
-    When I successfully run `purdie fetch -c ../../.purdie`
+    When I successfully run `purdie fetch`
     Then a file named "_data/sounds.yaml" should exist
     And the file "_data/sounds.yaml" should contain:
     """
@@ -35,8 +35,8 @@ Feature: Soundcloud
       date: '2015-02-18'
       license: Attribution-NonCommercial-ShareAlike
       license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-    - title: Hexaflexagon
-      id: 193008299
+    - title: Junalbandi
+      id: 193005357
       location: Islington Academy
       date: '2015-02-18'
       license: Attribution-NonCommercial-ShareAlike

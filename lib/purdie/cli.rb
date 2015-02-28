@@ -11,8 +11,7 @@ module Purdie
     desc 'fetch', 'Fetch the data'
     method_option :config,
                  :aliases => '-c',
-                 :desc => 'Specify config file',
-                 :default => '~/.purdie'
+                 :desc => 'Specify config file'
     def fetch
       b = Bernard.new options[:config]
       b.fetch

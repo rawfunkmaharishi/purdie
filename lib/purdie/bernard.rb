@@ -4,7 +4,7 @@ module Purdie
   class Bernard
     attr_reader :config
 
-    def initialize config_file = File.join(File.dirname(__FILE__), '..', '.purdie')
+    def initialize config_file = nil
       @config = Config.new config_file
     end
 

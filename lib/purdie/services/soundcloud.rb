@@ -1,6 +1,6 @@
 require 'purdie'
 
-Dotenv.load '.purdie'
+Dotenv.load
 
 module Purdie
   module Services
