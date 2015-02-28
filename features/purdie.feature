@@ -5,7 +5,7 @@ Feature: Purdie
     """
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     """
-    When I successfully run `purdie fetch`
+    When I successfully run `purdie fetch -c .purdie`
     Then a file named "_data/sounds.yaml" should exist
     And the file "_data/sounds.yaml" should contain:
     """
