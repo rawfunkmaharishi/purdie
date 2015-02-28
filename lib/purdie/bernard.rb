@@ -5,7 +5,8 @@ module Purdie
     attr_reader :config
 
     def initialize config_file = '~/.purdie'
-      @config = YAML.load File.read config_file
+      defaults = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', 'config/defaults.yaml')
+      @config = defaults.merge YAML.load File.read config_file
     end
 
     def fetch
