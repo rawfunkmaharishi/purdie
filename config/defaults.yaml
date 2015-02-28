@@ -1,4 +1,10 @@
-output_dir: _data
+output-dir: _data
 
 soundcloud:
   host: https://api.soundcloud.com
+
+license-lookups:
+  cc-by-nc-sa:
+    short-name: BY-NC-SA
+    full-name:  Attribution-NonCommercial-ShareAlike
+    url:        http://creativecommons.org/licenses/by-nc-sa/4.0/

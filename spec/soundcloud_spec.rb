@@ -19,7 +19,7 @@ module Purdie
 
       it 'renders YAML' do
         yaml = @sc.yamlise 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
-        expect(yaml).to eq "---\ntitle: Hexaflexagon\nid: 193008299\nlocation: Islington Academy\ndate: '2015-02-18'\nlicense: cc-by-nc-sa\n"
+        expect(yaml).to eq "---\ntitle: Hexaflexagon\nid: 193008299\nlocation: Islington Academy\ndate: '2015-02-18'\nlicense: Attribution-NonCommercial-ShareAlike\nlicense_url: http://creativecommons.org/licenses/by-nc-sa/4.0/\n"
       end
     end
   end

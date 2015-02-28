@@ -6,12 +6,12 @@ module Purdie
   module Services
     class SoundCloud
       def initialize config
-        @config = config['soundcloud']
+        @config = config
       end
 
       def all_tracks
         @all_tracks ||= begin
-          url = "#{@config['host']}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
+          url = "#{@config['soundcloud']['host']}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
           response = HTTParty.get url
           JSON.parse response.body
         end
@@ -30,7 +30,8 @@ module Purdie
         results['id'] = track['id']
         results['location'] = track['description']
         results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
-        results['license'] = track['license']
+        results['license'] = @config['license-lookups'][track['license']]['full-name']
+        results['license_url'] = @config['license-lookups'][track['license']]['url']
 
         results.to_yaml
       end

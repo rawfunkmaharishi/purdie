@@ -4,7 +4,7 @@ module Purdie
   describe Config do
     it 'has defaults' do
       c = Config.new
-      expect(c['output_dir']).to eq '_data'
+      expect(c['output-dir']).to eq '_data'
     end
 
     it 'has custom stuff alongside defaults' do
