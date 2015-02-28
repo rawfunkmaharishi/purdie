@@ -1,3 +1,4 @@
 output_dir: _data
+
 soundcloud:
-  client_id: 1974
+  host: https://api.soundcloud.com
