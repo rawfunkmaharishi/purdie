@@ -1,5 +1,4 @@
-require "purdie/version"
+require 'thor'
 
-module Purdie
-  # Your code goes here...
-end
+require 'purdie/version'
+require 'purdie/cli'

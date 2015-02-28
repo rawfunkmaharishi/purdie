@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'purdie/cli'
+Purdie::CLI.start
