@@ -2,13 +2,13 @@
 Feature: Soundcloud
 
   Scenario: Generate SoundCloud YAML
-    Given a file named "_sources/sounds.csv" with:
+    Given a file named "_sources/soundcloud.csv" with:
     """
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     """
     When I successfully run `purdie fetch`
-    Then a file named "_data/sounds.yaml" should exist
-    And the file "_data/sounds.yaml" should contain:
+    Then a file named "_data/soundcloud.yaml" should exist
+    And the file "_data/soundcloud.yaml" should contain:
     """
     - title: Hexaflexagon
       id: 193008299
@@ -20,14 +20,14 @@ Feature: Soundcloud
 
 
   Scenario: Generate SoundCloud YAML for multiple tracks
-    Given a file named "_sources/sounds.csv" with:
+    Given a file named "_sources/soundcloud.csv" with:
     """
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
     """
     When I successfully run `purdie fetch`
-    Then a file named "_data/sounds.yaml" should exist
-    And the file "_data/sounds.yaml" should contain:
+    Then a file named "_data/soundcloud.yaml" should exist
+    And the file "_data/soundcloud.yaml" should contain:
     """
     - title: Hexaflexagon
       id: 193008299
