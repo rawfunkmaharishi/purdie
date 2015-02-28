@@ -1,0 +1,170 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://pikesley.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sat, 28 Feb 2015 23:48:10 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=daeb220e98c9a44f449ad6a745ea2816b1425167290; expires=Sun, 28-Feb-16
+        23:48:10 GMT; path=/; domain=.pikesley.org; HttpOnly
+      Location:
+      - http://sam.pikesley.org/
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      Via:
+      - 1.1 vegur
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 1c0082ed5b1f1359-LHR
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 23:48:10 GMT
+- request:
+    method: get
+    uri: http://sam.pikesley.org/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Cookie:
+      - __cfduid=daeb220e98c9a44f449ad6a745ea2816b1425167290
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Content-Type:
+      - text/html; charset=utf-8
+      Last-Modified:
+      - Tue, 17 Feb 2015 17:24:31 GMT
+      Expires:
+      - Fri, 27 Feb 2015 17:33:02 GMT
+      Cache-Control:
+      - max-age=600
+      Content-Length:
+      - '5730'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 28 Feb 2015 23:48:10 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-ams4147-AMS
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      X-Timer:
+      - S1425167290.616428,VS0,VE86
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang='en'>\n  <head>\n    <meta charset='utf-8'>\n
+        \   <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <meta name='viewport'
+        content='width=device-width, initial-scale=1' />\n    <title>I am Sam Pikesley</title>\n
+        \    <script type=\"text/javascript\">\n  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n
+        \ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n
+        \ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n
+        \ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n
+        \ ga('create', 'UA-46327971-1', {});\n  ga('send', 'pageview');\n</script>\n\n\n
+        \   <!-- Bootstrap -->\n    <link rel='stylesheet' href='/assets/application.css'
+        type='text/css' />\n\n    <link rel='icon' type='image/gif' href='/assets/favicon.gif'
+        />\n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and
+        media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the
+        page via file:// -->\n    <!--[if lt IE 9]>\n      <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>\n
+        \     <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>\n
+        \   <![endif]-->\n  </head>\n  <body>\n    <div class='container'>\n      <div
+        class='row'>\n        <div class='col-md-2'>\n          <nav class='navbar
+        navbar-default' role='navigation'>\n  <div class='container-fluid'>\n    <!--
+        Brand and toggle get grouped for better mobile display -->\n    <div class='navbar-header'>\n
+        \     <button type='button' class='navbar-toggle collapsed' data-toggle='collapse'
+        data-target='#navbar-collapse'>\n        <span class='sr-only'>Toggle navigation</span>\n
+        \       <span class='icon-bar'></span>\n        <span class='icon-bar'></span>\n
+        \       <span class='icon-bar'></span>\n      </button>\n    </div>\n\n    <!--
+        Collect the nav links, forms, and other content for toggling -->\n    <div
+        class='collapse navbar-collapse' id='navbar-collapse'>\n      <ul class='nav
+        nav-pills nav-stacked' role='tablist'>\n        \n          <li>\n  <a href='/'>\n\n
+        \   \n      <i class='fa fa-arrow-circle-right'></i>\n    \n\n    Home</a>\n</li>\n\n
+        \       \n          <li>\n  <a href='/projects/'>\n\n    \n\n    Projects</a>\n</li>\n\n
+        \       \n          <li>\n  <a href='/photography/'>\n\n    \n\n    Photography</a>\n</li>\n\n
+        \       \n          <li>\n  <a href='/blog/'>\n\n    \n\n    Blog</a>\n</li>\n\n
+        \       \n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!--
+        /.container-fluid -->\n</nav>\n\n        </div>\n        <div class='col-md-8'>\n
+        \         <div class='header'>\n  <a href='/'><img src='/assets/images/logos/logo-orange.png'
+        class='logo' alt='pikesley.org'/></a>\n</div>\n\n          <div class='row'>\n
+        \ <div class='col-md-2'></div>\n  <div class='col-md-8'>\n    <h1>I am Sam
+        Pikesley</h1>\n\n    <p>I write code for the <a href=\"http://theodi.org/team/sam-pikesley\">ODI</a>
+        and play music with <a href=\"http://rawfunkmaharishi.uk\">The Raw Funk Maharishi</a>,
+        and I have a <a href=\"http://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/What-is-Type-1-diabetes/\">non-working
+        pancreas</a>.</p>\n\n<p>Some other places you can find me on the internets:</p>\n\n<ul>\n
+        \ <li>My <a href=\"https://github.com/pikesley\">Github</a> account</li>\n
+        \ <li>My <a href=\"https://twitter.com/pikesley\">Twitter</a> stream (and
+        the <a href=\"https://twitter.com/pikesley_ebooks\">horse_ebooks</a> Markov
+        chain version)</li>\n  <li>My <a href=\"https://soundcloud.com/pikesley\">SoundCloud</a></li>\n
+        \ <li>My <a href=\"http://garden.pikesley.org\">Gardening</a> site</li>\n
+        \ <li>Some <a href=\"https://www.youtube.com/playlist?list=PLuPLM2FI60-M0-aWejF9WgB-Dkt1TuQXv\">talks</a>
+        I have given</li>\n  <li>My <a href=\"http://www.flickr.com/photos/pikesley/\">Flickr</a>
+        page</li>\n  <li>My very patchy <a href=\"https://www.youtube.com/user/pikesley/videos\">YouTube</a>
+        and <a href=\"https://vimeo.com/pikesley\">Vimeo</a> channels</li>\n  <li>My
+        occasional <a href=\"http://www.instructables.com/member/pikesley?show=INSTRUCTABLES\">Instructables</a></li>\n
+        \ <li>My <a href=\"https://keybase.io/pikesley\">Keybase</a> profile (and
+        my <a href=\"https://keybase.io/pikesley/key.asc\">public key</a>)</li>\n
+        \ <li>My <a href=\"http://cv.pikesley.org\">CV</a></li>\n</ul>\n\n<p>You can
+        also usually find me in #theodi on Freenode</p>\n\n  </div>\n  <div class='col-md-2'></div>\n</div>\n\n
+        \       </div>\n        <div class='col-md-2'></div>\n      </div>\n    </div>\n
+        \   <div class='footer'>\n  <div class='row'>\n    <div class='col-md-12 text-center
+        bottom'>\n      \n          <a href='https://github.com/pikesley' alt='Github'
+        title='Github'>\n            <i class='fa fa-github'></i>\n            <span
+        class='hidden-xs'>Github</span>\n          </a>\n        \n          |\n        \n
+        \     \n          <a href='https://twitter.com/pikesley' alt='Twitter' title='Twitter'>\n
+        \           <i class='fa fa-twitter'></i>\n            <span class='hidden-xs'>Twitter</span>\n
+        \         </a>\n        \n          |\n        \n      \n          <a href='https://flickr.com/photos/pikesley'
+        alt='Flickr' title='Flickr'>\n            <i class='fa fa-flickr'></i>\n            <span
+        class='hidden-xs'>Flickr</span>\n          </a>\n        \n          |\n        \n
+        \     \n          <a href='https://soundcloud.com/pikesley' alt='Soundcloud'
+        title='Soundcloud'>\n            <i class='fa fa-soundcloud'></i>\n            <span
+        class='hidden-xs'>Soundcloud</span>\n          </a>\n        \n      \n    </div>\n
+        \ </div>\n</div>\n\n\n    <!-- jQuery (necessary for Bootstrap's JavaScript
+        plugins) -->\n    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>\n
+        \   <!-- Include all compiled plugins (below), or include individual files
+        as needed -->\n    <script src='/javascript/bootstrap.js'></script>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 28 Feb 2015 23:48:10 GMT
+recorded_with: VCR 2.9.3
