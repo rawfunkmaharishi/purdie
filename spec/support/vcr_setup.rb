@@ -10,7 +10,9 @@ VCR.configure do |c|
   c.allow_http_connections_when_no_cassette = true
 
   [
-    'SOUNDCLOUD_CLIENT_ID'
+    'SOUNDCLOUD_CLIENT_ID',
+    'FLICKR_API_KEY',
+    'FLICKR_SECRET'
   ].each do |env_var|
     c.filter_sensitive_data("<#{env_var}>") { ENV[env_var] }
   end

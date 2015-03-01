@@ -7,9 +7,11 @@ VCR.configure do |c|
   c.default_cassette_options = { :record => :once }
   c.cassette_library_dir = 'features/support/fixtures/vcr'
   c.hook_into :webmock
-  
+
   [
-    'SOUNDCLOUD_CLIENT_ID'
+    'SOUNDCLOUD_CLIENT_ID',
+    'FLICKR_API_KEY',
+    'FLICKR_SECRET'
   ].each do |env_var|
     c.filter_sensitive_data("<#{env_var}>") { ENV[env_var] }
   end

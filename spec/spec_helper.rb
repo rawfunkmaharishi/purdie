@@ -1,5 +1,6 @@
 require 'purdie'
 require_relative 'support/vcr_setup'
+require 'timecop'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
