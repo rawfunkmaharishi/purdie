@@ -3,7 +3,7 @@ require 'spec_helper'
 module Purdie
   describe Bernard do
     it 'has config' do
-      b = Bernard.new File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/config/purdie')
+      b = Bernard.new File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/config/purdie.yaml')
       expect(b.config['soundcloud']['client_id']).to eq 123456
       expect(b.config['output-dir']).to eq '_data'
     end

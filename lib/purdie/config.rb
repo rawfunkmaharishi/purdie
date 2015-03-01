@@ -2,11 +2,11 @@ require 'purdie'
 
 module Purdie
   class Config
-    def initialize config_file = nil
+    def initialize
       @conf = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', 'config/defaults.yaml')
 
-      if config_file
-        @conf = @conf.deep_merge YAML.load File.read config_file
+      if File.exists? File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
+        @conf = @conf.deep_merge YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
       end
     end
 
