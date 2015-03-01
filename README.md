@@ -24,16 +24,16 @@ Am I going to regret these decisions? Almost certainly.
 
 ##Using it
 
-You need to set up a __sources_ directory in your Jekyll project, containing files with one-URL-per-line, like this:
+You need to set up a *_sources* directory in your Jekyll project, containing files with one-URL-per-line, like this:
 
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
 
-and a _.env_ with API keys in it, and then you can run
+and a *.env* with API keys in it, and then you can run
 
     purdie fetch
 
-and it will dump out YAML files into __data_ ready for Jekyll to consume.
+and it will dump out YAML files into *_data* ready for Jekyll to consume.
 
 For now, though, please don't. None of my metadata hacks are documented, it's got some very Raw Funk Maharishi-specific lookups nailed into it, the output filenames are hardcoded (so it may well overwrite stuff you care about), there are flickering tests, you'll have a bad time. But soon...
 
