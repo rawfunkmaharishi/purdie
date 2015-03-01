@@ -9,6 +9,7 @@ require 'purdie/bernard'
 require 'purdie/config'
 
 require 'purdie/services/soundcloud'
+require 'purdie/services/flickr'
 
 module Purdie
   def Purdie.strip_scheme url
