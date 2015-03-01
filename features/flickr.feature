@@ -10,8 +10,9 @@ Feature: Flickr
     Then a file named "_data/flickr.yaml" should exist
     And the file "_data/flickr.yaml" should contain:
     """
-    - photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15631479625/
-      title: The Comedy, October 2014
+    - title: The Comedy, October 2014
+      date: '2014-10-22'
+      photo_page: https://www.flickr.com/photos/rawfunkmaharishi/15631479625/
       photo_url: https://farm4.staticflickr.com/3933/15631479625_b6168ee903_m.jpg
       license: Attribution-NonCommercial-ShareAlike
       license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
