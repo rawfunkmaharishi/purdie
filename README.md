@@ -35,7 +35,7 @@ and a _.env_ with API keys in it, and then you can run
 
 and it will dump out YAML files into __data_ ready for Jekyll to consume.
 
-For now, though, please don't. None of my metadata hacks are documented, it's got some very Raw Funk Maharishi-specific lookups nailed into it, the output filenames are hardcoded (so it may well overwrite stuff you care about), you'll have a bad time. But soon...
+For now, though, please don't. None of my metadata hacks are documented, it's got some very Raw Funk Maharishi-specific lookups nailed into it, the output filenames are hardcoded (so it may well overwrite stuff you care about), there are flickering tests, you'll have a bad time. But soon...
 
 ##Why Purdie?
 
