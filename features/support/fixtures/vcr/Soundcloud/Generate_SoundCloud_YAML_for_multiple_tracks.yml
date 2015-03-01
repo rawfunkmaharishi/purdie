@@ -33,7 +33,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Mar 2015 17:01:23 GMT
+      - Sun, 01 Mar 2015 17:01:49 GMT
       Etag:
       - '"bc2a79a8247ad62d968576021d0d3520"'
       Last-Modified:
@@ -225,5 +225,5 @@ http_interactions:
         Soundwave","description":"","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/108686090","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/pacific-soundwave","artwork_url":"https://i1.sndcdn.com/artworks-000056911848-6mpx4r-large.jpg","waveform_url":"https://w1.sndcdn.com/C3BUSl55c1gv_m.png","stream_url":"https://api.soundcloud.com/tracks/108686090/stream","playback_count":76,"download_count":0,"favoritings_count":1,"comment_count":1,"attachments_uri":"https://api.soundcloud.com/tracks/108686090/attachments","policy":"ALLOW"}]'
     http_version: 
-  recorded_at: Sun, 01 Mar 2015 17:01:23 GMT
+  recorded_at: Sun, 01 Mar 2015 17:01:49 GMT
 recorded_with: VCR 2.9.3
