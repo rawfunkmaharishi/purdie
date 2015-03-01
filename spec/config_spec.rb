@@ -12,7 +12,7 @@ module Purdie
         File.join(File.dirname(__FILE__), '..', 'config/purdie.yaml')
 
       c = Config.new
-      expect(c['tower-of-power']['drums']).to eq 'garibaldi'
+      expect(c['default-title']).to eq 'Raw Funk Maharishi'
 
       FileUtils.rm File.join(File.dirname(__FILE__), '..', 'config/purdie.yaml')
     end

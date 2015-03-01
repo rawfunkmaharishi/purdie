@@ -4,17 +4,18 @@ module Purdie
   module Services
     describe Flickr do
       before :each do
-        @f = Flickr.new Config.new $config_file
+    #    require 'pry'
+    #    binding.pry
+        FileUtils.cp File.join(File.dirname(__FILE__), '..', '..', 'features/support/fixtures/config/purdie.yaml'),
+          File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
+        @f = Flickr.new Config.new
         Timecop.freeze '2015-03-01'
       end
 
       after :each do
+    #    FileUtils.rm File.join(File.dirname(__FILE__), 'config/purdie.yaml')
         Timecop.return
       end
-
-#      it 'gets data for a photo', :vcr do
-#        expect(@f.get_photo 'https://www.flickr.com/photos/rawfunkmaharishi/15631479625/').to be_a FlickRaw::Response
-#      end
 
       it 'refines data for a photo', :vcr do
         expect(@f.refine 'https://www.flickr.com/photos/rawfunkmaharishi/15631479625/').to eq({

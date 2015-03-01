@@ -4,7 +4,7 @@ module Purdie
   module Services
     describe SoundCloud do
       before :each do
-        @sc = SoundCloud.new Config.new $config_file
+        @sc = SoundCloud.new Config.new
       end
 
       it 'connects to SoundCloud', :vcr do
