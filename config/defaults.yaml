@@ -1,5 +1,6 @@
 source-dir: _sources
 output-dir: _data
+default-title: Raw Funk Maharishi
 
 soundcloud:
   host: https://api.soundcloud.com
@@ -9,3 +10,6 @@ license-lookups:
     short-name: BY-NC-SA
     full-name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+photographer-lookups:
+  cluttercup: jane
