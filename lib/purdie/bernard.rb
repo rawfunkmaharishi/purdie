@@ -4,8 +4,8 @@ module Purdie
   class Bernard
     attr_reader :config
 
-    def initialize config_file = nil
-      @config = Config.new config_file
+    def initialize
+      @config = Config.new
     end
 
     def fetch

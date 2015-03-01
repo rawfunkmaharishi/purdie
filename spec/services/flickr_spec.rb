@@ -3,18 +3,17 @@ require 'spec_helper'
 module Purdie
   module Services
     describe Flickr do
-      before :each do
-    #    require 'pry'
-    #    binding.pry
+      before :all do
         FileUtils.cp File.join(File.dirname(__FILE__), '..', '..', 'features/support/fixtures/config/purdie.yaml'),
           File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
-        @f = Flickr.new Config.new
-        Timecop.freeze '2015-03-01'
       end
 
-      after :each do
-    #    FileUtils.rm File.join(File.dirname(__FILE__), 'config/purdie.yaml')
-        Timecop.return
+      before :each do
+        @f = Flickr.new Config.new
+      end
+
+      after :all do
+        FileUtils.rm File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
       end
 
       it 'refines data for a photo', :vcr do
@@ -28,8 +27,8 @@ module Purdie
           "photographer"=>"kim"
         })
       end
-
-      it 'refines data for a photo without a specific photogapher tag' do
+      
+      it 'refines data for a photo without a specific photographer tag', :vcr do
         expect(@f.refine 'https://www.flickr.com/photos/cluttercup/15950875724/').to eq ({
           "title"=>"Raw Funk Maharishi",
           "date"=>"2015-02-18",
