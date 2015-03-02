@@ -29,7 +29,8 @@ module Purdie
         end
       end
 
-      FileUtils.mkdir @config['output-dir']
+      FileUtils.mkdir_p @config['output-dir']
+      
       sf = File.open '_data/soundcloud.yaml', 'w'
       sf.write sounds.to_yaml
       sf.close
