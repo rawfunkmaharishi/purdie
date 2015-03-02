@@ -3,8 +3,17 @@ require 'spec_helper'
 module Purdie
   module Services
     describe SoundCloud do
+      before :all do
+        FileUtils.cp File.join(File.dirname(__FILE__), '..', '..', 'features/support/fixtures/config/purdie.yaml'),
+          File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
+      end
+
       before :each do
         @sc = SoundCloud.new Config.new
+      end
+
+      after :all do
+    #    FileUtils.rm File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
       end
 
       it 'connects to SoundCloud', :vcr do
