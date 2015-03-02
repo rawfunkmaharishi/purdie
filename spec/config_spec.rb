@@ -7,10 +7,14 @@ module Purdie
       expect(c['output-dir']).to eq '_data'
     end
 
-    it 'has custom stuff alongside defaults' do
-      c = Config.new File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/config/purdie')
-      expect(c['soundcloud']['host']).to eq 'https://api.soundcloud.com'
-      expect(c['soundcloud']['client_id']).to eq 123456
+    it 'reads a local config file' do
+      FileUtils.cp File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/config/purdie.yaml'),
+        File.join(File.dirname(__FILE__), '..', 'config/purdie.yaml')
+
+      c = Config.new
+      expect(c['default-title']).to eq 'Raw Funk Maharishi'
+
+      FileUtils.rm File.join(File.dirname(__FILE__), '..', 'config/purdie.yaml')
     end
   end
 end

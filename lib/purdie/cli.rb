@@ -9,11 +9,8 @@ module Purdie
     map %w(-v --version) => :version
 
     desc 'fetch', 'Fetch the data'
-    method_option :config,
-                 :aliases => '-c',
-                 :desc => 'Specify config file'
     def fetch
-      b = Bernard.new options[:config]
+      b = Bernard.new
       b.fetch
     end
   end

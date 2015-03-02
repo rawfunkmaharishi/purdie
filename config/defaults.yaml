@@ -1,9 +1,10 @@
-source-dir: _sources
-output-dir: _data
-default-title: Raw Funk Maharishi
+source-dir:    _sources
+output-dir:    _data
+default-title: Bernard Purdie, the World's most-recorded drummer
 
 soundcloud:
-  host: https://api.soundcloud.com
+  host:        https://api.soundcloud.com
+  output-file: soundcloud.yml
 
 license-lookups:
   cc-by-nc-sa:
