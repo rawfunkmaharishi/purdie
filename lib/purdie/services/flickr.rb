@@ -18,9 +18,6 @@ module Purdie
         url = url[0..-2] if url[-1] == '/'
         id = url.split('/')[-1].to_i
 
-      #  require 'pry'
-      #  binding.pry
-      #  flickr = FlickRaw::Flickr.new
         flickr.photos.getInfo(photo_id: id)
       end
 
@@ -44,6 +41,9 @@ module Purdie
           results['photographer'] = snapper['raw'].split(':')[1]
         rescue NoMethodError
           results['photographer'] = @config['photographer-lookups'][photo['owner']['username']]
+          unless results['photographer']
+            results['photographer'] = photo['owner']['username']
+          end
         end
 
         results
