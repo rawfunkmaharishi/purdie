@@ -4,7 +4,7 @@ Feature: Flickr
   Scenario: Generate Flickr YAML
     Given a file named "_sources/flickr.csv" with:
     """
-    https://www.flickr.com/photos/rawfunkmaharishi/15631479625/,kim
+    https://www.flickr.com/photos/rawfunkmaharishi/15631479625/
     """
     When I successfully run `purdie fetch`
     Then a file named "_data/flickr.yaml" should exist

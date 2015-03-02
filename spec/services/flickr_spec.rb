@@ -16,7 +16,7 @@ module Purdie
         FileUtils.rm File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
       end
 
-      it 'refines data for a photo', :vcr do
+      it 'refines data for a regular photo', :vcr do
         expect(@f.refine 'https://www.flickr.com/photos/rawfunkmaharishi/15631479625/').to eq({
           "title"=>"The Comedy, October 2014",
           "date"=>"2014-10-22",
@@ -27,7 +27,7 @@ module Purdie
           "photographer"=>"kim"
         })
       end
-      
+
       it 'refines data for a photo without a specific photographer tag', :vcr do
         expect(@f.refine 'https://www.flickr.com/photos/cluttercup/15950875724/').to eq ({
           "title"=>"Raw Funk Maharishi",

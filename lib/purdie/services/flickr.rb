@@ -1,5 +1,5 @@
 require 'purdie'
-require 'flickraw'
+require 'flickraw-cached'
 
 Dotenv.load
 
@@ -18,7 +18,9 @@ module Purdie
         url = url[0..-2] if url[-1] == '/'
         id = url.split('/')[-1].to_i
 
-        flickr = FlickRaw::Flickr.new
+      #  require 'pry'
+      #  binding.pry
+      #  flickr = FlickRaw::Flickr.new
         flickr.photos.getInfo(photo_id: id)
       end
 
