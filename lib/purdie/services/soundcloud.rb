@@ -11,7 +11,7 @@ module Purdie
 
       def all_tracks
         @all_tracks ||= begin
-          url = "#{@config['soundcloud']['host']}/users/#{@config['soundcloud']['user-id']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
+          url = "#{@config['services']['SoundCloud']['host']}/users/#{@config['services']['SoundCloud']['user-id']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
           response = HTTParty.get url
           JSON.parse response.body
         end

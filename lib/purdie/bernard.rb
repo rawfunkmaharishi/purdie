@@ -32,11 +32,11 @@ module Purdie
       FileUtils.mkdir_p @config['output-dir']
 
 
-      sf = File.open "#{@config['output-dir']}/#{@config['soundcloud']['output-file']}", 'w'
+      sf = File.open "#{@config['output-dir']}/#{@config['services']['SoundCloud']['output-file']}", 'w'
       sf.write sounds.to_yaml
       sf.close
 
-      ff = File.open "#{@config['output-dir']}/#{@config['flickr']['output-file']}", 'w'
+      ff = File.open "#{@config['output-dir']}/#{@config['services']['Flickr']['output-file']}", 'w'
       ff.write flickrs.to_yaml
       ff.close
     end

@@ -1,7 +1,8 @@
 default-title: Raw Funk Maharishi
 
-soundcloud:
-  user-id: rawfunkmaharishi
+services:
+  SoundCloud:
+    user-id: rawfunkmaharishi
 
 photographer-lookups:
   cluttercup: jane
