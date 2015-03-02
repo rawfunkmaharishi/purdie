@@ -5,7 +5,7 @@ Feature: Purdie
     Given a file named "_sources/sources.csv" with:
     """
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
-    https://www.flickr.com/photos/rawfunkmaharishi/15631479625/,kim
+    https://www.flickr.com/photos/rawfunkmaharishi/15631479625/
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
     """
     When I successfully run `purdie fetch`
