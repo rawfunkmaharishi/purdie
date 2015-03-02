@@ -4,7 +4,10 @@ default-title: Bernard Purdie, the World's most-recorded drummer
 
 soundcloud:
   host:        https://api.soundcloud.com
-  output-file: soundcloud.yml
+  output-file: soundcloud.yaml
+
+flickr:
+  output-file: flickr.yaml
 
 license-lookups:
   cc-by-nc-sa:
