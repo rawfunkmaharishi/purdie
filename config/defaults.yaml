@@ -7,6 +7,10 @@ license-lookups:
     short-name: BY-NC-SA
     full-name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
+  by-nc-sa:
+    short-name: BY-NC-SA
+    full-name:  Attribution-NonCommercial-ShareAlike
+    url:        http://creativecommons.org/licenses/by-nc-sa/3.0/
 
 services:
   SoundCloud:
@@ -15,3 +19,7 @@ services:
 
   Flickr:
     output-file: flickr.yaml
+
+  Vimeo:
+    host:        https://api.vimeo.com
+    output-file: vimeo.yaml

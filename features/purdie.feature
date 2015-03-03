@@ -7,6 +7,7 @@ Feature: Purdie
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://www.flickr.com/photos/rawfunkmaharishi/15631479625/
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
+    https://vimeo.com/111356018
     """
     When I successfully run `purdie fetch`
     Then a file named "_data/soundcloud.yaml" should exist
@@ -35,4 +36,13 @@ Feature: Purdie
       license: Attribution-NonCommercial-ShareAlike
       license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
       photographer: kim
+    """
+    And a file named "_data/vimeo.yaml" should exist
+    And the file "_data/vimeo.yaml" should contain:
+    """
+    ---
+    - title: Safety On Board
+      id: 111356018
+      license: Attribution-NonCommercial-ShareAlike
+      license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
     """

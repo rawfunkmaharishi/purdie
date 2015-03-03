@@ -10,6 +10,7 @@ require 'purdie/config'
 
 require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'
+require 'purdie/services/vimeo'
 
 module Purdie
   def Purdie.strip_scheme url
