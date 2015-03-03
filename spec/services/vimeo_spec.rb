@@ -12,7 +12,8 @@ module Purdie
       end
 
       it 'distills a video', :vcr do
-        expect(@v.distill 'https://vimeo.com/117102891').to eq({
+        @v.ingest 'https://vimeo.com/117102891'
+        expect(@v.items[0]).to eq({
           "title"=>"Bernard",
           "id"=>117102891,
           "license"=>"Attribution-NonCommercial-ShareAlike",

@@ -5,8 +5,11 @@ Dotenv.load
 module Purdie
   module Services
     class Vimeo
+      attr_reader :items
+
       def initialize config
         @config = config
+        @items = []
       end
 
       def get_video url
@@ -32,6 +35,18 @@ module Purdie
         results['license_url'] = @config['license-lookups'][video['license']]['url']
 
         results
+      end
+
+      def ingest url
+        @items.push distill url
+      end
+
+      def has_items?
+        @items.count > 0
+      end
+
+      def to_yaml
+        @items.to_yaml
       end
     end
   end

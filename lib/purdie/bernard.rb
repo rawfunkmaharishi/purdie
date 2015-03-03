@@ -21,8 +21,8 @@ module Purdie
       f = Purdie::Services::Flickr.new @config
       flickrs = []
 
-      v = Purdie::Services::Vimeo.new @config
-      vimeos = []
+      vimeo = Purdie::Services::Vimeo.new @config
+    #  vimeos = []
 
       @sources.each do |source|
         lines = File.readlines source
@@ -36,7 +36,7 @@ module Purdie
               flickrs.push f.distill line
 
             when /vimeo/
-              vimeos.push v.distill line
+              vimeo.ingest line
           end
           puts 'done'
         end
@@ -56,9 +56,9 @@ module Purdie
         ff.close
       end
 
-      if vimeos[0]
+      if vimeo.has_items?
         vf = File.open "#{@config['output-dir']}/#{@config['services']['Vimeo']['output-file']}", 'w'
-        vf.write vimeos.to_yaml
+        vf.write vimeo.to_yaml
         vf.close
       end
     end
