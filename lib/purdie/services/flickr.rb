@@ -1,5 +1,4 @@
 require 'purdie'
-require 'flickraw-cached'
 
 Dotenv.load
 
@@ -16,6 +15,10 @@ module Purdie
         FlickRaw.shared_secret = ENV['FLICKR_SECRET']
       end
 
+      def licenses
+        @licenses ||= flickr.photos.licenses.getInfo
+      end
+
       def get_photo url
         flickr.photos.getInfo photo_id: Purdie.get_id(url)
       end
@@ -30,8 +33,7 @@ module Purdie
         results['photo_page'] = photo['urls'][0]['_content']
         results['photo_url'] = FlickRaw.url_m(photo)
 
-        @licenses = flickr.photos.licenses.getInfo
-        license = @licenses.select {|l| l['id'] == photo['license']}[0]
+        license = licenses.select {|l| l['id'] == photo['license']}[0]
         results['license'] = license['name'].split(' License')[0]
         results['license_url'] = license['url']
 
