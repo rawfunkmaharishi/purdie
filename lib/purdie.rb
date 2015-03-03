@@ -8,6 +8,7 @@ require 'active_support/inflector'
 require 'purdie/version'
 require 'purdie/bernard'
 require 'purdie/config'
+require 'purdie/ingester'
 
 require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'
