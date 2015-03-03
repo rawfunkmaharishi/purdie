@@ -2,15 +2,16 @@ source-dir:    _sources
 output-dir:    _data
 default-title: Bernard Purdie, the World's most-recorded drummer
 
-soundcloud:
-  host:        https://api.soundcloud.com
-  output-file: soundcloud.yml
-
 license-lookups:
   cc-by-nc-sa:
     short-name: BY-NC-SA
     full-name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
 
-photographer-lookups:
-  cluttercup: jane
+services:
+  SoundCloud:
+    host:        https://api.soundcloud.com
+    output-file: soundcloud.yaml
+
+  Flickr:
+    output-file: flickr.yaml

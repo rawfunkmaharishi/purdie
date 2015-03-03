@@ -29,12 +29,14 @@ module Purdie
         end
       end
 
-      FileUtils.mkdir @config['output-dir']
-      sf = File.open '_data/soundcloud.yaml', 'w'
+      FileUtils.mkdir_p @config['output-dir']
+
+
+      sf = File.open "#{@config['output-dir']}/#{@config['services']['SoundCloud']['output-file']}", 'w'
       sf.write sounds.to_yaml
       sf.close
 
-      ff = File.open '_data/flickr.yaml', 'w'
+      ff = File.open "#{@config['output-dir']}/#{@config['services']['Flickr']['output-file']}", 'w'
       ff.write flickrs.to_yaml
       ff.close
     end

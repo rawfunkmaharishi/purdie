@@ -6,3 +6,5 @@ require 'rspec'
 
 require 'coveralls'
 Coveralls.wear_merged!
+
+$fixtures = File.join(File.dirname(__FILE__), 'fixtures/')

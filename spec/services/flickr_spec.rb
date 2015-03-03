@@ -3,17 +3,8 @@ require 'spec_helper'
 module Purdie
   module Services
     describe Flickr do
-      before :all do
-        FileUtils.cp File.join(File.dirname(__FILE__), '..', '..', 'features/support/fixtures/config/purdie.yaml'),
-          File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
-      end
-
       before :each do
         @f = Flickr.new Config.new
-      end
-
-      after :all do
-        FileUtils.rm File.join(File.dirname(__FILE__), '..', '..', 'config/purdie.yaml')
       end
 
       it 'refines data for a regular photo', :vcr do
@@ -38,6 +29,10 @@ module Purdie
           "license_url"=>"https://creativecommons.org/licenses/by-nc/2.0/",
           "photographer"=>"jane"
         })
+      end
+
+      it 'falls back to the default photographer name', :vcr do
+        expect(@f.refine('https://www.flickr.com/photos/pikesley/16649739916/')['photographer']).to eq 'pikesley'
       end
     end
   end

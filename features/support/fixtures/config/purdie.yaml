@@ -1,4 +1,8 @@
 default-title: Raw Funk Maharishi
 
-tower-of-power:
-  drums: garibaldi
+services:
+  SoundCloud:
+    user-id: rawfunkmaharishi
+
+photographer-lookups:
+  cluttercup: jane
