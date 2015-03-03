@@ -7,8 +7,6 @@ module Purdie
     class Vimeo
       include Purdie::Ingester
       
-      attr_reader :items
-
       def initialize config
         @config = config
         @items = []

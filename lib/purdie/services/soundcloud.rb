@@ -5,8 +5,11 @@ Dotenv.load
 module Purdie
   module Services
     class SoundCloud
+      include Purdie::Ingester
+
       def initialize config
         @config = config
+        @items = []
       end
 
       def all_tracks

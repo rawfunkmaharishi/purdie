@@ -15,11 +15,8 @@ module Purdie
     end
 
     def fetch
-      s = Purdie::Services::SoundCloud.new @config
-      soundclouds = []
-
       flickr = Purdie::Services::Flickr.new @config
-
+      soundcloud = Purdie::Services::SoundCloud.new @config
       vimeo = Purdie::Services::Vimeo.new @config
 
       @sources.each do |source|
@@ -28,10 +25,10 @@ module Purdie
           print "Processing #{line.strip}... "
           case line
             when /soundcloud/
-              soundclouds.push s.distill line
+              soundcloud.ingest line
 
             when /flickr/
-              flickrs.ingest line
+              flickr.ingest line
 
             when /vimeo/
               vimeo.ingest line
@@ -40,25 +37,9 @@ module Purdie
         end
       end
 
-      FileUtils.mkdir_p @config['output-dir']
-
-      if soundclouds[0]
-        sf = File.open "#{@config['output-dir']}/#{@config['services']['SoundCloud']['output-file']}", 'w'
-        sf.write soundclouds.to_yaml
-        sf.close
-      end
-
-      if flickr.has_items?
-        ff = File.open "#{@config['output-dir']}/#{@config['services']['Flickr']['output-file']}", 'w'
-        ff.write flickr.to_yaml
-        ff.close
-      end
-
-      if vimeo.has_items?
-        vf = File.open "#{@config['output-dir']}/#{@config['services']['Vimeo']['output-file']}", 'w'
-        vf.write vimeo.to_yaml
-        vf.close
-      end
+      flickr.write
+      soundcloud.write
+      vimeo.write
     end
   end
 end
