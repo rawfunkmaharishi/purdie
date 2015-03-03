@@ -22,16 +22,18 @@ module Purdie
       sources.each do |source|
         lines = File.readlines "#{@config['source-dir']}/#{source}"
         lines.each do |line|
+          print "Processing #{line.strip}... "
           case line
             when /soundcloud/
-              sounds.push s.refine line
+              sounds.push s.distill line
 
             when /flickr/
-              flickrs.push f.refine line
+              flickrs.push f.distill line
 
             when /vimeo/
-              vimeos.push v.refine line
+              vimeos.push v.distill line
           end
+          puts 'done'
         end
       end
 

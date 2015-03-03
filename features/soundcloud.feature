@@ -5,6 +5,7 @@ Feature: Soundcloud
     Given a file named "_sources/soundcloud.csv" with:
     """
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
+    https://soundcloud.com/rawfunkmaharishi/bernard
     """
     When I successfully run `purdie fetch`
     Then a file named "_data/soundcloud.yaml" should exist

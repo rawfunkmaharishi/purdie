@@ -23,7 +23,7 @@ module Purdie
         end[0]
       end
 
-      def refine url
+      def distill url
         track = get_track url
         results = {}
         results['title'] = track['title']

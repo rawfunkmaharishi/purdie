@@ -7,8 +7,8 @@ module Purdie
         @f = Flickr.new Config.new
       end
 
-      it 'refines data for a regular photo', :vcr do
-        expect(@f.refine 'https://www.flickr.com/photos/rawfunkmaharishi/15631479625/').to eq({
+      it 'distills data for a regular photo', :vcr do
+        expect(@f.distill 'https://www.flickr.com/photos/rawfunkmaharishi/15631479625/').to eq({
           "title"=>"The Comedy, October 2014",
           "date"=>"2014-10-22",
           "photo_page"=>"https://www.flickr.com/photos/rawfunkmaharishi/15631479625/",
@@ -19,8 +19,8 @@ module Purdie
         })
       end
 
-      it 'refines data for a photo without a specific photographer tag', :vcr do
-        expect(@f.refine 'https://www.flickr.com/photos/cluttercup/15950875724/').to eq ({
+      it 'distills data for a photo without a specific photographer tag', :vcr do
+        expect(@f.distill 'https://www.flickr.com/photos/cluttercup/15950875724/').to eq ({
           "title"=>"Raw Funk Maharishi",
           "date"=>"2015-02-18",
           "photo_page"=>"https://www.flickr.com/photos/cluttercup/15950875724/",
@@ -32,7 +32,7 @@ module Purdie
       end
 
       it 'falls back to the default photographer name', :vcr do
-        expect(@f.refine('https://www.flickr.com/photos/pikesley/16649739916/')['photographer']).to eq 'pikesley'
+        expect(@f.distill('https://www.flickr.com/photos/pikesley/16649739916/')['photographer']).to eq 'pikesley'
       end
     end
   end

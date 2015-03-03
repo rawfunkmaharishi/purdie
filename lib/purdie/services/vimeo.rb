@@ -24,7 +24,7 @@ module Purdie
         JSON.parse response.body
       end
 
-      def refine url
+      def distill url
         video = get_video url
         results = {}
 

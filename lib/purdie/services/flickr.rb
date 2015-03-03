@@ -21,7 +21,7 @@ module Purdie
         flickr.photos.getInfo(photo_id: id)
       end
 
-      def refine url
+      def distill url
         photo = get_photo url
         results = {}
 
