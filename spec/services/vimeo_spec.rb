@@ -11,9 +11,9 @@ module Purdie
         expect(@v.get_video 'https://vimeo.com/117102891').to be_a Hash
       end
 
-      it 'distills a video', :vcr do
+      it 'ingests a video', :vcr do
         @v.ingest 'https://vimeo.com/117102891'
-        expect(@v.items[0]).to eq({
+        expect(@v[0]).to eq({
           "title"=>"Bernard",
           "id"=>117102891,
           "license"=>"Attribution-NonCommercial-ShareAlike",

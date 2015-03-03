@@ -6,8 +6,13 @@ Dotenv.load
 module Purdie
   module Services
     class Flickr
+      include Purdie::Ingester
+
+      attr_reader :items
+
       def initialize config
         @config = config
+        @items = []
 
         FlickRaw.api_key = ENV['FLICKR_API_KEY']
         FlickRaw.shared_secret = ENV['FLICKR_SECRET']

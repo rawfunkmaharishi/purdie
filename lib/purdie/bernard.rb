@@ -18,11 +18,9 @@ module Purdie
       s = Purdie::Services::SoundCloud.new @config
       soundclouds = []
 
-      f = Purdie::Services::Flickr.new @config
-      flickrs = []
+      flickr = Purdie::Services::Flickr.new @config
 
       vimeo = Purdie::Services::Vimeo.new @config
-    #  vimeos = []
 
       @sources.each do |source|
         lines = File.readlines source
@@ -33,7 +31,7 @@ module Purdie
               soundclouds.push s.distill line
 
             when /flickr/
-              flickrs.push f.distill line
+              flickrs.ingest line
 
             when /vimeo/
               vimeo.ingest line
@@ -50,9 +48,9 @@ module Purdie
         sf.close
       end
 
-      if flickrs[0]
+      if flickr.has_items?
         ff = File.open "#{@config['output-dir']}/#{@config['services']['Flickr']['output-file']}", 'w'
-        ff.write flickrs.to_yaml
+        ff.write flickr.to_yaml
         ff.close
       end
 
