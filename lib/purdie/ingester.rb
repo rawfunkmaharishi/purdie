@@ -20,9 +20,9 @@ module Purdie
       if self.has_items?
         FileUtils.mkdir_p @config['output-dir']
 
-        f = File.open "#{@config['output-dir']}/#{@config['services'][self.class.name.split('::')[-1]]['output-file']}", 'w'
-        f.write self.to_yaml
-        f.close
+        File.open "#{@config['output-dir']}/#{@config['services'][self.class.name.split('::')[-1]]['output-file']}", 'w' do |f|
+          f.write self.to_yaml
+        end
       end
     end
   end
