@@ -5,13 +5,16 @@ Dotenv.load
 module Purdie
   module Services
     class SoundCloud
+      include Purdie::Ingester
+
       def initialize config
         @config = config
+        @items = []
       end
 
       def all_tracks
         @all_tracks ||= begin
-          url = "#{@config['services']['SoundCloud']['host']}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
+          url = "#{@config['services'][self.class.name.split('::')[-1]]['host']}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
           response = HTTParty.get url
           JSON.parse response.body
         end

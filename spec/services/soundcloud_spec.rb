@@ -28,9 +28,9 @@ module Purdie
           "license_url"=>"http://creativecommons.org/licenses/by-nc-sa/4.0/"})
       end
 
-      it 'deals with a troublesome bawbag', :vcr do
-        distilld = @sc.distill 'https://soundcloud.com/rawfunkmaharishi/bernard'
-        expect(distilld).to eq({
+      it 'ingests a track', :vcr do
+        @sc.ingest 'https://soundcloud.com/rawfunkmaharishi/bernard'
+        expect(@sc[0]).to eq({
           "title"=>"Bernard",
           "id"=>192841052,
           "location"=>"Islington Academy",

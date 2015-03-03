@@ -19,8 +19,9 @@ module Purdie
         })
       end
 
-      it 'distills data for a photo without a specific photographer tag', :vcr do
-        expect(@f.distill 'https://www.flickr.com/photos/cluttercup/15950875724/').to eq ({
+      it 'ingests data for a photo without a specific photographer tag', :vcr do
+        @f.ingest 'https://www.flickr.com/photos/cluttercup/15950875724/'
+        expect(@f[0]).to eq ({
           "title"=>"Raw Funk Maharishi",
           "date"=>"2015-02-18",
           "photo_page"=>"https://www.flickr.com/photos/cluttercup/15950875724/",
