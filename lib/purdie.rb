@@ -3,6 +3,7 @@ require 'yaml'
 require 'deep_merge'
 require 'httparty'
 require 'dotenv'
+require 'active_support/inflector'
 
 require 'purdie/version'
 require 'purdie/bernard'
