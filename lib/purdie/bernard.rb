@@ -15,30 +15,24 @@ module Purdie
     end
 
     def fetch
-      flickr = Purdie::Services::Flickr.new @config
-      soundcloud = Purdie::Services::SoundCloud.new @config
-      vimeo = Purdie::Services::Vimeo.new @config
+      services = {}
+      @config['services'].each do |s|
+        services[s[0].downcase.to_sym] = "Purdie::Services::#{s[0]}".constantize.new(@config)
+      end
 
       @sources.each do |source|
         File.readlines(source).each do |line|
+          next if line[0] == '#'
+
           print "Processing #{line.strip}... "
-          case line
-            when /soundcloud/
-              soundcloud.ingest line
-
-            when /flickr/
-              flickr.ingest line
-
-            when /vimeo/
-              vimeo.ingest line
-          end
+          services[services.keys.select{ |s| line =~ /#{s.to_s}/ }[0]].ingest line
           puts 'done'
         end
       end
 
-      flickr.write
-      soundcloud.write
-      vimeo.write
+      services.each_key do |k|
+        services[k].write
+      end
     end
   end
 end
