@@ -1,0 +1,25 @@
+source-dir:    _sources
+output-dir:    _data
+default-title: Bernard Purdie, the World's most-recorded drummer
+
+license-lookups:
+  cc-by-nc-sa:
+    short-name: BY-NC-SA
+    full-name:  Attribution-NonCommercial-ShareAlike
+    url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
+  by-nc-sa:
+    short-name: BY-NC-SA
+    full-name:  Attribution-NonCommercial-ShareAlike
+    url:        http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+services:
+  SoundCloud:
+    host:        https://api.soundcloud.com
+    output-file: soundcloud.yaml
+
+  Flickr:
+    output-file: flickr.yaml
+
+  Vimeo:
+    host:        https://api.vimeo.com
+    output-file: vimeo.yaml

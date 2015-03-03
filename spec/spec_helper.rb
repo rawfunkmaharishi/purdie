@@ -16,11 +16,11 @@ RSpec.configure do |config|
   config.order = :random
 
   config.before :each do
-    FileUtils.cp File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/config/purdie.yaml'),
-      File.join(File.dirname(__FILE__), '..', 'config/purdie.yaml')
+    FileUtils.cp File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/_config/purdie.yaml'),
+      File.join(File.dirname(__FILE__), '..', '_config/purdie.yaml')
   end
 
   config.after :each do
-    FileUtils.rm File.join(File.dirname(__FILE__), '..', 'config/purdie.yaml')
+    FileUtils.rm File.join(File.dirname(__FILE__), '..', '_config/purdie.yaml')
   end
 end
