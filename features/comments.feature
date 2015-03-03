@@ -1,7 +1,6 @@
 @vcr
 Feature: Handle comments
 
-  @announce-stdout
   Scenario: Handle comments in a source file
     Given a file named "_sources/sources.source" with:
     """

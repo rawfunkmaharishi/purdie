@@ -6,6 +6,12 @@ module Purdie
 
     def initialize
       @config = Config.new
+      @sources = Dir.entries(@config['source-dir']).select { |e| e !~ /^\./ }
+      @sources.map! { |s| "#{@config['source-dir']}/#{s}"}
+    end
+
+    def source_file path
+      @sources = [path]
     end
 
     def fetch
@@ -18,9 +24,8 @@ module Purdie
       v = Purdie::Services::Vimeo.new @config
       vimeos = []
 
-      sources = Dir.entries(@config['source-dir']).select { |e| e !~ /^\./ }
-      sources.each do |source|
-        lines = File.readlines "#{@config['source-dir']}/#{source}"
+      @sources.each do |source|
+        lines = File.readlines source
         lines.each do |line|
           print "Processing #{line.strip}... "
           case line
