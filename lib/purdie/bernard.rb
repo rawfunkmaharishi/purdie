@@ -15,13 +15,13 @@ module Purdie
     end
 
     def fetch
+      
       flickr = Purdie::Services::Flickr.new @config
       soundcloud = Purdie::Services::SoundCloud.new @config
       vimeo = Purdie::Services::Vimeo.new @config
 
       @sources.each do |source|
-        lines = File.readlines source
-        lines.each do |line|
+        File.readlines(source).each do |line|
           print "Processing #{line.strip}... "
           case line
             when /soundcloud/
