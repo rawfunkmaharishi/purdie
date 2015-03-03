@@ -18,3 +18,5 @@ Feature: Flickr
       license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
       photographer: kim
     """
+    And a file named "_data/soundcloud.yaml" should not exist
+    And a file named "_data/vimeo.yaml" should not exist

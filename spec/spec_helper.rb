@@ -18,9 +18,11 @@ RSpec.configure do |config|
   config.before :each do
     FileUtils.cp File.join(File.dirname(__FILE__), '..', 'features/support/fixtures/_config/purdie.yaml'),
       File.join(File.dirname(__FILE__), '..', '_config/purdie.yaml')
+    FileUtils.mkdir_p File.join(File.dirname(__FILE__), '..', '_sources')
   end
 
   config.after :each do
     FileUtils.rm File.join(File.dirname(__FILE__), '..', '_config/purdie.yaml')
+    FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '_sources')
   end
 end
