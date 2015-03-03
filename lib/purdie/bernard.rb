@@ -10,7 +10,7 @@ module Purdie
 
     def fetch
       s = Purdie::Services::SoundCloud.new @config
-      sounds = []
+      soundclouds = []
 
       f = Purdie::Services::Flickr.new @config
       flickrs = []
@@ -25,7 +25,7 @@ module Purdie
           print "Processing #{line.strip}... "
           case line
             when /soundcloud/
-              sounds.push s.distill line
+              soundclouds.push s.distill line
 
             when /flickr/
               flickrs.push f.distill line
@@ -39,17 +39,23 @@ module Purdie
 
       FileUtils.mkdir_p @config['output-dir']
 
-      sf = File.open "#{@config['output-dir']}/#{@config['services']['SoundCloud']['output-file']}", 'w'
-      sf.write sounds.to_yaml
-      sf.close
+      if soundclouds[0]
+        sf = File.open "#{@config['output-dir']}/#{@config['services']['SoundCloud']['output-file']}", 'w'
+        sf.write soundclouds.to_yaml
+        sf.close
+      end
 
-      ff = File.open "#{@config['output-dir']}/#{@config['services']['Flickr']['output-file']}", 'w'
-      ff.write flickrs.to_yaml
-      ff.close
+      if flickrs[0]
+        ff = File.open "#{@config['output-dir']}/#{@config['services']['Flickr']['output-file']}", 'w'
+        ff.write flickrs.to_yaml
+        ff.close
+      end
 
-      vf = File.open "#{@config['output-dir']}/#{@config['services']['Vimeo']['output-file']}", 'w'
-      vf.write vimeos.to_yaml
-      vf.close
+      if vimeos[0]
+        vf = File.open "#{@config['output-dir']}/#{@config['services']['Vimeo']['output-file']}", 'w'
+        vf.write vimeos.to_yaml
+        vf.close
+      end
     end
   end
 end
