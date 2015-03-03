@@ -14,11 +14,7 @@ module Purdie
       end
 
       def get_photo url
-        url.strip!
-        url = url[0..-2] if url[-1] == '/'
-        id = url.split('/')[-1].to_i
-
-        flickr.photos.getInfo(photo_id: id)
+        flickr.photos.getInfo photo_id: Purdie.get_id(url)
       end
 
       def distill url
