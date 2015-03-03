@@ -15,7 +15,6 @@ module Purdie
     end
 
     def fetch
-      
       flickr = Purdie::Services::Flickr.new @config
       soundcloud = Purdie::Services::SoundCloud.new @config
       vimeo = Purdie::Services::Vimeo.new @config
