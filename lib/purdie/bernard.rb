@@ -19,25 +19,23 @@ module Purdie
     end
 
     def fetch
-      services = @config['services'].keys.map { |s| "Purdie::Services::#{s}".constantize.new(@config)}
+      raise Exception.new 'No data sources specified' unless @sources
 
-      begin
-        @sources.each do |source|
-          File.readlines(source).each do |line|
-            next if line[0] == '#'
+      services = Ingester.includees.map { |i| i.new @config }
 
-            begin
-              print "Processing #{line.strip}... "
-              services.select{ |s| line =~ /#{s.subconfig['matcher']}/ }[0].ingest line
-            rescue NoMethodError => nme
-              puts 'unrecognised URL' if nme.message == "undefined method `ingest' for nil:NilClass"
-            else
-              puts 'done'
-            end
+      @sources.each do |source|
+        File.readlines(source).each do |line|
+          next if line[0] == '#'
+
+          begin
+            print "Processing #{line.strip}... "
+            services.select{ |s| line =~ /#{s.subconfig['matcher']}/ }[0].ingest line
+          rescue NoMethodError => nme
+            puts 'unrecognised URL' if nme.message == "undefined method `ingest' for nil:NilClass"
+          else
+            puts 'done'
           end
         end
-      rescue NoMethodError
-        raise Exception.new 'No data sources specified'
       end
 
       services.map { |service| service.write }

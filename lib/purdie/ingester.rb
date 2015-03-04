@@ -4,6 +4,16 @@ module Purdie
   module Ingester
     attr_reader :config, :subconfig
 
+    INCLUDEES = []
+
+    def self.included base
+      INCLUDEES.push base
+    end
+
+    def self.includees
+      INCLUDEES
+    end
+
     def initialize config
       @config = config
       @subconfig = @config['services'][Purdie.basename self]
