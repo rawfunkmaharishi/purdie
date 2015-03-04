@@ -10,7 +10,7 @@
 
 We have music on SoundCloud, photos on Flickr, and videos on Vimeo, and we want to feature them on [http://rawfunkmaharishi.uk/](http://rawfunkmaharishi.uk/). Up until now, this has been managed by curating, by hand (or [very shonky scripts](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/flickriser.rb)), [bits](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/sounds.yml) [of](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/pictures.yml) [YAML](https://github.com/rawfunkmaharishi/rawfunkmaharishi.github.io/blob/master/_data/videos.yml) to feed into Jekyll, but this gets old quickly, especially when you run into things like SoundCloud's decision to only expose the track ID deep inside the embeddable iframe code.
 
-But you know what, It's 2015 and everything has an API, so let's build a robot to do this stuff properly!
+But this is dumb. It's 2015 and everything has an API, so let's build a robot to do this stuff properly!
 
 ##The great metadata shift
 
@@ -24,18 +24,32 @@ Am I going to regret these decisions? Almost certainly.
 
 ##Using it
 
-You need to set up a *_sources* directory in your Jekyll project, containing files with one-URL-per-line, like this:
+You need to create a *_sources* directory in your Jekyll project, containing files with one-URL-per-line, like this:
 
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
 
-and a *.env* with API keys in it, and then you can run
+(you can alternatively specify a source file on the command line with the `-f` flag).
+ 
+You also need a *.env* file with API secrets in it:
+
+    FLICKR_API_KEY: this_a_key
+    FLICKR_SECRET: this_a_secret
+
+    SOUNDCLOUD_CLIENT_ID: this_a_client_is
+    SOUNDCLOUD_USER_ID: this_a_user_id
+
+    VIMEO_BEARER_TOKEN: this_bearer_token
+    
+(get those keys from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new))
+
+And then you can run
 
     purdie fetch
 
 and it will dump out YAML files into *_data* ready for Jekyll to consume.
 
-For now, though, please don't. None of my metadata hacks are documented, it's got some very Raw Funk Maharishi-specific lookups nailed into it, the output filenames are hardcoded (so it may well overwrite stuff you care about), there are flickering tests, you'll have a bad time. But soon...
+Tread carefully for now, though. My metadata hacks aren't fully documented, and the output filenames are hardcoded, so it may trample all over your data.
 
 ##Why Purdie?
 
