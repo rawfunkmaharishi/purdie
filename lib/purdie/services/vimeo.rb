@@ -9,6 +9,8 @@ module Purdie
         @host = 'https://api.vimeo.com'
         @matcher = 'vimeo.com'
         @output_file = 'vimeo.yaml'
+
+        super
       end
 
       def get url
@@ -30,8 +32,8 @@ module Purdie
 
         results['title'] = video['name']
         results['id'] = @id
-        results['license'] = @config['license-lookups'][video['license']]['full-name']
-        results['license_url'] = @config['license-lookups'][video['license']]['url']
+        results['license'] = @config['license_lookups'][video['license']]['full_name']
+        results['license_url'] = @config['license_lookups'][video['license']]['url']
 
         results
       end

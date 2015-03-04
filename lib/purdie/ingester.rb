@@ -21,6 +21,17 @@ module Purdie
       configure
     end
 
+    def configure
+      if @config['services']
+        if @config['services'][Purdie.basename self]
+          if @config['services'][Purdie.basename self]['output_file']
+            @config['output_dir'] = File.dirname(@config['services'][Purdie.basename self]['output_file'])
+            @output_file = File.basename(@config['services'][Purdie.basename self]['output_file'])
+          end
+        end
+      end
+    end
+
     def ingest url
       @items.push distill url
     end
@@ -39,9 +50,8 @@ module Purdie
 
     def write
       if self.has_items?
-        FileUtils.mkdir_p @config['output-dir']
-
-        File.open "#{@config['output-dir']}/#{@output_file}", 'w' do |f|
+        FileUtils.mkdir_p @config['output_dir']
+        File.open "#{@config['output_dir']}/#{@output_file}", 'w' do |f|
           f.write self.to_yaml
         end
       end

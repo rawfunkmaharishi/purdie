@@ -14,5 +14,9 @@ module Purdie
     def [] key
       @conf[key]
     end
+
+    def []= key, value
+      @conf[key] = value
+    end
   end
 end

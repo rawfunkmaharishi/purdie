@@ -1,13 +1,13 @@
-source-dir:    _sources
-output-dir:    _data
-default-title: Bernard Purdie, the World's most-recorded drummer
+source_dir:    _sources
+output_dir:    _data
+default_title: Bernard Purdie, the World's most-recorded drummer
 
-license-lookups:
+license_lookups:
   cc-by-nc-sa:
-    short-name: BY-NC-SA
-    full-name:  Attribution-NonCommercial-ShareAlike
+    short_name: BY-NC-SA
+    full_name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
   by-nc-sa:
-    short-name: BY-NC-SA
-    full-name:  Attribution-NonCommercial-ShareAlike
+    short_name: BY-NC-SA
+    full_name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/3.0/

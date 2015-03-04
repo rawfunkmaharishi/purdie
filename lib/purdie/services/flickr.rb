@@ -13,6 +13,8 @@ module Purdie
       def configure
         @matcher = 'flickr.com'
         @output_file = 'flickr.yaml'
+
+        super
       end
 
       def licenses
@@ -28,7 +30,7 @@ module Purdie
         results = {}
 
         results['title'] = photo['title']
-        results['title'] = @config['default-title'] if photo['title'] == ''
+        results['title'] = @config['default_title'] if photo['title'] == ''
         results['date'] = photo['dates']['taken'].split(' ')[0]
         results['photo_page'] = photo['urls'][0]['_content']
         results['photo_url'] = FlickRaw.url_m(photo)
@@ -41,7 +43,7 @@ module Purdie
           snapper = photo['tags'].select { |t| t['raw'] =~ /photographer/ }[0]
           results['photographer'] = snapper['raw'].split(':')[1]
         rescue NoMethodError
-          results['photographer'] = @config['photographer-lookups'][photo['owner']['username']]
+          results['photographer'] = @config['photographer_lookups'][photo['owner']['username']]
           unless results['photographer']
             results['photographer'] = photo['owner']['username']
           end

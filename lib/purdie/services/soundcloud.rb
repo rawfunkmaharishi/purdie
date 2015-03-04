@@ -11,6 +11,8 @@ module Purdie
         @host = 'https://api.soundcloud.com'
         @matcher = 'soundcloud.com'
         @output_file = 'soundcloud.yaml'
+
+        super
       end
 
       def all_tracks
@@ -34,8 +36,8 @@ module Purdie
         results['id'] = track['id']
         results['location'] = track['description']
         results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
-        results['license'] = @config['license-lookups'][track['license']]['full-name']
-        results['license_url'] = @config['license-lookups'][track['license']]['url']
+        results['license'] = @config['license_lookups'][track['license']]['full_name']
+        results['license_url'] = @config['license_lookups'][track['license']]['url']
 
         results
       end
