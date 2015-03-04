@@ -15,7 +15,12 @@ module Purdie
     def fetch
       b = Bernard.new
       b.source_file options[:source_file] if options[:source_file]
-      b.fetch
+      begin
+        b.fetch
+      rescue Exception => e
+        $stderr.puts e.message
+      #  exit 1
+      end
     end
   end
 end
