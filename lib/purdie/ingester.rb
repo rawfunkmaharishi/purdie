@@ -21,9 +21,6 @@ module Purdie
       configure
     end
 
-    def configure
-    end
-
     def ingest url
       @items.push distill url
     end
