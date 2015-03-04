@@ -1,8 +1,6 @@
 @vcr
 Feature: Flickr
 
-@announce-stdout
-@announce-stderr
   Scenario: Generate Flickr YAML
     Given a file named "_sources/flickr.csv" with:
     """
