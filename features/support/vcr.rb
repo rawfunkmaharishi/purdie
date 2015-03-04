@@ -29,6 +29,7 @@ class VcrFriendlyMain
   def execute!
     $stdin = @stdin
     $stdout = @stdout
+    $stderr = @stderr
     Purdie::CLI.start(@argv)
   end
 end
@@ -43,4 +44,5 @@ After('@vcr') do
   VCR.eject_cassette
   $stdin = STDIN
   $stdout = STDOUT
+  $stderr = STDERR
 end

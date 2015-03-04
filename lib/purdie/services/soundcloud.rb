@@ -5,26 +5,30 @@ Dotenv.load
 module Purdie
   module Services
     class SoundCloud
-      def initialize config
-        @config = config
+      include Purdie::Ingester
+
+      def configure
+        @host = 'https://api.soundcloud.com'
+        @matcher = 'soundcloud.com'
+        @output_file = 'soundcloud.yaml'
       end
 
       def all_tracks
         @all_tracks ||= begin
-          url = "#{@config['services']['SoundCloud']['host']}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
+          url = "#{@host}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
           response = HTTParty.get url
           JSON.parse response.body
         end
       end
 
-      def get_track url
+      def get url
         all_tracks.select do |track|
           Purdie.strip_scheme(track['permalink_url']) == Purdie.strip_scheme(url)
         end[0]
       end
 
       def distill url
-        track = get_track url
+        track = get url
         results = {}
         results['title'] = track['title']
         results['id'] = track['id']

@@ -1,28 +1,30 @@
 require 'purdie'
-require 'flickraw-cached'
 
 Dotenv.load
+
+FlickRaw.api_key = ENV['FLICKR_API_KEY']
+FlickRaw.shared_secret = ENV['FLICKR_SECRET']
 
 module Purdie
   module Services
     class Flickr
-      def initialize config
-        @config = config
+      include Purdie::Ingester
 
-        FlickRaw.api_key = ENV['FLICKR_API_KEY']
-        FlickRaw.shared_secret = ENV['FLICKR_SECRET']
+      def configure
+        @matcher = 'flickr.com'
+        @output_file = 'flickr.yaml'
       end
 
-      def get_photo url
-        url.strip!
-        url = url[0..-2] if url[-1] == '/'
-        id = url.split('/')[-1].to_i
+      def licenses
+        @licenses ||= flickr.photos.licenses.getInfo
+      end
 
-        flickr.photos.getInfo(photo_id: id)
+      def get url
+        flickr.photos.getInfo photo_id: Purdie.get_id(url)
       end
 
       def distill url
-        photo = get_photo url
+        photo = get url
         results = {}
 
         results['title'] = photo['title']
@@ -31,8 +33,7 @@ module Purdie
         results['photo_page'] = photo['urls'][0]['_content']
         results['photo_url'] = FlickRaw.url_m(photo)
 
-        @licenses = flickr.photos.licenses.getInfo
-        license = @licenses.select {|l| l['id'] == photo['license']}[0]
+        license = licenses.select {|l| l['id'] == photo['license']}[0]
         results['license'] = license['name'].split(' License')[0]
         results['license_url'] = license['url']
 

@@ -1,20 +1,20 @@
 require 'purdie'
 
-Dotenv.load
-
 module Purdie
   module Services
     class Vimeo
-      def initialize config
-        @config = config
+      include Purdie::Ingester
+
+      def configure
+        @host = 'https://api.vimeo.com'
+        @matcher = 'vimeo.com'
+        @output_file = 'vimeo.yaml'
       end
 
-      def get_video url
-        url.strip!
-        url = url[0..-2] if url[-1] == '/'
-        @id = url.split('/')[-1].to_i
+      def get url
+        @id = Purdie.get_id url
 
-        target = "#{@config['services']['Vimeo']['host']}/videos/#{@id}"
+        target = "#{@host}/videos/#{@id}"
         headers = {
           'Authorization' => "bearer #{ENV['VIMEO_BEARER_TOKEN']}",
           'Accept' => 'application/json'
@@ -25,7 +25,7 @@ module Purdie
       end
 
       def distill url
-        video = get_video url
+        video = get url
         results = {}
 
         results['title'] = video['name']

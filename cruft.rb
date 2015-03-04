@@ -1,9 +1,10 @@
+require 'active_support/inflector'
+
 class Thing
   def hello
     puts "I am a #{self.class.name}"
   end
 end
 
-Thing.new.hello
-
-t = "Thing"
+t = "Thing".constantize.new
+t.hello

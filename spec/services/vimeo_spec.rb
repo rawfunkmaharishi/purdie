@@ -8,16 +8,19 @@ module Purdie
       end
 
       it 'gets a video', :vcr do
-        expect(@v.get_video 'https://vimeo.com/117102891').to be_a Hash
+        expect(@v.get 'https://vimeo.com/117102891').to be_a Hash
       end
 
-      it 'distills a video', :vcr do
-        expect(@v.distill 'https://vimeo.com/117102891').to eq({
-          "title"=>"Bernard",
-          "id"=>117102891,
-          "license"=>"Attribution-NonCommercial-ShareAlike",
-          "license_url"=>"http://creativecommons.org/licenses/by-nc-sa/3.0/"
-        })
+      it 'ingests a video', :vcr do
+        @v.ingest 'https://vimeo.com/117102891'
+        expect(@v[0].to_yaml).to eq(
+"---
+title: Bernard
+id: 117102891
+license: Attribution-NonCommercial-ShareAlike
+license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+"
+        )
       end
     end
   end

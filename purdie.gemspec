@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'deep_merge', '~> 1.0'
   spec.add_dependency 'dotenv', '~> 1.0'
   spec.add_dependency 'flickraw-cached', '= 20120701'
+  spec.add_dependency 'activesupport'
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 10.0'
