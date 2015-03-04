@@ -81,7 +81,9 @@ You can supply your own *_config/purdie.yaml* file to specify a few things:
         
 (see [this](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml) for some other things you can tweak)
 
-Tread carefully for now, because my metadata hacks aren't fully documented. 
+###Caveats
+ 
+Tread carefully for now, because my metadata hacks aren't fully documented, and I may have inadvertently nailed-in some Raw Funk Maharishi-specific stuff (although I've tried hard not to). 
 
 ##What next?
 
@@ -104,4 +106,4 @@ And I can definitely rationalise these [horrible license lookups](https://github
   
 ##Why Purdie?
 
-Because Bernard Purdie is [even more amazing that Ruby introspection](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV&index=6).
+Because Bernard Purdie is [even more amazing than Ruby introspection](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV&index=6).
