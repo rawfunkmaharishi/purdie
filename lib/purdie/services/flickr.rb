@@ -2,29 +2,24 @@ require 'purdie'
 
 Dotenv.load
 
+FlickRaw.api_key = ENV['FLICKR_API_KEY']
+FlickRaw.shared_secret = ENV['FLICKR_SECRET']
+
 module Purdie
   module Services
     class Flickr
       include Purdie::Ingester
 
-      def initialize config
-        @config = config
-        @items = []
-
-        FlickRaw.api_key = ENV['FLICKR_API_KEY']
-        FlickRaw.shared_secret = ENV['FLICKR_SECRET']
-      end
-
       def licenses
         @licenses ||= flickr.photos.licenses.getInfo
       end
 
-      def get_photo url
+      def get url
         flickr.photos.getInfo photo_id: Purdie.get_id(url)
       end
 
       def distill url
-        photo = get_photo url
+        photo = get url
         results = {}
 
         results['title'] = photo['title']

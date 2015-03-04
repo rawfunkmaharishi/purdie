@@ -19,5 +19,16 @@ module Purdie
     it 'gets an id' do
       expect(Purdie.get_id 'http://foo.bar/654321').to eq 654321
     end
+
+    it 'gets a basename for a class' do
+      module Medeski
+        module Martin
+          class Wood
+          end
+        end
+      end
+      @mmw = Medeski::Martin::Wood.new
+      expect(Purdie.basename @mmw).to eq 'Wood'
+    end
   end
 end
