@@ -13,12 +13,14 @@ module Purdie
 
       it 'ingests a video', :vcr do
         @v.ingest 'https://vimeo.com/117102891'
-        expect(@v[0]).to eq({
-          "title"=>"Bernard",
-          "id"=>117102891,
-          "license"=>"Attribution-NonCommercial-ShareAlike",
-          "license_url"=>"http://creativecommons.org/licenses/by-nc-sa/3.0/"
-        })
+        expect(@v[0].to_yaml).to eq(
+"---
+title: Bernard
+id: 117102891
+license: Attribution-NonCommercial-ShareAlike
+license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
+"
+        )
       end
     end
   end
