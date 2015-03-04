@@ -12,7 +12,7 @@ module Purdie
       end
 
       it 'extracts a track', :vcr do
-        track = @sc.get_track 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
+        track = @sc.get 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
         expect(track).to be_a Hash
         expect(track['id']). to eq 193008299
       end

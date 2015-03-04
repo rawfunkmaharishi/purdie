@@ -8,7 +8,7 @@ module Purdie
       end
 
       it 'gets a video', :vcr do
-        expect(@v.get_video 'https://vimeo.com/117102891').to be_a Hash
+        expect(@v.get 'https://vimeo.com/117102891').to be_a Hash
       end
 
       it 'ingests a video', :vcr do
