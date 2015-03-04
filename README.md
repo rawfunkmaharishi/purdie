@@ -24,6 +24,16 @@ Am I going to regret these decisions? Almost certainly.
 
 ##Using it
 
+    gem install purdie
+    
+or
+
+    git clone https://github.com/rawfunkmaharishi/purdie/
+    cd purdie
+    bundle
+    rake
+    rake install
+
 You need to create a *_sources* directory in your Jekyll project, containing files with one-URL-per-line, like this:
 
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
@@ -51,7 +61,7 @@ and it will dump out YAML files into *_data* ready for Jekyll to consume.
 
 ###Customisation
 
-You can supply your own _config/purdie.yaml_ file to specify a few things:
+You can supply your own *_config/purdie.yaml* file to specify a few things:
 
     # Flickr photos are happy to have a null title
     default_title: Raw Funk Maharishi 
