@@ -10,6 +10,11 @@ module Purdie
     class Flickr
       include Purdie::Ingester
 
+      def configure
+        @matcher = 'flickr.com'
+        @output_file = 'flickr.yaml'
+      end
+
       def licenses
         @licenses ||= flickr.photos.licenses.getInfo
       end

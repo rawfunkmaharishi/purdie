@@ -29,7 +29,7 @@ module Purdie
 
           begin
             print "Processing #{line.strip}... "
-            services.select{ |s| line =~ /#{s.subconfig['matcher']}/ }[0].ingest line
+            services.select{ |s| line =~ /#{s.matcher}/ }[0].ingest line
           rescue NoMethodError => nme
             puts 'unrecognised URL' if nme.message == "undefined method `ingest' for nil:NilClass"
           else

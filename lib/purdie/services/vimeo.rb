@@ -5,10 +5,16 @@ module Purdie
     class Vimeo
       include Purdie::Ingester
 
+      def configure
+        @host = 'https://api.vimeo.com'
+        @matcher = 'vimeo.com'
+        @output_file = 'vimeo.yaml'
+      end
+
       def get url
         @id = Purdie.get_id url
 
-        target = "#{@subconfig['host']}/videos/#{@id}"
+        target = "#{@host}/videos/#{@id}"
         headers = {
           'Authorization' => "bearer #{ENV['VIMEO_BEARER_TOKEN']}",
           'Accept' => 'application/json'
