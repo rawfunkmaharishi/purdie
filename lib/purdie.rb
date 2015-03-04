@@ -30,4 +30,8 @@ module Purdie
   def Purdie.get_id url
     Purdie.sanitise_url(url).split('/')[-1].to_i
   end
+
+  def Purdie.basename obj
+    obj.class.name.to_s.split('::').last
+  end
 end
