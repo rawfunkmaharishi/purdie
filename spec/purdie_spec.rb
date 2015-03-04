@@ -7,6 +7,12 @@ module Purdie
       expect(b.config['output-dir']).to eq '_data'
     end
 
+    it 'does not throw a fit when initialized with no _sources dir' do
+      FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '_sources')
+      b = Bernard.new
+      expect {b.fetch}.to raise_error
+    end
+
     it 'strips a scheme' do
       expect(Purdie.strip_scheme 'http://foo.bar/stuff').to eq 'foo.bar/stuff'
       expect(Purdie.strip_scheme 'https://bar.foo/stuff').to eq 'bar.foo/stuff'

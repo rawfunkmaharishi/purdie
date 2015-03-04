@@ -2,12 +2,26 @@ Dotenv.load
 
 module Purdie
   module Ingester
-    attr_reader :config, :subconfig
+    attr_reader :config, :subconfig, :matcher
+
+    INCLUDEES = []
+
+    def self.included base
+      INCLUDEES.push base
+    end
+
+    def self.includees
+      INCLUDEES
+    end
 
     def initialize config
       @config = config
-      @subconfig = @config['services'][Purdie.basename self]
       @items = []
+
+      configure
+    end
+
+    def configure
     end
 
     def ingest url
@@ -30,7 +44,7 @@ module Purdie
       if self.has_items?
         FileUtils.mkdir_p @config['output-dir']
 
-        File.open "#{@config['output-dir']}/#{@subconfig['output-file']}", 'w' do |f|
+        File.open "#{@config['output-dir']}/#{@output_file}", 'w' do |f|
           f.write self.to_yaml
         end
       end

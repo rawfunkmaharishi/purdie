@@ -7,9 +7,15 @@ module Purdie
     class SoundCloud
       include Purdie::Ingester
 
+      def configure
+        @host = 'https://api.soundcloud.com'
+        @matcher = 'soundcloud.com'
+        @output_file = 'soundcloud.yaml'
+      end
+
       def all_tracks
         @all_tracks ||= begin
-          url = "#{@subconfig['host']}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
+          url = "#{@host}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
           response = HTTParty.get url
           JSON.parse response.body
         end
