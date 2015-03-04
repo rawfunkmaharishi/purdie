@@ -15,24 +15,24 @@ module Purdie
     end
 
     def fetch
-      services = {}
-      @config['services'].each do |s|
-        services[s[0].downcase.to_sym] = "Purdie::Services::#{s[0]}".constantize.new(@config)
-      end
+      services = @config['services'].keys.map { |s| "Purdie::Services::#{s}".constantize.new(@config)}
 
       @sources.each do |source|
         File.readlines(source).each do |line|
           next if line[0] == '#'
 
-          print "Processing #{line.strip}... "
-          services[services.keys.select{ |s| line =~ /#{s.to_s}/ }[0]].ingest line
-          puts 'done'
+          begin
+            print "Processing #{line.strip}... "
+            services.select{ |s| line =~ /#{s.subconfig['matcher']}/ }[0].ingest line
+          rescue NoMethodError => nme
+            puts 'unrecognised URL' if nme.message == "undefined method `ingest' for nil:NilClass"
+          else
+            puts 'done'
+          end
         end
       end
 
-      services.each_key do |k|
-        services[k].write
-      end
+      services.map { |service| service.write }
     end
   end
 end
