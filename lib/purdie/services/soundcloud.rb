@@ -20,14 +20,14 @@ module Purdie
         end
       end
 
-      def get_track url
+      def get url
         all_tracks.select do |track|
           Purdie.strip_scheme(track['permalink_url']) == Purdie.strip_scheme(url)
         end[0]
       end
 
       def distill url
-        track = get_track url
+        track = get url
         results = {}
         results['title'] = track['title']
         results['id'] = track['id']

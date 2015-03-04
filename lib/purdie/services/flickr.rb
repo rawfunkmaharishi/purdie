@@ -19,12 +19,12 @@ module Purdie
         @licenses ||= flickr.photos.licenses.getInfo
       end
 
-      def get_photo url
+      def get url
         flickr.photos.getInfo photo_id: Purdie.get_id(url)
       end
 
       def distill url
-        photo = get_photo url
+        photo = get url
         results = {}
 
         results['title'] = photo['title']

@@ -12,7 +12,7 @@ module Purdie
         @items = []
       end
 
-      def get_video url
+      def get url
         @id = Purdie.get_id url
 
         target = "#{@config['services'][self.class.name.split('::')[-1]]['host']}/videos/#{@id}"
@@ -26,7 +26,7 @@ module Purdie
       end
 
       def distill url
-        video = get_video url
+        video = get url
         results = {}
 
         results['title'] = video['name']
