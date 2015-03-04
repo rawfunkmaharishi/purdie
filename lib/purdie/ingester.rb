@@ -1,5 +1,11 @@
 module Purdie
   module Ingester
+    def initialize config
+      @config = config
+      @subconfig = @config['services'][Purdie.basename self]
+      @items = []
+    end
+
     def ingest url
       @items.push distill url
     end

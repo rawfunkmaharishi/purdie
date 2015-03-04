@@ -7,14 +7,8 @@ module Purdie
     class Flickr
       include Purdie::Ingester
 
-      def initialize config
-        @config = config
-        @items = []
-
         FlickRaw.api_key = ENV['FLICKR_API_KEY']
         FlickRaw.shared_secret = ENV['FLICKR_SECRET']
-      end
-
       def licenses
         @licenses ||= flickr.photos.licenses.getInfo
       end

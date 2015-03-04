@@ -6,11 +6,6 @@ module Purdie
   module Services
     class Vimeo
       include Purdie::Ingester
-      
-      def initialize config
-        @config = config
-        @items = []
-      end
 
       def get url
         @id = Purdie.get_id url
