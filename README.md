@@ -49,8 +49,45 @@ And then you can run
 
 and it will dump out YAML files into *_data* ready for Jekyll to consume.
 
-Tread carefully for now, though. My metadata hacks aren't fully documented, and the output filenames are hardcoded, so it may trample all over your data.
+###Customisation
 
+You can supply your own _config/purdie.yaml_ file to specify a few things:
+
+    # Flickr photos are happy to have a null title
+    default_title: Raw Funk Maharishi 
+
+    # Map Flickr users to better names
+    photographer_lookups:
+      pikesley: sam
+      
+    # Specify output files per-service
+    services:
+      Flickr:
+        output_file: "_outfiles/photos.yaml"
+        
+(see [this](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml) for some other things you can tweak)
+
+Tread carefully for now, because my metadata hacks aren't fully documented. 
+
+##What next?
+
+There's no reason I couldn't support other services - YouTube springs immediately to mind, and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
+
+* includes the `Purdie::Ingester` module, and
+* sports a `#configure` method which sets at least a 
+  * `@matcher` string which will pick a URL out of an input file, and an
+  * `@output_file`, and
+* has a `#distill` method which takes a URL representing an item on the service and returns a hash of metadata, see e.g.
+  * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L26-L48)
+  * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L30-L41)
+  * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb#L27-L37)
+
+then this should all Just Work. There's definitely a blog post in this, because Ruby introspection and metaprogramming is just mind-bogglingly powerful (and dangerous).
+
+More prosaically, I think it will be fairly simple to support Flickr sets and SoundCloud albums as input data.
+  
+And I can definitely rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5-L13) into a module or even a gem of their own.
+  
 ##Why Purdie?
 
-Because Bernard Purdie is [amazing](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV&index=6)
+Because Bernard Purdie is [even more amazing that Ruby introspection](https://www.youtube.com/watch?v=E9E0WxLbqVA&list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV&index=6).

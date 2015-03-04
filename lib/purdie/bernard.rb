@@ -7,8 +7,8 @@ module Purdie
     def initialize
       @config = Config.new
       begin
-        @sources = Dir.entries(@config['source-dir']).select { |e| e !~ /^\./ }
-        @sources.map! { |s| "#{@config['source-dir']}/#{s}"}
+        @sources = Dir.entries(@config['source_dir']).select { |e| e !~ /^\./ }
+        @sources.map! { |s| "#{@config['source_dir']}/#{s}"}
       rescue Errno::ENOENT
         @sources = nil
       end
