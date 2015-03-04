@@ -103,6 +103,8 @@ then this should all Just Work. There's definitely a blog post in this, because 
 More prosaically, I think it will be fairly simple to support Flickr sets and SoundCloud albums as input data.
   
 And I can definitely rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5-L13) into a module or even a gem of their own.
+
+And of course, known issues are [here](https://github.com/rawfunkmaharishi/purdie/issues).
   
 ##Why Purdie?
 
