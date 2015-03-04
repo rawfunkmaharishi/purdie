@@ -1,5 +1,9 @@
+Dotenv.load
+
 module Purdie
   module Ingester
+    attr_reader :config, :subconfig
+
     def initialize config
       @config = config
       @subconfig = @config['services'][Purdie.basename self]
@@ -26,7 +30,7 @@ module Purdie
       if self.has_items?
         FileUtils.mkdir_p @config['output-dir']
 
-        File.open "#{@config['output-dir']}/#{@config['services'][self.class.name.split('::')[-1]]['output-file']}", 'w' do |f|
+        File.open "#{@config['output-dir']}/#{@subconfig['output-file']}", 'w' do |f|
           f.write self.to_yaml
         end
       end

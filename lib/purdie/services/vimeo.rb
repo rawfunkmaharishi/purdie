@@ -1,7 +1,5 @@
 require 'purdie'
 
-Dotenv.load
-
 module Purdie
   module Services
     class Vimeo
@@ -10,7 +8,7 @@ module Purdie
       def get url
         @id = Purdie.get_id url
 
-        target = "#{@config['services'][self.class.name.split('::')[-1]]['host']}/videos/#{@id}"
+        target = "#{@subconfig['host']}/videos/#{@id}"
         headers = {
           'Authorization' => "bearer #{ENV['VIMEO_BEARER_TOKEN']}",
           'Accept' => 'application/json'
