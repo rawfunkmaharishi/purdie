@@ -24,6 +24,8 @@ Am I going to regret these decisions? Almost certainly.
 
 ##Using it
 
+###Installation
+
     gem install purdie
     
 or
@@ -33,6 +35,8 @@ or
     bundle
     rake
     rake install
+
+###Configuration
 
 You need to create a *_sources* directory in your Jekyll project, containing files with one-URL-per-line, like this:
 
