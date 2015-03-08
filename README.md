@@ -61,7 +61,7 @@ And then you can run
 
     purdie fetch
 
-and it will dump out YAML files into *_data* ready for Jekyll to consume.
+and it will dump out YAML files into *_data*, ready for Jekyll to consume.
 
 ###Customisation
 
@@ -93,15 +93,15 @@ There's no reason I couldn't support other services - I've now added [YouTube](h
 * sports a `#configure` method which sets at least a
   * `@matcher` string which will pick a URL out of an input file, and
 * has a `#distill` method which takes a URL representing an item on the service and returns a hash of metadata, see e.g.
-  * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L26-L48)
-  * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L30-L41)
-  * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb#L27-L37)
+  * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L27)
+  * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L31)
+  * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb#L28)
 
 then this should all Just Work. There's definitely a blog post in this, because Ruby introspection and metaprogramming is just mind-bogglingly powerful (and dangerous).
 
 More prosaically, I think it will be fairly simple to support Flickr sets and SoundCloud albums as input data.
 
-And I can definitely rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5-L13) into a module or even a gem of their own.
+And I can definitely rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5) into a module or even a gem of their own.
 
 And of course, known issues are [here](https://github.com/rawfunkmaharishi/purdie/issues).
 
