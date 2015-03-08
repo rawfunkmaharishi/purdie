@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'thor', '~> 0.19'
   spec.add_dependency 'httparty', '~> 0.13'
   spec.add_dependency 'deep_merge', '~> 1.0'
-  spec.add_dependency 'dotenv', '~> 1.0'
+  spec.add_dependency 'dotenv', '~> 2.0'
   spec.add_dependency 'flickraw-cached', '= 20120701'
   spec.add_dependency 'activesupport'
   spec.add_dependency 'google-api-client'
