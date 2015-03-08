@@ -15,6 +15,7 @@ require 'purdie/source_list'
 require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'
 require 'purdie/services/vimeo'
+require 'purdie/services/youtube'
 
 module Purdie
   def Purdie.strip_scheme url

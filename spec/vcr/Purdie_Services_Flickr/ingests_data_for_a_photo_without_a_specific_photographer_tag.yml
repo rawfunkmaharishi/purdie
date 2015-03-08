@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="CKcZOZ7BxeocCr%2F1yj2R3KzYmdcDcn27JCwGbuHGShk%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425422844", oauth_token="",
+        oauth_nonce="sS%2FWvDGTDFmFWZjG2mc52eH%2F%2F%2F8QqIZCcYapDuT%2FKpE%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845860", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,11 +26,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 03 Mar 2015 22:47:24 GMT
+      - Sun, 08 Mar 2015 20:17:40 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '543'
+      - '542'
       P3p:
       - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
         TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www55.flickr.bf1.yahoo.com
+      - www7.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r19.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts125.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r24.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -54,9 +54,9 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"photo":{"id":"15950875724","secret":"23d58be214","server":"7398","farm":8,"dateuploaded":"1424289792","isfavorite":0,"license":"2","safety_level":"0","rotation":0,"originalsecret":"24a89b0cfe","originalformat":"jpg","owner":{"nsid":"54115632@N00","username":"cluttercup","realname":"Jane
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424289792","taken":"2015-02-18
-        16:56:20","takengranularity":"0","takenunknown":"0","lastupdate":"1424289832"},"views":"37","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/15950875724\/"}]},"media":"photo"},"stat":"ok"}'
+        16:56:20","takengranularity":"0","takenunknown":"0","lastupdate":"1424289832"},"views":"38","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/15950875724\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 03 Mar 2015 22:47:24 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:40 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -72,8 +72,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="ETyAm8OsxWXkgjtBML1%2FeNzpZUH2ElmvCB9kksmzlsk%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425422844", oauth_token="",
+        oauth_nonce="boov2Wa6DkpsQqDjok%2Fv7VCptew%2FiegvEBwN%2FeTQHIc%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845860", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -83,7 +83,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 03 Mar 2015 22:47:25 GMT
+      - Sun, 08 Mar 2015 20:17:41 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -95,14 +95,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www261.flickr.bf1.yahoo.com
+      - www348.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '2'
       Via:
-      - http/1.1 fts103.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r07.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts108.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -119,5 +119,5 @@ http_interactions:
         known copyright restrictions","url":"https:\/\/www.flickr.com\/commons\/usage\/"},{"id":"8","name":"United
         States Government Work","url":"http:\/\/www.usa.gov\/copyright.shtml"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 03 Mar 2015 22:47:25 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:41 GMT
 recorded_with: VCR 2.9.3

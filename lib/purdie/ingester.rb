@@ -22,6 +22,7 @@ module Purdie
     end
 
     def configure
+      @output_file = "#{Purdie.basename(self).downcase}.yaml"
       # This is such a hack
       if @config['services']
         if @config['services'][Purdie.basename self]

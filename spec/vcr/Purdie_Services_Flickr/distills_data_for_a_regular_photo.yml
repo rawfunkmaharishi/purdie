@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="V1Kr4%2B%2B5DuKytgeoW5%2FxA62qRAb75bpRdBhp3nqEuSI%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425422845", oauth_token="",
+        oauth_nonce="a1s4fcdOA5G7mTCo0454DY7ve6eafPzp2v5XbLvkdEM%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845861", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 03 Mar 2015 22:47:25 GMT
+      - Sun, 08 Mar 2015 20:17:41 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www243.flickr.bf1.yahoo.com
+      - www251.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts101.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r07.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts102.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -55,10 +55,10 @@ http_interactions:
       string: '{"photo":{"id":"15631479625","secret":"b6168ee903","server":"3933","farm":4,"dateuploaded":"1414326010","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"3191340cdb","originalformat":"jpg","owner":{"nsid":"128943844@N06","username":"rawfunkmaharishi","realname":"Raw
         Funk Maharishi","location":"","iconserver":"3933","iconfarm":4,"path_alias":"rawfunkmaharishi"},"title":{"_content":"The
         Comedy, October 2014"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1414326010","taken":"2014-10-22
-        15:54:24","takengranularity":"0","takenunknown":"0","lastupdate":"1416111853"},"views":"92","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"128898522-15631479625-1422028","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"the
+        15:54:24","takengranularity":"0","takenunknown":"0","lastupdate":"1416111853"},"views":"94","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"128898522-15631479625-1422028","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"the
         comedy","_content":"thecomedy","machine_tag":0},{"id":"128898522-15631479625-17975","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"gigs","_content":"gigs","machine_tag":0},{"id":"128898522-15631479625-228989594","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"photographer:kim","_content":"photographerkim","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/rawfunkmaharishi\/15631479625\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 03 Mar 2015 22:47:25 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:41 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -74,8 +74,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="suO%2BYgwuYjwuvcncWHF82uBNLN24OqTrmocpEWQRZe8%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425422845", oauth_token="",
+        oauth_nonce="mlC0dcHRJ0S0u%2F21khM20cA81y4gFgQC6c8qLj3JqnY%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845861", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 03 Mar 2015 22:47:26 GMT
+      - Sun, 08 Mar 2015 20:17:41 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -97,14 +97,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www41.flickr.bf1.yahoo.com
+      - www58.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r09.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts111.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -121,5 +121,5 @@ http_interactions:
         known copyright restrictions","url":"https:\/\/www.flickr.com\/commons\/usage\/"},{"id":"8","name":"United
         States Government Work","url":"http:\/\/www.usa.gov\/copyright.shtml"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 03 Mar 2015 22:47:26 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:41 GMT
 recorded_with: VCR 2.9.3
