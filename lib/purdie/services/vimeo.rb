@@ -8,7 +8,6 @@ module Purdie
       def configure
         @host = 'https://api.vimeo.com'
         @matcher = 'vimeo.com'
-        @output_file = 'vimeo.yaml'
 
         super
       end

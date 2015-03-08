@@ -10,7 +10,6 @@ module Purdie
       def configure
         @host = 'https://api.soundcloud.com'
         @matcher = 'soundcloud.com'
-        @output_file = 'soundcloud.yaml'
 
         super
       end

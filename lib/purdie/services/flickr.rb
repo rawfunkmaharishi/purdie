@@ -12,7 +12,6 @@ module Purdie
 
       def configure
         @matcher = 'flickr.com'
-        @output_file = 'flickr.yaml'
 
         super
       end

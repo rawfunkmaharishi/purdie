@@ -9,7 +9,6 @@ module Purdie
 
       def configure
         @matcher = 'youtube.com'
-        @output_file = 'youtube.yaml'
 
         super
       end
