@@ -10,6 +10,7 @@ require 'purdie/version'
 require 'purdie/bernard'
 require 'purdie/config'
 require 'purdie/ingester'
+require 'purdie/source_list'
 
 require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'
@@ -33,5 +34,11 @@ module Purdie
 
   def Purdie.basename obj
     obj.class.name.to_s.split('::').last
+  end
+
+  def Purdie.wtf message
+    File.open '../../wtf.log', 'w' do |f|
+      f.write message
+    end
   end
 end

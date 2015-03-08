@@ -43,12 +43,15 @@ module Purdie
           snapper = photo['tags'].select { |t| t['raw'] =~ /photographer/ }[0]
           results['photographer'] = snapper['raw'].split(':')[1]
         rescue NoMethodError
-          results['photographer'] = @config['photographer_lookups'][photo['owner']['username']]
+          if @config['photographer_lookups']
+            results['photographer'] = @config['photographer_lookups'][photo['owner']['username']]
+          else
+            results['photographer'] = photo['owner']['username']
+          end
           unless results['photographer']
             results['photographer'] = photo['owner']['username']
           end
         end
-
         results
       end
     end

@@ -37,7 +37,8 @@ photographer: jane
         )
       end
 
-      it 'falls back to the default photographer name', :vcr do        expect(@f.distill('https://www.flickr.com/photos/pikesley/16649739916/')['photographer']).to eq 'pikesley'
+      it 'falls back to the default photographer name', :vcr do
+        expect(@f.distill('https://www.flickr.com/photos/pikesley/16649739916/')['photographer']).to eq 'pikesley'
       end
     end
   end

@@ -22,6 +22,7 @@ module Purdie
     end
 
     def configure
+      # This is such a hack
       if @config['services']
         if @config['services'][Purdie.basename self]
           if @config['services'][Purdie.basename self]['output_file']
@@ -38,6 +39,10 @@ module Purdie
 
     def [] key
       @items[key]
+    end
+
+    def count
+      @items.count
     end
 
     def has_items?
