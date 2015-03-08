@@ -14,26 +14,34 @@ module Purdie
         super
       end
 
-      def get url
-        client = Google::APIClient.new(
-          key: ENV['YOUTUBE_API_KEY'],
-          authorization: nil,
-          application_name: 'purdie',
-          application_version: Purdie::VERSION
-        )
+      def client
+        @client ||= Google::APIClient.new(
+            key: ENV['YOUTUBE_API_KEY'],
+            authorization: nil,
+            application_name: 'purdie',
+            application_version: Purdie::VERSION
+          )
+      end
 
-        youtube = client.discovered_api(
+      def yt_service
+        @yt_service ||= client.discovered_api(
           ENV['YOUTUBE_API_SERVICE_NAME'],
           ENV['YOUTUBE_API_VERSION']
         )
+      end
 
-        data = client.execute!(
-          api_method: youtube.videos.list,
+      def get_data id, part
+        client.execute!(
+          api_method: yt_service.videos.list,
           parameters: {
-            id: YouTube.get_id(url),
-            part: 'status'
+            id: id,
+            part: part
           }
         )
+      end
+
+      def get url
+        data = get_data YouTube.get_id(url), 'status'
         JSON.parse data.body
       end
 
