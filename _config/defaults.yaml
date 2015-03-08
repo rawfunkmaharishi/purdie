@@ -4,14 +4,20 @@ default_title: Bernard Purdie, the World's most-recorded drummer
 
 # those unwieldy lookups are because each service calls the CC licenses by a slightly different name and defaults to a different version of the license. I think I need to abstract all of this out into a modlue or even a gem of its own
 license_lookups:
+
+  # SoundCloud
   cc-by-nc-sa:
     short_name: BY-NC-SA
     full_name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+  # Vimeo
   by-nc-sa:
     short_name: BY-NC-SA
     full_name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+  # This one is YouTube. WTF YouTube?
   creativeCommon:
     short_name: BY
     full_name:  Attribution

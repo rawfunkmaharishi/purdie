@@ -47,8 +47,6 @@ module Purdie
       def distill url
         video = get url
         results = {}
-      #  require 'pry'
-      #  binding.pry
 
         results['title'] = video['items'][0]['snippet']['localized']['title']
         results['id'] = YouTube.get_id(url)
