@@ -12,3 +12,7 @@ license_lookups:
     short_name: BY-NC-SA
     full_name:  Attribution-NonCommercial-ShareAlike
     url:        http://creativecommons.org/licenses/by-nc-sa/3.0/
+  creativeCommon:
+    short_name: BY
+    full_name:  Attribution
+    url:        https://creativecommons.org/licenses/by/3.0/
