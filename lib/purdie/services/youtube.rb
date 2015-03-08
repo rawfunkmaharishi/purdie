@@ -9,6 +9,8 @@ module Purdie
 
       def configure
         @matcher = 'youtube.com'
+        @api_service_name = 'youtube'
+        @api_version = 'v3'
 
         super
       end
@@ -24,8 +26,8 @@ module Purdie
 
       def yt_service
         @yt_service ||= client.discovered_api(
-          ENV['YOUTUBE_API_SERVICE_NAME'],
-          ENV['YOUTUBE_API_VERSION']
+          @api_service_name,
+          @api_version
         )
       end
 
