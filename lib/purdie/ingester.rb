@@ -29,6 +29,12 @@ module Purdie
         @output_file = File.basename(@config['services'][Purdie.basename self]['output_file'])
       rescue NoMethodError
       end
+
+      # Can I do something like
+      # @config['services'][Purdie.basename self].each do |c|
+      #   @#{c} = c
+      # end
+      # ?
     end
 
     def ingest url
