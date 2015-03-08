@@ -45,6 +45,20 @@ module Purdie
         JSON.parse data.body
       end
 
+      def distill url
+        video = get url
+        results = {}
+      #  require 'pry'
+      #  binding.pry
+
+        results['title'] = video['items'][0]['snippet']['localized']['title']
+        results['id'] = YouTube.get_id(url)
+        results['license'] = @config['license_lookups'][video['items'][0]['status']['license']]['full_name']
+        results['license_url'] = @config['license_lookups'][video['items'][0]['status']['license']]['url']
+
+        results
+      end
+
       def self.get_id url
         params = CGI.parse(URI.parse(url).query)
         params['v'].first
