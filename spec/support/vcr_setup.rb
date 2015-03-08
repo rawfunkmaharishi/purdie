@@ -9,7 +9,9 @@ VCR.configure do |c|
   [
     'SOUNDCLOUD_CLIENT_ID',
     'FLICKR_API_KEY',
-    'FLICKR_SECRET'
+    'FLICKR_SECRET',
+    'YOUTUBE_API_KEY',
+    'VIMEO_BEARER_TOKEN'
   ].each do |env_var|
     c.filter_sensitive_data("<#{env_var}>") { ENV[env_var] }
   end
