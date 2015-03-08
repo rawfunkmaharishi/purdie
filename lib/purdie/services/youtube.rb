@@ -41,7 +41,7 @@ module Purdie
       end
 
       def get url
-        data = get_data YouTube.get_id(url), 'status'
+        data = get_data YouTube.get_id(url), 'status,snippet'
         JSON.parse data.body
       end
 
