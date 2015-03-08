@@ -18,7 +18,7 @@ module Purdie
         @client ||= Google::APIClient.new(
             key: ENV['YOUTUBE_API_KEY'],
             authorization: nil,
-            application_name: 'purdie',
+            application_name: self.class.name.split('::').first,
             application_version: Purdie::VERSION
           )
       end
