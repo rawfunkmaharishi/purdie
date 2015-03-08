@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="mwKUw%2BtLLmjcH0cVWrpfcDbCJR1MqS%2Fqf%2FDWxQQi8Xc%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425843066", oauth_token="",
+        oauth_nonce="E5mBKXDQ%2B3IF%2FCt24O0xOLt2Aj%2FafvUrF8vLP5RMnq0%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845870", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Mar 2015 19:31:06 GMT
+      - Sun, 08 Mar 2015 20:17:51 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www56.flickr.bf1.yahoo.com
+      - www231.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '0'
+      - '1'
       Via:
-      - http/1.1 fts103.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r07.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -56,7 +56,7 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424289792","taken":"2015-02-18
         16:56:20","takengranularity":"0","takenunknown":"0","lastupdate":"1424289832"},"views":"38","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/15950875724\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 19:31:06 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:51 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -72,8 +72,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="Ej1XKjve2kTMwFQvj%2FaRZ0LN8EjwAYw2b4XtWS4OjVE%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425843066", oauth_token="",
+        oauth_nonce="mHoC%2FA7vPFUT9rfojHTtdo74VIXR%2Fk1IypguepFqPYw%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845871", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -83,7 +83,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Mar 2015 19:31:06 GMT
+      - Sun, 08 Mar 2015 20:17:51 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -95,14 +95,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www245.flickr.bf1.yahoo.com
+      - www307.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts109.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r09.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts101.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -119,7 +119,7 @@ http_interactions:
         known copyright restrictions","url":"https:\/\/www.flickr.com\/commons\/usage\/"},{"id":"8","name":"United
         States Government Work","url":"http:\/\/www.usa.gov\/copyright.shtml"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 19:31:06 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:51 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -135,8 +135,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="f2OBweAeTxFuwVimjRrz3v1by8nFOvBkIXGVBlQnx4Q%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425843066", oauth_token="",
+        oauth_nonce="FZD8wlbDFJrxqgRQmPcinn%2BOG4o1xWwbM3jE2JLhWRk%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1425845871", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -146,7 +146,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Mar 2015 19:31:07 GMT
+      - Sun, 08 Mar 2015 20:17:51 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -158,14 +158,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www58.flickr.bf1.yahoo.com
+      - www292.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '0'
+      - '2'
       Via:
-      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r20.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts111.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -176,7 +176,7 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424360169","taken":"2015-02-18
         16:28:17","takengranularity":"0","takenunknown":"0","lastupdate":"1424360294"},"views":"25","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/16579675721\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 19:31:07 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:51 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/users/rawfunkmaharishi/tracks?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -189,6 +189,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Accept-Ranges:
+      - bytes
       Access-Control-Allow-Headers:
       - Accept, Authorization, Content-Type, Origin
       Access-Control-Allow-Methods:
@@ -202,11 +204,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 08 Mar 2015 19:31:07 GMT
+      - Sun, 08 Mar 2015 20:17:52 GMT
       Etag:
-      - '"1ea3158013bd29b0a44aab8332eca5f1+ident"'
+      - '"453d45cede655029f93d0007d0d03142"'
       Last-Modified:
-      - Sun, 08 Mar 2015 19:28:50 GMT
+      - Sun, 08 Mar 2015 20:17:44 GMT
       Server:
       - ECS (lhr/4BE7)
       Vary:
@@ -240,7 +242,7 @@ http_interactions:
         16:21:41 +0000","user_id":56479293,"duration":242569,"commentable":true,"state":"finished","original_content_size":9754086,"last_modified":"2015/03/03
         20:38:41 +0000","sharing":"public","tag_list":"","permalink":"old-cotswold-legbar-1","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Old
         Cotswold Legbar","description":"Rogue Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":11,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/191432275","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/old-cotswold-legbar-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/3Wk3SzqzGceh_m.png","stream_url":"https://api.soundcloud.com/tracks/191432275/stream","download_url":"https://api.soundcloud.com/tracks/191432275/download","playback_count":39,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/191432275/attachments","policy":"ALLOW"},{"kind":"track","id":191308336,"created_at":"2015/02/15
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/old-cotswold-legbar-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/3Wk3SzqzGceh_m.png","stream_url":"https://api.soundcloud.com/tracks/191432275/stream","download_url":"https://api.soundcloud.com/tracks/191432275/download","playback_count":40,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/191432275/attachments","policy":"ALLOW"},{"kind":"track","id":191308336,"created_at":"2015/02/15
         20:48:28 +0000","user_id":56479293,"duration":162103,"commentable":true,"state":"finished","original_content_size":6535802,"last_modified":"2015/03/03
         20:38:05 +0000","sharing":"public","tag_list":"re-work","permalink":"jessicas-cousin","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Jessica''s
         Cousin","description":"Rogue Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":11,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/191308336","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
@@ -248,7 +250,7 @@ http_interactions:
         19:05:33 +0000","user_id":56479293,"duration":243745,"commentable":true,"state":"finished","original_content_size":9801108,"last_modified":"2015/03/03
         20:39:08 +0000","sharing":"public","tag_list":"Jam Funk","permalink":"not-bernard","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"work-in-progress","title":"Not
         Bernard","description":"Rogue Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":11,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/190803089","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/not-bernard","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/39tsgcZdYQWG_m.png","stream_url":"https://api.soundcloud.com/tracks/190803089/stream","download_url":"https://api.soundcloud.com/tracks/190803089/download","playback_count":54,"download_count":2,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/190803089/attachments","policy":"ALLOW"},{"kind":"track","id":174628735,"created_at":"2014/10/30
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/not-bernard","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/39tsgcZdYQWG_m.png","stream_url":"https://api.soundcloud.com/tracks/190803089/stream","download_url":"https://api.soundcloud.com/tracks/190803089/download","playback_count":55,"download_count":2,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/190803089/attachments","policy":"ALLOW"},{"kind":"track","id":174628735,"created_at":"2014/10/30
         23:08:40 +0000","user_id":56479293,"duration":168530,"commentable":true,"state":"finished","original_content_size":6792847,"last_modified":"2015/03/03
         20:39:32 +0000","sharing":"public","tag_list":"","permalink":"safety-on-board","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Safety
         On Board","description":"Enterprise Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2014,"release_month":10,"release_day":14,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/174628735","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
@@ -319,7 +321,7 @@ http_interactions:
         20:21:12 +0000","user_id":56479293,"duration":155887,"commentable":true,"state":"finished","original_content_size":7909418,"last_modified":"2014/10/27
         11:50:28 +0000","sharing":"public","tag_list":"","permalink":"day-of-the-pimp-1","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"funk","title":"Day
         Of The Pimp","description":"","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/139751553","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/day-of-the-pimp-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/eeg8r5B2eQvE_m.png","stream_url":"https://api.soundcloud.com/tracks/139751553/stream","playback_count":202,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/139751553/attachments","policy":"ALLOW"},{"kind":"track","id":132829451,"created_at":"2014/02/03
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/day-of-the-pimp-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/eeg8r5B2eQvE_m.png","stream_url":"https://api.soundcloud.com/tracks/139751553/stream","playback_count":203,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/139751553/attachments","policy":"ALLOW"},{"kind":"track","id":132829451,"created_at":"2014/02/03
         12:29:08 +0000","user_id":56479293,"duration":282906,"commentable":true,"state":"finished","original_content_size":6798815,"last_modified":"2014/10/27
         11:50:38 +0000","sharing":"public","tag_list":"","permalink":"aquamarine","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Aquamarine","description":"","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/132829451","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/aquamarine","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/SvooGvY34fbv_m.png","stream_url":"https://api.soundcloud.com/tracks/132829451/stream","playback_count":465,"download_count":0,"favoritings_count":2,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/132829451/attachments","policy":"ALLOW"},{"kind":"track","id":132753536,"created_at":"2014/02/02
@@ -383,7 +385,7 @@ http_interactions:
         11:54:00 +0000","sharing":"public","tag_list":"jazz \"jazz funk\" \"deep funk\"
         avant-groove soul jam","permalink":"day-of-the-pimp","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"funk","title":"Day
         Of The Pimp","description":"","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/108691917","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/day-of-the-pimp","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/tbyM601iQIMl_m.png","stream_url":"https://api.soundcloud.com/tracks/108691917/stream","playback_count":71,"download_count":0,"favoritings_count":1,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/108691917/attachments","policy":"ALLOW"},{"kind":"track","id":108691909,"created_at":"2013/09/03
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/day-of-the-pimp","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/tbyM601iQIMl_m.png","stream_url":"https://api.soundcloud.com/tracks/108691917/stream","playback_count":72,"download_count":0,"favoritings_count":1,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/108691917/attachments","policy":"ALLOW"},{"kind":"track","id":108691909,"created_at":"2013/09/03
         19:27:43 +0000","user_id":56479293,"duration":127959,"commentable":true,"state":"finished","original_content_size":5127226,"last_modified":"2014/10/27
         11:54:09 +0000","sharing":"public","tag_list":"Jazz \"jazz funk\" \"deep funk\"
         avant-groove soul jam","permalink":"another-funky-crate","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Another
@@ -395,7 +397,7 @@ http_interactions:
         Soundwave","description":"","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/108686090","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/pacific-soundwave","artwork_url":"https://i1.sndcdn.com/artworks-000056911848-6mpx4r-large.jpg","waveform_url":"https://w1.sndcdn.com/C3BUSl55c1gv_m.png","stream_url":"https://api.soundcloud.com/tracks/108686090/stream","playback_count":76,"download_count":0,"favoritings_count":1,"comment_count":1,"attachments_uri":"https://api.soundcloud.com/tracks/108686090/attachments","policy":"ALLOW"}]'
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 19:31:07 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:52 GMT
 - request:
     method: get
     uri: https://api.vimeo.com/videos/117102891
@@ -413,7 +415,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Mar 2015 19:31:08 GMT
+      - Sun, 08 Mar 2015 20:17:54 GMT
       Server:
       - nginx
       Content-Type:
@@ -421,7 +423,7 @@ http_interactions:
       Cache-Control:
       - no-cache, max-age=315360000
       Expires:
-      - Wed, 05 Mar 2025 19:31:07 GMT
+      - Wed, 05 Mar 2025 20:17:52 GMT
       Content-Length:
       - '3688'
       Accept-Ranges:
@@ -431,13 +433,13 @@ http_interactions:
       Age:
       - '0'
       X-Served-By:
-      - cache-lcy1134-LCY
+      - cache-lcy1122-LCY
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1425843067.814263,VS0,VE229
+      - S1425845872.760127,VS0,VE1418
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
@@ -445,7 +447,7 @@ http_interactions:
       string: '{"uri":"/videos/117102891","name":"Bernard","description":null,"link":"https://vimeo.com/117102891","duration":239,"width":1280,"language":null,"height":720,"created_time":"2015-01-18T17:26:10+00:00","modified_time":"2015-03-07T22:05:59+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/117102891/pictures/503683214","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/503683214_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/503683214_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/503683214_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/503683214_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/503683214_960x540.jpg"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/503683214_1280x720.jpg"}]},"tags":[],"stats":{"plays":21},"embed":{"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"metadata":{"connections":{"comments":{"uri":"/videos/117102891/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/117102891/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/117102891/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/117102891/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/117102891/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/117102891"}}},"embed_presets":null,"user":{"uri":"/users/33772623","name":"Raw
         Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":0},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"app":null,"status":"available"}'
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 19:31:07 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:54 GMT
 - request:
     method: get
     uri: https://api.vimeo.com/videos/110132671
@@ -463,7 +465,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Mar 2015 19:31:08 GMT
+      - Sun, 08 Mar 2015 20:17:54 GMT
       Server:
       - nginx
       Content-Type:
@@ -471,7 +473,7 @@ http_interactions:
       Cache-Control:
       - no-cache, max-age=315360000
       Expires:
-      - Wed, 05 Mar 2025 19:31:08 GMT
+      - Wed, 05 Mar 2025 20:17:54 GMT
       Content-Length:
       - '3648'
       Accept-Ranges:
@@ -481,13 +483,13 @@ http_interactions:
       Age:
       - '0'
       X-Served-By:
-      - cache-lcy1126-LCY
+      - cache-lcy1127-LCY
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1425843068.165041,VS0,VE201
+      - S1425845874.442767,VS0,VE205
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
@@ -495,5 +497,5 @@ http_interactions:
       string: '{"uri":"/videos/110132671","name":"Discotheque Metamorphosis","description":null,"link":"https://vimeo.com/rawfunkmaharishi/discotheque-metamorphosis","duration":218,"width":640,"language":null,"height":360,"created_time":"2014-10-27T12:10:13+00:00","modified_time":"2014-12-24T21:09:53+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/110132671/pictures/494269097","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/494269097_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/494269097_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/494269097_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/494269097_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/494269097_960x540.jpg"}]},"tags":[],"stats":{"plays":7},"embed":{"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"metadata":{"connections":{"comments":{"uri":"/videos/110132671/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/110132671/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/110132671/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/110132671/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/110132671/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/110132671"}}},"embed_presets":null,"user":{"uri":"/users/33772623","name":"Raw
         Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":0},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"app":null,"status":"available"}'
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 19:31:08 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:54 GMT
 recorded_with: VCR 2.9.3

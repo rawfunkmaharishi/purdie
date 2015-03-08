@@ -45,10 +45,10 @@ http_interactions:
       - GSE
       Content-Length:
       - '37875'
+      Age:
+      - '16'
       Cache-Control:
       - public, max-age=300, must-revalidate, no-transform
-      Age:
-      - '0'
       Alternate-Protocol:
       - 443:quic,p=0.08
     body:
@@ -897,10 +897,10 @@ http_interactions:
         mq/Pzx6z6KvHpdQ3u09nqBvYuyCueWvZkR/Tiw0c2X2hO0829fY0sONktLgB
         zGWZyzKXdS/pk3EJaGXnK/G//3z1/yykl5ponQQA
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 20:17:39 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:55 GMT
 - request:
     method: get
-    uri: https://www.googleapis.com/youtube/v3/videos?id=JCix1XW329g&key=<YOUTUBE_API_KEY>&part=status,snippet
+    uri: https://www.googleapis.com/youtube/v3/videos?id=Qt_J0jNqtZg&key=<YOUTUBE_API_KEY>&part=status,snippet
     body:
       encoding: UTF-8
       string: ''
@@ -921,13 +921,13 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 08 Mar 2015 20:17:39 GMT
+      - Sun, 08 Mar 2015 20:17:56 GMT
       Date:
-      - Sun, 08 Mar 2015 20:17:39 GMT
+      - Sun, 08 Mar 2015 20:17:56 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
-      - '"43qFkeEQBKio26KDSq1ZQMzjhSo/r0E12GLgau-skna-UbGSn8lvn2Y"'
+      - '"43qFkeEQBKio26KDSq1ZQMzjhSo/fePmg5myc9M2lw27OvTFI7DBNUE"'
       Vary:
       - Origin
       - X-Origin
@@ -950,21 +950,21 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAJ1Uy1LbMBTd+ys06pYkfjVNsoM8GF4dIFAopdOR7RtbRA/H
-        kkMTJv9eKYlNhlKmk4UXPjr3nHOvr/ziIDylIsE9hBey1GUEn+Y0AXlOlb4G
-        lUuhAB8YFmiSWtYjDoPZaArDq6MzKv322WA88x6uLpZP2Vi2Cnfo+cfnKSkb
-        aipI4zY6HosOmwv/+yNe6+QkhRMxkUbrxUEIa6kJM04l08pg3oEFi837JRSX
-        hm5hB61sNdXALe2HYdnyf6S3Tuh/M/PF/cD7tRxHFzC6C9s3X9Xzw2ASdMK2
-        u8lslOja47RPf3v3d4HfTbe4EjTPQW+bMUBeRoyqDJJDC2Lf9cKG5za84Mbt
-        9tyg9zlsuq77sClHOM6IEMBO1vK3/WB+dHl1crpMDyfDfMy612f8KUwrsqaa
-        2WHg4cWoT3iOrDoakAUK0DlNMy2oSJEZ5xS1q5oEVFzQXFMpbGUtlZU8EoQy
-        VUe33AkxY39FEC4LZssyrXPVa7Voc6EpT5ux5K05be3Mo7Utbj7lVV5T/kwT
-        ndnP57s1loGNasCuu4FW2yPMIaEl38+ezz4MELwXwOu8TZCZk/38s4/9w847
-        /kH7rb/SRCSkSPbLoJIPM7TDdzKE9QycnSTVXt7UG8cg1oXkJBWgaYxGFFhS
-        LzHRkMpisdli/0uFMzqHo0KSJCZK96XQINaXQkgBNUfGhNEl7LS8z57/vehO
-        3dRqe1U10eXruuMyZybauEJxXsgYlIK6rbygcxIvdhj2bsev3cVgf47mIC6A
-        aNNsX3Ju7LcE4BEkCYnWveiihEp3LWNl1TcKzzsEZxvZPD+dlfMHWJpujp0F
-        AAA=
+        H4sIAAAAAAAAALVUwU7bQBC9+ytW7hUS2wmQ5EYgVCEFEhJQlVJVG3tsb1jv
+        Ot5xUECR+If+Yb+ku4ltIkpRhdSDD377Zt6b2Zl9soh9z0Rgd4i9kjnmM/i0
+        ZAHIL0zhNahUCgX2nmYB0siw7uxmY3F2D71Rd8Ckdzg4HS/c6ejicR6PZT2E
+        YRIdJCu/feHxB+/oajk56x+ddi9venf2Jk9KI+iLUOpcTxYhNkqkXCvlHJXG
+        3D0DZtv/IWRDTTewRdYmmiEkhvZNs0z4X9wbJfKvnp3FwbXLR5N4wLvTqzZb
+        9FvsPDxuf/VaW886E9tojPDHuTO/XOA0KnAlWJoCFsVoIM1nnKkYgmMD2p7j
+        NvddZ99tTJx2x/E6nltzHGe6DSe2H1MhgPc36W9OGsvucNQ/f4yOw1465u3r
+        QTJvRiUZGXLTDHtMEzJk96A4rMiv55/kloqAal0mIqIbkZHPDON8RnyZJAxJ
+        rC9TZisSyoyEuSCaTdJMhgzL1AEoP2MpMimMQKUY58lMUMZVVaHhhlTfzgtC
+        7DzjJixGTFWnXme1FbIkqmn5+pLVd9pWL4Jr87QsS4c/sABjc8ueU2ExsCg2
+        Im1nC62LIzuBgOXJx+STxbsGGm8ZcFuvHcT65GP68fv6zdYb+o3D1/oKzX1n
+        wcc8qOBdD4fNNzw0qx5YO07K8Z2Ug9nj4GMmExoJQOaTMwY8qGadIkR6DLfD
+        7h2VOGdL6GaSBj5VeCIFgtjsjpACKo709Xw/wk7J/3Ed/twHq6p9XSw+Usxf
+        tsLOU64rGJeorfP5oBRU1acZW1J/tcMwL4X/0gQfzFOrD/wMKOqenGi3Wr4g
+        QDKDIKCzTcmY5VDm3aQxadUtg4cdglVY1t93a239BqM+j5brBQAA
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 20:17:39 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:56 GMT
 recorded_with: VCR 2.9.3

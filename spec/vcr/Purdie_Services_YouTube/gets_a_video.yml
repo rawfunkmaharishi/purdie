@@ -23,9 +23,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 08 Mar 2015 20:04:16 GMT
+      - Sun, 08 Mar 2015 20:22:39 GMT
       Date:
-      - Sun, 08 Mar 2015 19:59:16 GMT
+      - Sun, 08 Mar 2015 20:17:39 GMT
       Etag:
       - '"ye6orv2F-1npMW3u9suM3a7C5Bo/AYyY0j4XEsTngZkuAwK2XAeWc04"'
       Vary:
@@ -46,7 +46,7 @@ http_interactions:
       Content-Length:
       - '37875'
       Age:
-      - '277'
+      - '0'
       Cache-Control:
       - public, max-age=300, must-revalidate, no-transform
       Alternate-Protocol:
@@ -897,7 +897,7 @@ http_interactions:
         mq/Pzx6z6KvHpdQ3u09nqBvYuyCueWvZkR/Tiw0c2X2hO0829fY0sONktLgB
         zGWZyzKXdS/pk3EJaGXnK/G//3z1/yykl5ponQQA
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 20:03:53 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:39 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=JCix1XW329g&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -921,9 +921,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Sun, 08 Mar 2015 20:03:54 GMT
+      - Sun, 08 Mar 2015 20:17:40 GMT
       Date:
-      - Sun, 08 Mar 2015 20:03:54 GMT
+      - Sun, 08 Mar 2015 20:17:40 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -966,5 +966,5 @@ http_interactions:
         aNNsX3Ju7LcE4BEkCYnWveiihEp3LWNl1TcKzzsEZxvZPD+dlfMHWJpujp0F
         AAA=
     http_version: 
-  recorded_at: Sun, 08 Mar 2015 20:03:54 GMT
+  recorded_at: Sun, 08 Mar 2015 20:17:40 GMT
 recorded_with: VCR 2.9.3
