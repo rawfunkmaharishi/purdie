@@ -87,7 +87,7 @@ Tread carefully for now, because my metadata hacks aren't fully documented, and 
 
 ##What next?
 
-There's no reason I couldn't support other services - I've now added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
+There's no reason I couldn't support other services - I've now added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) [support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
 
 * includes the `Purdie::Ingester` module, and
 * sports a `#configure` method which sets at least a
