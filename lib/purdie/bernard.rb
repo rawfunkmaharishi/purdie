@@ -22,22 +22,27 @@ module Purdie
       @services ||= Ingester.includees.map { |i| i.new @config }
     end
 
+    def process list
+      list.each do |line|
+        next if line[0] == '#'
+        next if line == ''
+
+        begin
+          print "Processing #{line.strip}... "
+          grab line
+        rescue NoMethodError => nme
+          puts "unrecognised URL [#{line}]" if nme.message == "undefined method `ingest' for nil:NilClass"
+        else
+          puts 'done'
+        end
+      end
+    end
+
     def fetch
       raise Exception.new 'No data sources specified' unless @sources
 
       @sources.each do |source|
-        SourceList.from_file(source).each do |line|
-          next if line[0] == '#'
-
-          begin
-            print "Processing #{line.strip}... "
-            grab line
-          rescue NoMethodError => nme
-            puts 'unrecognised URL' if nme.message == "undefined method `ingest' for nil:NilClass"
-          else
-            puts 'done'
-          end
-        end
+        process SourceList.from_file source
       end
 
       dump

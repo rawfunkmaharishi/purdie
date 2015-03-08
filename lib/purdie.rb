@@ -35,4 +35,10 @@ module Purdie
   def Purdie.basename obj
     obj.class.name.to_s.split('::').last
   end
+
+  def Purdie.wtf message
+    File.open '../../wtf.log', 'w' do |f|
+      f.write message
+    end
+  end
 end
