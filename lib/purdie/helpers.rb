@@ -10,7 +10,12 @@ module Purdie
   end
 
   def Purdie.get_id url
-    Purdie.sanitise_url(url).split('/')[-1].to_i
+    case url
+    when /\?.*v=/
+        return CGI.parse(URI.parse(url).query)['v'].first
+      else
+        Purdie.sanitise_url(url).split('/')[-1].to_i
+    end
   end
 
   def Purdie.basename obj
