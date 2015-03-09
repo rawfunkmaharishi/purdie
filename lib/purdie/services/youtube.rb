@@ -42,7 +42,7 @@ module Purdie
       end
 
       def get url
-        data = get_data YouTube.get_id(url), 'status,snippet'
+        data = get_data Purdie.get_id(url), 'status,snippet'
         JSON.parse data.body
       end
 
@@ -51,16 +51,11 @@ module Purdie
         results = {}
 
         results['title'] = video['items'][0]['snippet']['localized']['title']
-        results['id'] = YouTube.get_id(url)
+        results['id'] = Purdie.get_id(url)
         results['license'] = @config['license_lookups'][video['items'][0]['status']['license']]['full_name']
         results['license_url'] = @config['license_lookups'][video['items'][0]['status']['license']]['url']
 
         results
-      end
-
-      def self.get_id url
-        params = CGI.parse(URI.parse(url).query)
-        params['v'].first
       end
     end
   end

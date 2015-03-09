@@ -18,7 +18,6 @@ Feature: Soundcloud
       license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
     """
 
-
   Scenario: Generate SoundCloud YAML for multiple tracks
     Given a file named "_sources/soundcloud.csv" with:
     """

@@ -24,7 +24,7 @@ VCR.cucumber_tags do |t|
 end
 
 class VcrFriendlyMain
-  def initialize(argv, stdin, stdout, stderr, kernel)
+  def initialize argv, stdin, stdout, stderr, kernel
     @argv, @stdin, @stdout, @stderr, @kernel = argv, stdin, stdout, stderr, kernel
   end
 
@@ -32,16 +32,16 @@ class VcrFriendlyMain
     $stdin = @stdin
     $stdout = @stdout
     $stderr = @stderr
-    Purdie::CLI.start(@argv)
+    Purdie::CLI.start @argv
   end
 end
 
-Before('@vcr') do
+Before '@vcr' do
   Aruba::InProcess.main_class = VcrFriendlyMain
   Aruba.process = Aruba::InProcess
 end
 
-After('@vcr') do
+After '@vcr' do
   Aruba.process = Aruba::SpawnProcess
   VCR.eject_cassette
   $stdin = STDIN

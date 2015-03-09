@@ -51,6 +51,7 @@ module Purdie
             results['photographer'] = photo['owner']['username']
           end
         end
+        
         results
       end
     end
