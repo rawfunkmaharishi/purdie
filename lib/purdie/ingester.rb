@@ -24,11 +24,17 @@ module Purdie
     def configure
       @output_file = "#{Purdie.basename(self).downcase}.yaml"
       # This still feels like such a hack
-      begin
-        @config['output_dir'] = File.dirname(@config['services'][Purdie.basename self]['output_file'])
-        @output_file = File.basename(@config['services'][Purdie.basename self]['output_file'])
-      rescue NoMethodError
+      specific_config = @config['services'][Purdie.basename self] rescue nil
+
+      if specific_config
+        if specific_config['output_file']
+          @config['output_dir'] = File.dirname(specific_config['output_file'])
+          @output_file = File.basename(@config['services'][Purdie.basename self]['output_file'])
+        end
+
+        @size = specific_config['size'] if specific_config['size']
       end
+
 
       # Can I do something like
       # @config['services'][Purdie.basename self].each do |c|

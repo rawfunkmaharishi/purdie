@@ -8,6 +8,8 @@ FlickRaw.shared_secret = ENV['FLICKR_SECRET']
 module Purdie
   module Services
     class Flickr
+      attr_accessor :size
+      
       include Purdie::Ingester
 
       def configure
