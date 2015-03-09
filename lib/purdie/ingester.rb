@@ -4,14 +4,14 @@ module Purdie
   module Ingester
     attr_reader :config, :subconfig, :matcher
 
-    INCLUDEES = []
+    INGESTERS = []
 
     def self.included base
-      INCLUDEES.push base
+      INGESTERS.push base
     end
 
-    def self.includees
-      INCLUDEES
+    def self.ingesters
+      INGESTERS
     end
 
     def initialize config

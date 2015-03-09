@@ -7,8 +7,11 @@ module Purdie
     def initialize
       @config = Config.new
       begin
-        @sources = Dir.entries(@config['source_dir']).select { |e| e !~ /^\./ }
-        @sources.map! { |s| "#{@config['source_dir']}/#{s}"}
+        @sources = Dir.entries(@config['source_dir']).select { |e|
+          e !~ /^\./
+        }.map { |s|
+          "#{@config['source_dir']}/#{s}"
+        }
       rescue Errno::ENOENT
         @sources = nil
       end
@@ -19,7 +22,7 @@ module Purdie
     end
 
     def services
-      @services ||= Ingester.includees.map { |i| i.new @config }
+      @services ||= Ingester.ingesters.map { |i| i.new @config }
     end
 
     def process list
