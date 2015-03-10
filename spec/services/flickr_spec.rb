@@ -23,22 +23,12 @@ photographer: kim
       end
 
       it 'ingests data for a photo without a specific photographer tag', :vcr do
-        @f.ingest 'https://www.flickr.com/photos/cluttercup/15950875724/'
-        expect(@f[0].to_yaml).to eq (
-"---
-title: Raw Funk Maharishi
-date: '2015-02-18'
-photo_page: https://www.flickr.com/photos/cluttercup/15950875724/
-photo_url: https://farm8.staticflickr.com/7398/15950875724_23d58be214_m.jpg
-license: Attribution-NonCommercial
-license_url: https://creativecommons.org/licenses/by-nc/2.0/
-photographer: jane
-"
-        )
+        @f.ingest 'https://www.flickr.com/photos/pikesley/16649739916/'
+        expect(@f[0].to_yaml).to match /photographer: sam/
       end
 
       it 'falls back to the default photographer name', :vcr do
-        expect(@f.distill('https://www.flickr.com/photos/pikesley/16649739916/')['photographer']).to eq 'pikesley'
+        expect(@f.distill('https://www.flickr.com/photos/cluttercup/15950875724/')['photographer']).to eq 'cluttercup'
       end
 
       context 'FlickRaw url_ methods' do

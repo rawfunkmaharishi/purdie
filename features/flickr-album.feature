@@ -17,7 +17,7 @@ Feature: Flickr album
       photo_url: https://farm8.staticflickr.com/7506/16252009191_ea2d06e6bb_m.jpg
       license: Attribution-NonCommercial-ShareAlike
       license_url: https://creativecommons.org/licenses/by-nc-sa/2.0/
-      photographer: pikesley
+      photographer: sam
     """
     And a file named "_data/soundcloud.yaml" should not exist
     And a file named "_data/vimeo.yaml" should not exist

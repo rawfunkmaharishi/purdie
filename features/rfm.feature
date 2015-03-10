@@ -28,14 +28,14 @@ Feature: First contact with the Real World
       photo_url: https://farm8.staticflickr.com/7398/15950875724_23d58be214_m.jpg
       license: Attribution-NonCommercial
       license_url: https://creativecommons.org/licenses/by-nc/2.0/
-      photographer: jane
+      photographer: cluttercup
     - title: Raw Funk Maharishi
       date: '2015-02-18'
       photo_page: https://www.flickr.com/photos/cluttercup/16579675721/
       photo_url: https://farm8.staticflickr.com/7418/16579675721_f765c42f99_m.jpg
       license: Attribution-NonCommercial
       license_url: https://creativecommons.org/licenses/by-nc/2.0/
-      photographer: jane
+      photographer: cluttercup
     """
     And a file named "_data/soundcloud.yaml" should exist
     And the file "_data/soundcloud.yaml" should contain:
