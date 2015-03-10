@@ -7,14 +7,8 @@ module Purdie
         @sc = SoundCloud.new Config.new
       end
 
-      it 'connects to SoundCloud', :vcr do
-        expect(@sc.all_tracks).to be_a Array
-      end
-
-      it 'extracts a track', :vcr do
-        track = @sc.get 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
-        expect(track).to be_a Hash
-        expect(track['id']). to eq 193008299
+      it 'has a SoundCloud client' do
+        expect(@sc.client.class.name).to eq 'SoundCloud::Client'
       end
 
       it 'distills the data', :vcr do
@@ -43,6 +37,14 @@ license: Attribution-NonCommercial-ShareAlike
 license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 "
         )
+      end
+
+      context 'resolve a set' do
+        it 'resolves a set from a url', :vcr do
+          set = SoundCloud.resolve_set 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
+          expect(set[0]).to eq 'http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
+          expect(set[3]).to eq 'http://soundcloud.com/rawfunkmaharishi/bernard'
+        end
       end
     end
   end

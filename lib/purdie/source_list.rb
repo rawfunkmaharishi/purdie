@@ -6,6 +6,7 @@ module Purdie
 
     def initialize sources
       @sources = sources
+      @sources = [sources] unless sources.class == Array
     end
 
     def [] key
@@ -24,6 +25,10 @@ module Purdie
 
     def self.from_file source_file
       SourceList.new File.readlines(source_file).map { |l| l.strip }
+    end
+
+    def self.resolve_set source
+      Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0].resolve_set source
     end
   end
 end

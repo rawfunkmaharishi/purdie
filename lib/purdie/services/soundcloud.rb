@@ -7,29 +7,12 @@ module Purdie
     class SoundCloud
       include Purdie::Ingester
 
-      def configure
-        @host = 'https://api.soundcloud.com'
-        @matcher = 'soundcloud.com'
-
-        super
-      end
-
-      def all_tracks
-        @all_tracks ||= begin
-          url = "#{@host}/users/#{ENV['SOUNDCLOUD_USER_ID']}/tracks?client_id=#{ENV['SOUNDCLOUD_CLIENT_ID']}"
-          response = HTTParty.get url
-          JSON.parse response.body
-        end
-      end
-
-      def get url
-        all_tracks.select do |track|
-          Purdie.strip_scheme(track['permalink_url']) == Purdie.strip_scheme(url)
-        end[0]
+      def client
+        @client ||= ::SoundCloud.new client_id: ENV['SOUNDCLOUD_CLIENT_ID']
       end
 
       def distill url
-        track = get url
+        track = client.get '/resolve', url: url
         results = {}
         results['title'] = track['title']
         results['id'] = track['id']
@@ -39,6 +22,16 @@ module Purdie
         results['license_url'] = @config['license_lookups'][track['license']]['url']
 
         results
+      end
+
+      def self.matcher
+        'soundcloud.com'
+      end
+
+      def self.resolve_set url
+        client = ::SoundCloud.new client_id: ENV['SOUNDCLOUD_CLIENT_ID']
+        client.get('/resolve', url: url).tracks.
+          map { |track| track['permalink_url'] }
       end
     end
   end

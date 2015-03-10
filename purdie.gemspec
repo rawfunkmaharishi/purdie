@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'deep_merge', '~> 1.0'
   spec.add_dependency 'dotenv', '~> 2.0'
   spec.add_dependency 'flickraw-cached', '= 20120701'
+  spec.add_dependency 'soundcloud'
   spec.add_dependency 'activesupport'
   spec.add_dependency 'google-api-client'
 

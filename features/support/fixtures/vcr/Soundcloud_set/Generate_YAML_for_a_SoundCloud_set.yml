@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/sets/june-2014
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 16:53:28 GMT
+      Location:
+      - https://api.soundcloud.com/playlists/44898295.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Content-Length:
+      - '131'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/playlists/44898295.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:53:28 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/playlists/44898295.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 16:53:28 GMT
+      Etag:
+      - '"ae258a38486de4b528ace4100d8f6d96"'
+      Server:
+      - am/2
+      Content-Length:
+      - '8814'
+    body:
+      encoding: UTF-8
+      string: '{"duration":973042,"release_day":null,"permalink_url":"http://soundcloud.com/rawfunkmaharishi/sets/june-2014","genre":"Funk","permalink":"june-2014","purchase_url":null,"release_month":null,"description":"Remix
+        of June 2014 set, featuring Ben Burke","uri":"https://api.soundcloud.com/playlists/44898295","label_name":null,"tag_list":"jazz
+        Jam","release_year":null,"track_count":5,"user_id":56479293,"last_modified":"2014/07/27
+        17:44:44 +0000","license":"all-rights-reserved","tracks":[{"kind":"track","id":160530965,"created_at":"2014/07/27
+        17:44:44 +0000","user_id":56479293,"duration":162940,"commentable":true,"state":"finished","original_content_size":6569320,"last_modified":"2014/10/27
+        11:48:52 +0000","sharing":"public","tag_list":"jazz Jam","permalink":"siren-1","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Siren","description":"Remix
+        of June 2014 set, featuring Ben Burke","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/160530965","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/siren-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/WBpv7zeYiQyt_m.png","stream_url":"https://api.soundcloud.com/tracks/160530965/stream","playback_count":98,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/160530965/attachments","policy":"ALLOW"},{"kind":"track","id":160530841,"created_at":"2014/07/27
+        17:43:39 +0000","user_id":56479293,"duration":172971,"commentable":true,"state":"finished","original_content_size":6970561,"last_modified":"2014/10/27
+        11:49:43 +0000","sharing":"public","tag_list":"jazz Jam","permalink":"safety-on-board-3","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Safety
+        On Board","description":"Remix of June 2014 set, featuring Ben Burke","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/160530841","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/safety-on-board-3","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/UjlY1Hsv1Zpb_m.png","stream_url":"https://api.soundcloud.com/tracks/160530841/stream","playback_count":55,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/160530841/attachments","policy":"ALLOW"},{"kind":"track","id":160530938,"created_at":"2014/07/27
+        17:44:31 +0000","user_id":56479293,"duration":143399,"commentable":true,"state":"finished","original_content_size":5787737,"last_modified":"2014/10/27
+        11:49:04 +0000","sharing":"public","tag_list":"jazz Jam","permalink":"stepney-green","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Stepney
+        Green","description":"Remix of June 2014 set, featuring Ben Burke","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/160530938","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/stepney-green","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/OMz1EOP8CZBg_m.png","stream_url":"https://api.soundcloud.com/tracks/160530938/stream","playback_count":48,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/160530938/attachments","policy":"ALLOW"},{"kind":"track","id":160530847,"created_at":"2014/07/27
+        17:43:42 +0000","user_id":56479293,"duration":208580,"commentable":true,"state":"finished","original_content_size":8394756,"last_modified":"2014/10/27
+        11:49:22 +0000","sharing":"public","tag_list":"jazz Jam","permalink":"bloodninja-2","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Bloodninja","description":"Remix
+        of June 2014 set, featuring Ben Burke","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/160530847","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/bloodninja-2","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/pBIlq5qArcE5_m.png","stream_url":"https://api.soundcloud.com/tracks/160530847/stream","playback_count":24,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/160530847/attachments","policy":"ALLOW"},{"kind":"track","id":160530869,"created_at":"2014/07/27
+        17:43:53 +0000","user_id":56479293,"duration":285152,"commentable":true,"state":"finished","original_content_size":11457352,"last_modified":"2014/10/27
+        11:49:13 +0000","sharing":"public","tag_list":"jazz Jam","permalink":"beer-of-course-but-why-2","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Beer
+        Of Course But Why","description":"Remix of June 2014 set, featuring Ben Burke","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/160530869","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why-2","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/MO5CWYBuwHef_m.png","stream_url":"https://api.soundcloud.com/tracks/160530869/stream","playback_count":65,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/160530869/attachments","policy":"ALLOW"}],"playlist_type":null,"id":44898295,"downloadable":false,"sharing":"public","created_at":"2014/07/27
+        17:44:44 +0000","release":null,"kind":"playlist","title":"June 2014","type":null,"purchase_title":null,"created_with":{"permalink_url":"http://soundcloud.com/apps/v2-on-https-soundcloud-com","name":"SoundCloud.com","external_url":"","uri":"https://api.soundcloud.com/apps/46941","creator":"spadgos","id":46941,"kind":"app"},"artwork_url":null,"ean":null,"streamable":true,"user":{"permalink_url":"http://soundcloud.com/rawfunkmaharishi","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","uri":"https://api.soundcloud.com/users/56479293","last_modified":"2015/02/27
+        15:07:28 +0000","id":56479293,"kind":"user","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"embeddable_by":"all","label_id":null}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:53:28 GMT
+recorded_with: VCR 2.9.3

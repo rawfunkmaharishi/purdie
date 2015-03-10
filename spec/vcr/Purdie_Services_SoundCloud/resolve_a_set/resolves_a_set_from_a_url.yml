@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 17:26:13 GMT
+      Location:
+      - https://api.soundcloud.com/playlists/88097435.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Content-Length:
+      - '131'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/playlists/88097435.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 17:26:13 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/playlists/88097435.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Mar 2015 17:26:13 GMT
+      Etag:
+      - '"c2a939d6c12ee9c5b247d0dc776b4d97"'
+      Server:
+      - am/2
+      Content-Length:
+      - '7543'
+    body:
+      encoding: UTF-8
+      string: '{"duration":770628,"release_day":null,"permalink_url":"http://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions","genre":"","permalink":"islington-academy-sessions","purchase_url":null,"release_month":null,"description":"","uri":"https://api.soundcloud.com/playlists/88097435","label_name":"","tag_list":"","release_year":null,"track_count":4,"user_id":56479293,"last_modified":"2015/03/10
+        16:35:06 +0000","license":"all-rights-reserved","tracks":[{"kind":"track","id":193008299,"created_at":"2015/02/25
+        19:24:51 +0000","user_id":56479293,"duration":209626,"commentable":true,"state":"finished","original_content_size":8436471,"last_modified":"2015/02/27
+        17:08:45 +0000","sharing":"public","tag_list":"\"islington academy sessions\"","permalink":"hexaflexagon-1","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"funk","title":"Hexaflexagon","description":"Islington
+        Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193008299","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":43,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"},{"kind":"track","id":193006525,"created_at":"2015/02/25
+        19:13:37 +0000","user_id":56479293,"duration":190031,"commentable":true,"state":"finished","original_content_size":7652798,"last_modified":"2015/03/03
+        20:07:21 +0000","sharing":"public","tag_list":"afrobeat \"islington academy
+        sessions\"","permalink":"beer-of-course-but-why","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Beer,
+        Of Course, But Why","description":"Islington Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193006525","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qBjvlEuOtgIA_m.png","stream_url":"https://api.soundcloud.com/tracks/193006525/stream","download_url":"https://api.soundcloud.com/tracks/193006525/download","playback_count":37,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193006525/attachments","policy":"ALLOW"},{"kind":"track","id":193005357,"created_at":"2015/02/25
+        19:05:57 +0000","user_id":56479293,"duration":197111,"commentable":true,"state":"finished","original_content_size":7935965,"last_modified":"2015/02/28
+        21:17:11 +0000","sharing":"public","tag_list":"\"islington academy sessions\"","permalink":"junalbandi-3","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Junalbandi","description":"Islington
+        Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193005357","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/junalbandi-3","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/nbBOD5P8zpUy_m.png","stream_url":"https://api.soundcloud.com/tracks/193005357/stream","download_url":"https://api.soundcloud.com/tracks/193005357/download","playback_count":30,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193005357/attachments","policy":"ALLOW"},{"kind":"track","id":192841052,"created_at":"2015/02/24
+        20:44:18 +0000","user_id":56479293,"duration":173860,"commentable":true,"state":"finished","original_content_size":7006006,"last_modified":"2015/03/03
+        20:31:37 +0000","sharing":"public","tag_list":"\"islington academy sessions\"","permalink":"bernard","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Bernard","description":"Islington
+        Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/192841052","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/bernard","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/BAgEnzWuGhV7_m.png","stream_url":"https://api.soundcloud.com/tracks/192841052/stream","download_url":"https://api.soundcloud.com/tracks/192841052/download","playback_count":53,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/192841052/attachments","policy":"ALLOW"}],"playlist_type":"","id":88097435,"downloadable":true,"sharing":"public","created_at":"2015/03/10
+        16:34:15 +0000","release":"","kind":"playlist","title":"Islington Academy
+        Sessions","type":"","purchase_title":null,"created_with":{"permalink_url":"http://soundcloud.com/apps/v2-on-https-soundcloud-com","name":"SoundCloud.com","external_url":"","uri":"https://api.soundcloud.com/apps/46941","creator":"spadgos","id":46941,"kind":"app"},"artwork_url":null,"ean":"","streamable":true,"user":{"permalink_url":"http://soundcloud.com/rawfunkmaharishi","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","uri":"https://api.soundcloud.com/users/56479293","last_modified":"2015/02/27
+        15:07:28 +0000","id":56479293,"kind":"user","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"embeddable_by":"all","label_id":null}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 17:26:13 GMT
+recorded_with: VCR 2.9.3

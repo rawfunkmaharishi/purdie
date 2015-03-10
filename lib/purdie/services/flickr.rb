@@ -9,11 +9,10 @@ module Purdie
   module Services
     class Flickr
       attr_accessor :size
-      
+
       include Purdie::Ingester
 
       def configure
-        @matcher = 'flickr.com'
         @size = 240 # pixels
         super
       end
@@ -82,6 +81,18 @@ module Purdie
           else
             return :url_o
         end
+      end
+
+      def self.resolve_set url
+        flickr.photosets.getPhotos(photoset_id: Purdie.get_id(url))['photo'].
+          map { |member| member['id'] }.
+          map { |id| flickr.photos.getInfo photo_id: id }.
+          map { |picture| picture['urls'][0]['_content'] }
+      end
+
+
+      def self.matcher
+        'flickr.com'
       end
     end
   end

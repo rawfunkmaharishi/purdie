@@ -62,6 +62,15 @@ photographer: jane
           expect(Flickr.url_for_size 6000000).to eq :url_o
         end
       end
+
+      context 'resolve a set' do
+        it 'resolves a set from a url', :vcr do
+          set = Flickr.resolve_set 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
+          expect(set.count).to eq 8
+          expect(set[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
+          expect(set[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
+        end
+      end
     end
   end
 end

@@ -1,0 +1,518 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photoset_id=72157649827363868&method=flickr.photosets.getPhotos&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="7x7WtsdL%2F9bdQ7pCxtpxrb7JkufvfnHViKg8KjlbP%2Fo%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004786", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '476'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www48.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts110.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r05.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photoset":{"id":"72157649827363868","primary":"16252009191","owner":"73135567@N00","ownername":"pikesley","photo":[{"id":"16252009191","secret":"ea2d06e6bb","server":"7506","farm":8,"title":"First
+        planting of the year","isprimary":"1","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16308144622","secret":"4822b81b0e","server":"7480","farm":8,"title":"Seedlings","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16202827068","secret":"ee50e0cb1c","server":"7357","farm":8,"title":"Tomato
+        farm","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16388723891","secret":"10a4a8e745","server":"7382","farm":8,"title":"Cucamelon","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16308619689","secret":"41143c6dbb","server":"7327","farm":8,"title":"Potato
+        kit","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16367228619","secret":"3af2aba147","server":"8660","farm":9,"title":"Embothrium
+        seedling","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16752302412","secret":"d80b27c8dc","server":"8707","farm":9,"title":"Growhouse","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0},{"id":"16752239531","secret":"2bcaa35495","server":"7651","farm":8,"title":"Patio
+        pots","isprimary":"0","ispublic":1,"isfriend":0,"isfamily":0}],"page":1,"per_page":500,"perpage":500,"pages":1,"total":"8","title":"Garden
+        2015"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:27 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16252009191&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="IaNzzKK9r1bWcze7VpKPbk3ZUtsxOKPlV19fBQWfAy0%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004787", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '555'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www56.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts109.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r22.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16252009191","secret":"ea2d06e6bb","server":"7506","farm":8,"dateuploaded":"1420982656","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"dd0b6e4274","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"First
+        planting of the year"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1420982656","taken":"2015-01-11
+        14:22:47","takengranularity":"0","takenunknown":"0","lastupdate":"1420982715"},"views":"166","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16252009191\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:27 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16308144622&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="fNLhzKl0A8WuMV0n7Q1Dcg7awg0HuTqcYGnmwlfl%2BAk%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004787", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '544'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www232.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r22.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16308144622","secret":"4822b81b0e","server":"7480","farm":8,"dateuploaded":"1421591962","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"fafedaf4a8","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Seedlings"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1421591962","taken":"2015-01-18
+        15:31:34","takengranularity":"0","takenunknown":"0","lastupdate":"1421592677"},"views":"175","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16308144622\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:27 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16202827068&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="W%2FV2%2BfM3bOoY4v5RLuDwYw1QGKDxgRxR1cbakA4eIYI%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004787", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '542'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www251.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r20.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16202827068","secret":"ee50e0cb1c","server":"7357","farm":8,"dateuploaded":"1422476532","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"06e6a96521","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Tomato
+        farm"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1422476532","taken":"2015-01-28
+        21:19:32","takengranularity":"0","takenunknown":"0","lastupdate":"1422476584"},"views":"103","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16202827068\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:28 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16388723891&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="98RerIrbJ%2BQElHA2Tb59HPmn30RClT4xhgA1YjFnmUI%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004788", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '543'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www309.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts101.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16388723891","secret":"10a4a8e745","server":"7382","farm":8,"dateuploaded":"1422476602","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"203886b5a3","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Cucamelon"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1422476602","taken":"2015-01-28
+        21:19:45","takengranularity":"0","takenunknown":"0","lastupdate":"1422477672"},"views":"116","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16388723891\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:28 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16308619689&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="3jGC8TdgLx6XM7LSDjFXLUTMvIUz5e2teCxslG4HaiY%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004788", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '545'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www342.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '2'
+      Via:
+      - http/1.1 fts116.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r19.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16308619689","secret":"41143c6dbb","server":"7327","farm":8,"dateuploaded":"1423599466","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"dc11437dda","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Potato
+        kit"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1423599466","taken":"2015-02-10
+        21:14:58","takengranularity":"0","takenunknown":"0","lastupdate":"1423601463"},"views":"75","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16308619689\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:29 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16367228619&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="wTkJYHa7BfK%2FGGB46AFAjlS75Nw%2BsP%2FlgMk8oVTIoVE%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004789", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '550'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www68.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts102.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r02.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16367228619","secret":"3af2aba147","server":"8660","farm":9,"dateuploaded":"1424124245","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"7145f68aed","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Embothrium
+        seedling"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424124245","taken":"2015-02-16
+        23:03:06","takengranularity":"0","takenunknown":"0","lastupdate":"1424125294"},"views":"55","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16367228619\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:29 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16752302412&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="bIqDVi9qU7dLA5C6UOUvqd4GEVM0MGfI%2BVoLpcUcNuk%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004789", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '545'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www34.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r18.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16752302412","secret":"d80b27c8dc","server":"8707","farm":9,"dateuploaded":"1425824636","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"b2e8dd6c5c","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Growhouse"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1425824636","taken":"2015-03-08
+        15:19:53","takengranularity":"0","takenunknown":"0","lastupdate":"1425825014"},"views":"32","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16752302412\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:29 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16752239531&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="ioxJsVPGwGVKYEFEbk2IZXiXDl4E23MSGjNE1ZTka2k%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426004789", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Mar 2015 16:26:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '602'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www45.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r03.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16752239531","secret":"2bcaa35495","server":"7651","farm":8,"dateuploaded":"1425824917","isfavorite":0,"license":"1","safety_level":"0","rotation":0,"originalsecret":"6f79696344","originalformat":"jpg","owner":{"nsid":"73135567@N00","username":"pikesley","realname":"Sam","location":"London","iconserver":"5072","iconfarm":6,"path_alias":"pikesley"},"title":{"_content":"Patio
+        pots"},"description":{"_content":"Chives, tarragon, sage, thyme, rosemary,
+        spinachy things, chocolate mint, potato bags\n"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1425824917","taken":"2015-03-08
+        15:20:22","takengranularity":"0","takenunknown":"0","lastupdate":"1425825005"},"views":"31","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/pikesley\/16752239531\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 10 Mar 2015 16:26:29 GMT
+recorded_with: VCR 2.9.3
