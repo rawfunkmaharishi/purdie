@@ -46,11 +46,11 @@ photographer: jane
           expect(Flickr.url_for_size).to eq :url
         end
 
-        it 'gives the 75ps url when we ask for 20 pixels' do
+        it 'gives the 75px url when we ask for 20 pixels' do
           expect(Flickr.url_for_size 20).to eq :url_s
         end
 
-        it 'gives the 640ps url when we ask for 600 pixels' do
+        it 'gives the 640px url when we ask for 600 pixels' do
           expect(Flickr.url_for_size 600).to eq :url_z
         end
 
@@ -60,6 +60,15 @@ photographer: jane
 
         it 'gives the biggest url when we ask for something larger' do
           expect(Flickr.url_for_size 6000000).to eq :url_o
+        end
+      end
+
+      context 'resolve a set' do
+        it 'resolves a set from a url', :vcr do
+          set = Flickr.resolve_set 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
+          expect(set.count).to eq 8
+          expect(set[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
+          expect(set[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
         end
       end
     end

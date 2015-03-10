@@ -7,8 +7,6 @@ module Purdie
 
       def configure
         @host = 'https://api.vimeo.com'
-        @matcher = 'vimeo.com'
-
         super
       end
 
@@ -35,6 +33,10 @@ module Purdie
         results['license_url'] = @config['license_lookups'][video['license']]['url']
 
         results
+      end
+        
+      def self.matcher
+        'vimeo.com'
       end
     end
   end

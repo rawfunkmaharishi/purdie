@@ -52,7 +52,7 @@ module Purdie
     end
 
     def grab url
-      services.select{ |s| url =~ /#{s.matcher}/ }[0].ingest url
+      services.select{ |s| url =~ /#{s.class.matcher}/ }[0].ingest url
     end
 
     def dump

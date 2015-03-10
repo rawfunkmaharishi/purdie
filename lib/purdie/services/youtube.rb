@@ -8,10 +8,8 @@ module Purdie
       include Ingester
 
       def configure
-        @matcher = 'youtube.com'
         @api_service_name = 'youtube'
         @api_version = 'v3'
-
         super
       end
 
@@ -56,6 +54,10 @@ module Purdie
         results['license_url'] = @config['license_lookups'][video['items'][0]['status']['license']]['url']
 
         results
+      end
+
+      def self.matcher
+        'youtube.com'
       end
     end
   end

@@ -3,6 +3,7 @@ require 'yaml'
 require 'deep_merge'
 require 'httparty'
 require 'dotenv'
+require 'soundcloud'
 require 'flickraw-cached'
 require 'active_support/inflector'
 
