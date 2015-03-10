@@ -23,7 +23,6 @@ module Purdie
 
     def configure
       @output_file = "#{Purdie.basename(self).downcase}.yaml"
-      # This still feels like such a hack
       specific_config = @config['services'][Purdie.basename self] rescue nil
 
       if specific_config
@@ -32,7 +31,10 @@ module Purdie
           @output_file = File.basename(@config['services'][Purdie.basename self]['output_file'])
         end
 
-        @size = specific_config['size'] if specific_config['size']
+        specific_config.each_pair do |key, value|
+          next if key == 'output_file'
+          self.instance_variable_set("@#{key}", value)
+        end
       end
     end
 
