@@ -38,11 +38,27 @@ module Purdie
         expect(sl[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
         expect(sl[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
       end
+
+      it 'uniques a list when an item appears multiple times' do
+        sources = [
+          'https://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why',
+          'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
+        ]
+        sl = SourceList.new sources
+        expect(sl.count).to eq 4
+        expect(Purdie.strip_scheme sl[0]).to eq 'soundcloud.com/rawfunkmaharishi/beer-of-course-but-why'
+        expect(Purdie.strip_scheme sl[2]).to eq 'soundcloud.com/rawfunkmaharishi/junalbandi-3'
+      end
     end
 
     it 'can be initialiased from a file' do
       sl = SourceList.from_file 'spec/support/fixtures/soundcloud.sounds'
       expect(sl[3]).to eq 'https://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin'
+    end
+
+    it 'deals with comments in a source file' do
+      sl = SourceList.from_file 'spec/support/fixtures/with-comments.source'
+      expect(sl.count).to eq 2
     end
   end
 end
