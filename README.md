@@ -43,10 +43,9 @@ You need to create a *_sources* directory in your Jekyll project, containing fil
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
     
-It also resolves sets/albums on Flickr, SoundCloud and Vimeo, so this will work:
+It also resolves sets/albums on Flickr and SoundCloud (and soon Vimeo), so this will work:
 
     https://www.flickr.com/photos/pikesley/sets/72157648589429938/
-    https://vimeo.com/album/3296736
     https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions
 
 ####Notes about *_sources*:
