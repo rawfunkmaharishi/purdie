@@ -7,6 +7,17 @@ module Purdie
     def initialize sources
       @sources = sources
       @sources = [sources] unless sources.class == Array
+      holder = []
+      @sources.each do |source|
+        case source
+          when /sets/
+            holder += SourceList.resolve_set source
+          else
+            holder.push source
+        end
+      end
+
+      @sources = holder
     end
 
     def [] key

@@ -31,6 +31,13 @@ module Purdie
         resolved = SourceList.resolve_set 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
         expect(resolved.count).to eq 4
       end
+
+      it 'constructs a list from a set URL', :vcr do
+        sl = SourceList.new 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
+        expect(sl.count).to eq 8
+        expect(sl[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
+        expect(sl[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
+      end
     end
 
     it 'can be initialiased from a file' do
