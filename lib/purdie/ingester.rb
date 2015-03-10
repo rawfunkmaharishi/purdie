@@ -34,13 +34,6 @@ module Purdie
 
         @size = specific_config['size'] if specific_config['size']
       end
-
-
-      # Can I do something like
-      # @config['services'][Purdie.basename self].each do |c|
-      #   @#{c} = c
-      # end
-      # ?
     end
 
     def ingest url

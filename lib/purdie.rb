@@ -3,8 +3,7 @@ require 'yaml'
 require 'deep_merge'
 require 'httparty'
 require 'dotenv'
-require 'soundcloud'
-require 'flickraw-cached'
+require 'cgi'
 require 'active_support/inflector'
 
 require 'purdie/version'
@@ -18,3 +17,5 @@ require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'
 require 'purdie/services/vimeo'
 require 'purdie/services/youtube'
+
+Dotenv.load

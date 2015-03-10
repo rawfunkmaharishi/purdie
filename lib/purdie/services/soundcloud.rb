@@ -1,6 +1,5 @@
 require 'purdie'
-
-Dotenv.load
+require 'soundcloud'
 
 module Purdie
   module Services

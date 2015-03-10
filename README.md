@@ -45,7 +45,7 @@ You need to create a *_sources* directory in your Jekyll project, containing fil
 
 (you can alternatively specify a source file on the command line with the `-f` flag).
 
-You also need a *.env* file with API keys in it:
+You also need a *.env* file with the relevant credentials in it:
 
     FLICKR_API_KEY: this_a_key
     FLICKR_SECRET: this_a_secret
@@ -55,7 +55,7 @@ You also need a *.env* file with API keys in it:
 
     VIMEO_BEARER_TOKEN: this_is_bearer_token
 
-(get those keys from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new))
+(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new))
 
 And then you can run
 

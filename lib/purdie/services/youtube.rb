@@ -1,5 +1,4 @@
 require 'purdie'
-require 'cgi'
 require 'google/api_client'
 
 module Purdie
