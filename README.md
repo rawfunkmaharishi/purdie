@@ -42,8 +42,14 @@ You need to create a *_sources* directory in your Jekyll project, containing fil
 
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
+    
+It also resolves sets/albums on Flickr, SoundCloud and Vimeo, so this will work:
 
-(you can alternatively specify a source file on the command line with the `-f` flag).
+    https://www.flickr.com/photos/pikesley/sets/72157648589429938/
+    https://vimeo.com/album/3296736
+    https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions
+    
+Note that Purdie does not care how many files are in *_sources*, nor if the services are all mixed up together in those files, it will dump out one file per service (although this will likely change in the future). Note also that you can  specify a source file on the command line with the `-f` flag.
 
 You also need a *.env* file with the relevant credentials in it:
 
@@ -51,17 +57,25 @@ You also need a *.env* file with the relevant credentials in it:
     FLICKR_SECRET: this_a_secret
 
     SOUNDCLOUD_CLIENT_ID: this_a_client_id
-    SOUNDCLOUD_USER_ID: this_a_user_id
 
     VIMEO_BEARER_TOKEN: this_is_bearer_token
+    
+    YOUTUBE_API_KEY: this_is_key_for_youtube
 
-(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new))
+(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new), [Vimeo](https://developer.vimeo.com/apps/new) and [YouTube](https://console.developers.google.com/project))
 
 And then you can run
 
     purdie fetch
 
-and it will dump out YAML files into *_data*, ready for Jekyll to consume.
+and it will dump out YAML files into *_data*:
+    
+    flickr.yaml
+    soundcloud.yaml
+    vimeo.yaml
+    youtube.yaml
+    
+ready for Jekyll to consume.
 
 ###Customisation
 
@@ -87,7 +101,7 @@ Tread carefully for now, because my metadata hacks aren't fully documented, and 
 
 ##What next?
 
-There's no reason I couldn't support other services - I've now added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) [support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
+There's no reason I couldn't support other services - I've already added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) [support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
 
 * includes the `Purdie::Ingester` module, and
 * sports a `::matcher` class method which returns a string which will pick a URL out of an input file, and
@@ -95,12 +109,11 @@ There's no reason I couldn't support other services - I've now added [YouTube](h
   * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L27)
   * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L31)
   * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb#L28)
+* and optionally a `::resolve_set` class method which takes a set or album URL for the service and returns a list of URLs for individual items
 
 then this should all Just Work. There's definitely a blog post in this, because Ruby introspection and metaprogramming is just mind-bogglingly powerful (and dangerous).
 
-More prosaically, I think it will be fairly simple to support Flickr sets and SoundCloud albums as input data.
-
-And I can definitely rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5) into a module or even a gem of their own.
+And I might rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5) into a module or even a gem of their own.
 
 And of course, known issues are [here](https://github.com/rawfunkmaharishi/purdie/issues).
 
