@@ -5,21 +5,10 @@ module Purdie
     class Vimeo
       include Purdie::Ingester
 
-      def configure
-        @host = 'https://api.vimeo.com'
-        super
-      end
-
       def get url
         @id = Purdie.get_id url
-
-        target = "#{@host}/videos/#{@id}"
-        headers = {
-          'Authorization' => "bearer #{ENV['VIMEO_BEARER_TOKEN']}",
-          'Accept' => 'application/json'
-        }
-        response = HTTParty.get target, headers: headers
-
+        target = "#{Vimeo.host}/videos/#{@id}"
+        response = HTTParty.get target, headers: Vimeo.headers
         JSON.parse response.body
       end
 
@@ -34,9 +23,26 @@ module Purdie
 
         results
       end
-        
+
+      def self.headers
+        {
+          'Authorization' => "bearer #{ENV['VIMEO_BEARER_TOKEN']}",
+          'Accept' => 'application/json'
+        }
+      end
+
+      def self.resolve_set url
+        target = "#{Vimeo.host}/albums/#{Purdie.get_id url}/videos/"
+        set = JSON.parse (HTTParty.get target, headers: Vimeo.headers).body
+        set['data'].map { |video| video['link'] }
+      end
+
       def self.matcher
         'vimeo.com'
+      end
+
+      def self.host
+        'https://api.vimeo.com'
       end
     end
   end

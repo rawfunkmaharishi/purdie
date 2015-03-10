@@ -23,14 +23,14 @@ module Purdie
         results
       end
 
-      def self.matcher
-        'soundcloud.com'
-      end
-
       def self.resolve_set url
         client = ::SoundCloud.new client_id: ENV['SOUNDCLOUD_CLIENT_ID']
         client.get('/resolve', url: url).tracks.
           map { |track| track['permalink_url'] }
+      end
+
+      def self.matcher
+        'soundcloud.com'
       end
     end
   end
