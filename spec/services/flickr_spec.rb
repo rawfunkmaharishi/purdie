@@ -46,11 +46,11 @@ photographer: jane
           expect(Flickr.url_for_size).to eq :url
         end
 
-        it 'gives the 75ps url when we ask for 20 pixels' do
+        it 'gives the 75px url when we ask for 20 pixels' do
           expect(Flickr.url_for_size 20).to eq :url_s
         end
 
-        it 'gives the 640ps url when we ask for 600 pixels' do
+        it 'gives the 640px url when we ask for 600 pixels' do
           expect(Flickr.url_for_size 600).to eq :url_z
         end
 
