@@ -90,8 +90,7 @@ Tread carefully for now, because my metadata hacks aren't fully documented, and 
 There's no reason I couldn't support other services - I've now added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) [support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
 
 * includes the `Purdie::Ingester` module, and
-* sports a `#configure` method which sets at least a
-  * `@matcher` string which will pick a URL out of an input file, and
+* sports a `::matcher` class method which returns a string which will pick a URL out of an input file, and
 * has a `#distill` method which takes a URL representing an item on the service and returns a hash of metadata, see e.g.
   * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L27)
   * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L31)
