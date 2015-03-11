@@ -36,7 +36,9 @@ module Purdie
     end
 
     def self.resolve_set source
-      Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0].resolve_set source
+      service_class = Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0]
+      return [] unless service_class
+      service_class.resolve_set source
     end
   end
 end

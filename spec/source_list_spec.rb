@@ -60,5 +60,10 @@ module Purdie
       sl = SourceList.from_file 'spec/support/fixtures/with-comments.source'
       expect(sl.count).to eq 2
     end
+
+    it 'does something sensible with an unrecognised URL' do
+      sl = SourceList.new 'http://foo.com/bar'
+      expect(sl.count).to eq 0
+    end
   end
 end
