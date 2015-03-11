@@ -24,7 +24,7 @@ module Purdie
       end
 
       def self.resolve url
-        return [url] unless url =~ /sets/
+        return [url] unless url =~ /\/sets\//
 
         client = ::SoundCloud.new client_id: ENV['SOUNDCLOUD_CLIENT_ID']
         client.get('/resolve', url: url).tracks.

@@ -29,9 +29,9 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
           set = Vimeo.resolve 'https://vimeo.com/album/3296736'
           expect(set.count).to eq 3
           expect(set).to eq [
-            'https://vimeo.com/rawfunkmaharishi/safetyonboard',
-            'https://vimeo.com/rawfunkmaharishi/trappedinhawaii',
-            'https://vimeo.com/rawfunkmaharishi/discotheque-metamorphosis'
+            'https://vimeo.com/111356018',
+            'https://vimeo.com/110133117',
+            'https://vimeo.com/110132671'
           ]
         end
       end

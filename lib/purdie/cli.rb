@@ -15,6 +15,7 @@ module Purdie
     def fetch
       b = Bernard.new
       b.source_file = options[:source_file] if options[:source_file]
+
       begin
         b.fetch
       rescue Exception => e

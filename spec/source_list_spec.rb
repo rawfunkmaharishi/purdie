@@ -56,6 +56,11 @@ module Purdie
       expect(sl[3]).to eq 'https://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin'
     end
 
+    it 'can be initialiased from a Vimeo file' do
+      sl = SourceList.from_file 'spec/support/fixtures/vimeo.vids'
+      expect(sl[2]).to eq 'https://vimeo.com/110132671'
+    end
+
     it 'deals with comments in a source file' do
       sl = SourceList.from_file 'spec/support/fixtures/with-comments.source'
       expect(sl.count).to eq 2

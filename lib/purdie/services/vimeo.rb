@@ -15,7 +15,6 @@ module Purdie
       def distill url
         video = get url
         results = {}
-
         results['title'] = video['name']
         results['id'] = @id
         results['license'] = @config['license_lookups'][video['license']]['full_name']
@@ -32,11 +31,11 @@ module Purdie
       end
 
       def self.resolve url
-        return [url] unless url =~ /album/
+        return [url] unless url =~ /\/albums?\//
 
         target = "#{Vimeo.host}/albums/#{Purdie.get_id url}/videos/"
         set = JSON.parse (HTTParty.get target, headers: Vimeo.headers).body
-        set['data'].map { |video| video['link'] }
+        set['data'].map { |video| video['uri'].sub '/videos', 'https://vimeo.com' }
       end
 
       def self.matcher
