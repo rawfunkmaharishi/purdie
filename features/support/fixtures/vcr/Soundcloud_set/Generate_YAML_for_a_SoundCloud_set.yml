@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:50 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Location:
       - https://api.soundcloud.com/playlists/88097435.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -38,7 +38,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/playlists/88097435.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:50 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/playlists/88097435.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -66,9 +66,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:51 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Etag:
-      - '"6d7e55f4176c3b6c6b95f1519f3bb2cd"'
+      - '"f82ccf5d9c458161099ece123c45d312"'
       Server:
       - am/2
       Content-Length:
@@ -80,12 +80,12 @@ http_interactions:
         19:24:51 +0000","user_id":56479293,"duration":209626,"commentable":true,"state":"finished","original_content_size":8436471,"last_modified":"2015/02/27
         17:08:45 +0000","sharing":"public","tag_list":"\"islington academy sessions\"","permalink":"hexaflexagon-1","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"funk","title":"Hexaflexagon","description":"Islington
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193008299","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":44,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"},{"kind":"track","id":193006525,"created_at":"2015/02/25
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":45,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"},{"kind":"track","id":193006525,"created_at":"2015/02/25
         19:13:37 +0000","user_id":56479293,"duration":190031,"commentable":true,"state":"finished","original_content_size":7652798,"last_modified":"2015/03/03
         20:07:21 +0000","sharing":"public","tag_list":"afrobeat \"islington academy
         sessions\"","permalink":"beer-of-course-but-why","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Beer,
         Of Course, But Why","description":"Islington Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193006525","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qBjvlEuOtgIA_m.png","stream_url":"https://api.soundcloud.com/tracks/193006525/stream","download_url":"https://api.soundcloud.com/tracks/193006525/download","playback_count":38,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193006525/attachments","policy":"ALLOW"},{"kind":"track","id":193005357,"created_at":"2015/02/25
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qBjvlEuOtgIA_m.png","stream_url":"https://api.soundcloud.com/tracks/193006525/stream","download_url":"https://api.soundcloud.com/tracks/193006525/download","playback_count":39,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193006525/attachments","policy":"ALLOW"},{"kind":"track","id":193005357,"created_at":"2015/02/25
         19:05:57 +0000","user_id":56479293,"duration":197111,"commentable":true,"state":"finished","original_content_size":7935965,"last_modified":"2015/02/28
         21:17:11 +0000","sharing":"public","tag_list":"\"islington academy sessions\"","permalink":"junalbandi-3","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Junalbandi","description":"Islington
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193005357","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
@@ -99,7 +99,7 @@ http_interactions:
         Funk Maharishi","uri":"https://api.soundcloud.com/users/56479293","last_modified":"2015/02/27
         15:07:28 +0000","id":56479293,"kind":"user","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"embeddable_by":"all","label_id":null}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:51 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
@@ -127,7 +127,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:51 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Location:
       - https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -138,7 +138,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:51 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -153,6 +153,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Accept-Ranges:
+      - bytes
       Access-Control-Allow-Headers:
       - Accept, Authorization, Content-Type, Origin
       Access-Control-Allow-Methods:
@@ -166,13 +168,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:51 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Etag:
-      - '"859f286dbcc1c367daa1ed7677ee4e85"'
+      - '"f53037e9d5ac7875cf1290e71218b857"'
+      Last-Modified:
+      - Wed, 11 Mar 2015 17:13:05 GMT
       Server:
-      - am/2
+      - ECS (lhr/4BCD)
       Vary:
-      - Authorization, Accept
+      - Accept-Encoding
+      X-Cache:
+      - HIT
       Content-Length:
       - '1555'
     body:
@@ -180,9 +186,9 @@ http_interactions:
       string: '{"kind":"track","id":193008299,"created_at":"2015/02/25 19:24:51 +0000","user_id":56479293,"duration":209626,"commentable":true,"state":"finished","original_content_size":8436471,"last_modified":"2015/02/27
         17:08:45 +0000","sharing":"public","tag_list":"\"islington academy sessions\"","permalink":"hexaflexagon-1","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"funk","title":"Hexaflexagon","description":"Islington
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193008299","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":44,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"}'
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":45,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:51 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why
@@ -210,7 +216,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:51 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Location:
       - https://api.soundcloud.com/tracks/193006525.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -221,7 +227,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/193006525.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:51 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/193006525.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -236,6 +242,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Accept-Ranges:
+      - bytes
       Access-Control-Allow-Headers:
       - Accept, Authorization, Content-Type, Origin
       Access-Control-Allow-Methods:
@@ -249,13 +257,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:51 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Etag:
-      - '"0785bb7bd17844d6cbc33f86a091464d"'
+      - '"e0cff61cac3738f4807794cf8862b9f4"'
+      Last-Modified:
+      - Wed, 11 Mar 2015 17:13:19 GMT
       Server:
-      - am/2
+      - ECS (lhr/47B6)
       Vary:
-      - Authorization, Accept
+      - Accept-Encoding
+      X-Cache:
+      - HIT
       Content-Length:
       - '1592'
     body:
@@ -264,9 +276,9 @@ http_interactions:
         20:07:21 +0000","sharing":"public","tag_list":"afrobeat \"islington academy
         sessions\"","permalink":"beer-of-course-but-why","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Beer,
         Of Course, But Why","description":"Islington Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193006525","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
-        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qBjvlEuOtgIA_m.png","stream_url":"https://api.soundcloud.com/tracks/193006525/stream","download_url":"https://api.soundcloud.com/tracks/193006525/download","playback_count":38,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193006525/attachments","policy":"ALLOW"}'
+        Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qBjvlEuOtgIA_m.png","stream_url":"https://api.soundcloud.com/tracks/193006525/stream","download_url":"https://api.soundcloud.com/tracks/193006525/download","playback_count":39,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193006525/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:51 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=http://soundcloud.com/rawfunkmaharishi/junalbandi-3
@@ -294,7 +306,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:51 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Location:
       - https://api.soundcloud.com/tracks/193005357.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -305,7 +317,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/193005357.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:52 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/193005357.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -320,6 +332,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Accept-Ranges:
+      - bytes
       Access-Control-Allow-Headers:
       - Accept, Authorization, Content-Type, Origin
       Access-Control-Allow-Methods:
@@ -333,13 +347,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:52 GMT
+      - Wed, 11 Mar 2015 17:13:21 GMT
       Etag:
       - '"37ac2a1715c2c5200d613b556ce71f1c"'
+      Last-Modified:
+      - Tue, 10 Mar 2015 19:23:52 GMT
       Server:
-      - am/2
+      - ECS (lhr/4BD4)
       Vary:
-      - Authorization, Accept
+      - Accept-Encoding
+      X-Cache:
+      - HIT
       Content-Length:
       - '1549'
     body:
@@ -349,7 +367,7 @@ http_interactions:
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193005357","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/junalbandi-3","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/nbBOD5P8zpUy_m.png","stream_url":"https://api.soundcloud.com/tracks/193005357/stream","download_url":"https://api.soundcloud.com/tracks/193005357/download","playback_count":31,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193005357/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:52 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:21 GMT
 - request:
     method: get
     uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=http://soundcloud.com/rawfunkmaharishi/bernard
@@ -377,7 +395,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:52 GMT
+      - Wed, 11 Mar 2015 17:13:22 GMT
       Location:
       - https://api.soundcloud.com/tracks/192841052.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -388,7 +406,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/192841052.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:52 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:22 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/192841052.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -403,6 +421,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Accept-Ranges:
+      - bytes
       Access-Control-Allow-Headers:
       - Accept, Authorization, Content-Type, Origin
       Access-Control-Allow-Methods:
@@ -416,13 +436,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Mar 2015 19:23:52 GMT
+      - Wed, 11 Mar 2015 17:13:22 GMT
       Etag:
       - '"1891a1e60a9d1249b0860879cb87fce7"'
+      Last-Modified:
+      - Tue, 10 Mar 2015 19:23:52 GMT
       Server:
       - am/2
       Vary:
+      - Accept-Encoding
       - Authorization, Accept
+      X-Cache:
+      - HIT
       Content-Length:
       - '1536'
     body:
@@ -432,5 +457,5 @@ http_interactions:
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/192841052","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/02/27 15:07:28 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/bernard","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/BAgEnzWuGhV7_m.png","stream_url":"https://api.soundcloud.com/tracks/192841052/stream","download_url":"https://api.soundcloud.com/tracks/192841052/download","playback_count":54,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/192841052/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 19:23:52 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:22 GMT
 recorded_with: VCR 2.9.3

@@ -52,14 +52,16 @@ module Purdie
 
         results['title'] = video['items'][0]['snippet']['localized']['title']
         results['id'] = Purdie.get_id(url)
-        results['license'] = @config['license_lookups'][video['items'][0]['status']['license']]['full_name']
-        results['license_url'] = @config['license_lookups'][video['items'][0]['status']['license']]['url']
+
+        l = LicenseManager.get video['items'][0]['status']['license']
+        results = l.attach results
 
         results
       end
 
       def self.resolve url
-        return [url] unless ( url =~ /list=/ && url !~ /index=/ )
+        query = CGI.parse(URI.parse(url).query).keys
+        return [url] unless (query.include?('list') and not query.include?('index'))
 
         set = YouTube.client.execute!(
           api_method: YouTube.yt_service.playlist_items.list,

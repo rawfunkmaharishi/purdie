@@ -17,8 +17,9 @@ module Purdie
         results = {}
         results['title'] = video['name']
         results['id'] = @id
-        results['license'] = @config['license_lookups'][video['license']]['full_name']
-        results['license_url'] = @config['license_lookups'][video['license']]['url']
+        
+        l = LicenseManager.get video['license']
+        results = l.attach results
 
         results
       end

@@ -17,8 +17,9 @@ module Purdie
         results['id'] = track['id']
         results['location'] = track['description']
         results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
-        results['license'] = @config['license_lookups'][track['license']]['full_name']
-        results['license_url'] = @config['license_lookups'][track['license']]['url']
+
+        l = LicenseManager.get track['license']
+        results = l.attach results
 
         results
       end
