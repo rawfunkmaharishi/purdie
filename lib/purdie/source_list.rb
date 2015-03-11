@@ -5,16 +5,12 @@ module Purdie
     include Enumerable
 
     def initialize sources
-      s = sources
-      s = [sources] unless sources.class == Array
-      s.select! { |i| i !~ /^#/ }
-
-      @sources = []
-      s.each do |source|
-        @sources += SourceList.resolve source
-      end
-
-      @sources.uniq! { |item| Purdie.strip_scheme item }
+      @sources = [sources].
+        flatten.
+        select { |i| i !~ /^#/ }.
+        map { |source| SourceList.resolve source }.
+        flatten.
+        uniq { |item| Purdie.strip_scheme item }
     end
 
     def [] key
