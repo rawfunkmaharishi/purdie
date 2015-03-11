@@ -31,7 +31,7 @@ module Purdie
         }
       end
 
-      def self.resolve_set url
+      def self.resolve url
         return [url] unless url =~ /album/
 
         target = "#{Vimeo.host}/albums/#{Purdie.get_id url}/videos/"

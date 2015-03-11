@@ -70,7 +70,7 @@ module Purdie
     end
 
     module ClassMethods
-      def resolve_set url
+      def resolve url
         [url]
       end
     end

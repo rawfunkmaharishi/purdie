@@ -11,7 +11,7 @@ module Purdie
 
       @sources = []
       s.each do |source|
-        @sources += SourceList.resolve_set source
+        @sources += SourceList.resolve source
       end
 
       @sources.uniq! { |item| Purdie.strip_scheme item }
@@ -35,10 +35,10 @@ module Purdie
       SourceList.new File.readlines(source_file).map { |l| l.strip }
     end
 
-    def self.resolve_set source
+    def self.resolve source
       service_class = Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0]
       return [] unless service_class
-      service_class.resolve_set source
+      service_class.resolve source
     end
   end
 end

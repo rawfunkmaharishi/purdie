@@ -41,7 +41,7 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 
       context 'resolve a set' do
         it 'resolves a set from a url', :vcr do
-          set = SoundCloud.resolve_set 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
+          set = SoundCloud.resolve 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
           expect(set[0]).to eq 'http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
           expect(set[3]).to eq 'http://soundcloud.com/rawfunkmaharishi/bernard'
         end

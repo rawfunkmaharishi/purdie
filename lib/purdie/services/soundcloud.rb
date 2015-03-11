@@ -23,7 +23,7 @@ module Purdie
         results
       end
 
-      def self.resolve_set url
+      def self.resolve url
         return [url] unless url =~ /sets/
 
         client = ::SoundCloud.new client_id: ENV['SOUNDCLOUD_CLIENT_ID']

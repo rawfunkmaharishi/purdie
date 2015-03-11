@@ -26,7 +26,7 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/3.0/
       context 'resolve an album' do
         it 'resolves an album from a URL' do
           # We're going to call this a set for consistency
-          set = Vimeo.resolve_set 'https://vimeo.com/album/3296736'
+          set = Vimeo.resolve 'https://vimeo.com/album/3296736'
           expect(set.count).to eq 3
           expect(set).to eq [
             'https://vimeo.com/rawfunkmaharishi/safetyonboard',

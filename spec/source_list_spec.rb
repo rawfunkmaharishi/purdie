@@ -21,14 +21,14 @@ module Purdie
 
     context 'resolve sets' do
       it 'resolves a Flickr set', :vcr do
-        resolved = SourceList.resolve_set 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
+        resolved = SourceList.resolve 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
         expect(resolved.count).to eq 8
         expect(resolved[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
         expect(resolved[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
       end
 
       it 'resolves a SoundCloud set', :vcr do
-        resolved = SourceList.resolve_set 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
+        resolved = SourceList.resolve 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
         expect(resolved.count).to eq 4
       end
 
