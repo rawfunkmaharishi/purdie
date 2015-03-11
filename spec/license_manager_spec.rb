@@ -14,15 +14,6 @@ module Purdie
         expect(e).to be_a LicenseException
         expect(e.status).to eq 'Unknown license type: fake-license'
       }
-
-    end
-
-    it 'attaches a license to a passed-in hash' do
-      l = LicenseManager.get 'by-nc-sa'
-      h = {'foo' => 'bar'}
-
-      r = l.attach h
-      expect(r['license']).to eq 'Attribution-NonCommercial-ShareAlike'
     end
   end
 end

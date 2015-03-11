@@ -18,5 +18,5 @@ creativeCommon:
 
 youtube:
   short_name: YouTube
-  fullname:   YouTube
+  full_name:   YouTube
   url:        https://www.youtube.com/static?gl=GB&template=terms

@@ -18,8 +18,7 @@ module Purdie
         results['location'] = track['description']
         results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
 
-        l = LicenseManager.get track['license']
-        results = l.attach results
+        results.attach_license LicenseManager.get track['license']
 
         results
       end

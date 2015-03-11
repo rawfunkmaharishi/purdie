@@ -19,13 +19,6 @@ module Purdie
       @values[key]
     end
 
-    def attach r
-      r['license'] = @values['full_name']
-      r['license_url'] = @values['url']
-
-      r
-    end
-
     def method_missing method_name, *args
       mname = method_name.to_s
 
