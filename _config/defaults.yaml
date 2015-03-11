@@ -22,3 +22,8 @@ license_lookups:
     short_name: BY
     full_name:  Attribution
     url:        https://creativecommons.org/licenses/by/3.0/
+
+  youtube:
+    short_name: YouTube
+    fullname:   YouTube
+    url:        https://www.youtube.com/static?gl=GB&template=terms

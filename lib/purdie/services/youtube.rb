@@ -6,6 +6,9 @@ module Purdie
     class YouTube
       include Ingester
 
+      API_SERVICE_NAME = 'youtube'
+      API_VERSION = 'v3'
+
       def configure
         @api_service_name = 'youtube'
         @api_version = 'v3'
@@ -53,6 +56,39 @@ module Purdie
         results['license_url'] = @config['license_lookups'][video['items'][0]['status']['license']]['url']
 
         results
+      end
+
+      def self.resolve url
+        return [url] unless ( url =~ /list=/ && url !~ /index=/ )
+
+        set = YouTube.client.execute!(
+          api_method: YouTube.yt_service.playlist_items.list,
+          parameters: {
+            playlistId: 'PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV',
+            part: 'contentDetails',
+            maxResults: 50
+          }
+        ).body
+
+        ids = JSON.parse(set)['items'].map { |v| v['contentDetails']['videoId'] }
+
+        ids.map { |id| "https://youtube.com/watch?v=#{id}"}
+      end
+
+      def self.client
+        Google::APIClient.new(
+          key: ENV['YOUTUBE_API_KEY'],
+          authorization: nil,
+          application_name: self.class.name.split('::').first,
+          application_version: Purdie::VERSION
+        )
+      end
+
+      def self.yt_service
+        client.discovered_api(
+          API_SERVICE_NAME,
+          API_VERSION
+        )
       end
 
       def self.matcher
