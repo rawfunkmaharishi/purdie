@@ -7,17 +7,13 @@ module Purdie
     def initialize sources
       s = sources
       s = [sources] unless sources.class == Array
+      s.select! { |i| i !~ /^#/ }
+
       @sources = []
       s.each do |source|
-        case source
-          when /sets/
-            @sources += SourceList.resolve_set source
-          else
-            @sources.push source
-        end
+        @sources += SourceList.resolve_set source
       end
 
-      @sources.select! { |i| i !~ /^#/ }
       @sources.uniq! { |item| Purdie.strip_scheme item }
     end
 

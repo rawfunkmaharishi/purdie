@@ -32,6 +32,8 @@ module Purdie
       end
 
       def self.resolve_set url
+        return [url] unless url =~ /album/
+
         target = "#{Vimeo.host}/albums/#{Purdie.get_id url}/videos/"
         set = JSON.parse (HTTParty.get target, headers: Vimeo.headers).body
         set['data'].map { |video| video['link'] }
