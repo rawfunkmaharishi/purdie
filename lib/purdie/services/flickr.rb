@@ -38,6 +38,9 @@ module Purdie
         results['license'] = license['name'].split(' License')[0]
         results['license_url'] = license['url']
 
+# WTF?
+#        results.attach_license self, photo['license']
+
         begin
           snapper = photo['tags'].select { |t| t['raw'] =~ /photographer/ }[0]
           results['photographer'] = snapper['raw'].split(':')[1]

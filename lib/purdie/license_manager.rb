@@ -4,8 +4,8 @@ module Purdie
   class LicenseManager
     LOOKUPS = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', '_config/licenses.yaml')
 
-    def self.get raw_name
-      License.new raw_name, LOOKUPS[raw_name]
+    def self.get service, raw_name
+      License.new raw_name, LOOKUPS[Purdie.basename service][raw_name]
     end
   end
 
@@ -31,10 +31,10 @@ module Purdie
   end
 
   class LicenseException < Exception
-    attr_reader :status
+    attr_reader :message
 
-    def initialize status
-      @status = status
+    def initialize message
+      @message = message
     end
   end
 end

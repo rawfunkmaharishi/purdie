@@ -9,16 +9,22 @@ module Purdie
         @id = Purdie.get_id url
         target = "#{Vimeo.host}/videos/#{@id}"
         response = HTTParty.get target, headers: Vimeo.headers
-        JSON.parse response.body
+        response = JSON.parse response.body
+        if response['error'] == 'A valid user token must be passed.'
+          raise CredentialsException.new 'Vimeo credentials missing and/or duff'
+        else
+          response
+        end
       end
 
       def distill url
         video = get url
+
         results = {}
         results['title'] = video['name']
         results['id'] = @id
 
-        results.attach_license LicenseManager.get video['license']
+        results.attach_license self, video['license']
 
         results
       end

@@ -26,3 +26,33 @@ RSpec.configure do |config|
     FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '_sources')
   end
 end
+
+$keys = [
+  'FLICKR_API_KEY',
+  'FLICKR_SECRET',
+  'SOUNDCLOUD_CLIENT_ID',
+  'VIMEO_BEARER_TOKEN',
+  'YOUTUBE_API_KEY',
+]
+
+def unset_env
+  $envs = {}
+  $keys.each do |k|
+    $envs[k] = ENV[k]
+    ENV[k] = nil
+  end
+end
+
+def randomise_env
+  $envs = {}
+  $keys.each do |k|
+    $envs[k] = ENV[k]
+    ENV[k] = Random.rand(10000000).to_s(16)
+  end
+end
+
+def reset_env
+  $keys.each do |k|
+    ENV[k] = $envs[k]
+  end
+end
