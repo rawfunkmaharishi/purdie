@@ -46,8 +46,8 @@ module Purdie
         ]
         sl = SourceList.new sources
         expect(sl.count).to eq 4
-        expect(Purdie.strip_scheme sl[0]).to eq 'soundcloud.com/rawfunkmaharishi/beer-of-course-but-why'
-        expect(Purdie.strip_scheme sl[2]).to eq 'soundcloud.com/rawfunkmaharishi/junalbandi-3'
+        expect(Purdie.strip_scheme sl[0]).to eq '//soundcloud.com/rawfunkmaharishi/beer-of-course-but-why'
+        expect(Purdie.strip_scheme sl[2]).to eq '//soundcloud.com/rawfunkmaharishi/junalbandi-3'
       end
     end
 

@@ -1,6 +1,6 @@
 module Purdie
   def Purdie.strip_scheme url
-    url.match(/http[s]?:\/\/(.*)/)[1]
+    url.match(/http[s]?:(.*)/)[1]
   end
 
   def Purdie.sanitise_url url
