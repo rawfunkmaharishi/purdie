@@ -27,30 +27,32 @@ RSpec.configure do |config|
   end
 end
 
+$keys = [
+  'FLICKR_API_KEY',
+  'FLICKR_SECRET',
+  'SOUNDCLOUD_CLIENT_ID',
+  'VIMEO_BEARER_TOKEN',
+  'YOUTUBE_API_KEY',
+]
+
 def unset_env
-  e = File.readlines '.env'
   $envs = {}
-  e.each do |line|
-    next if line =~ /^$/
-    v = line.split ':'
-    $envs[v[0]] = v[1].strip
-    ENV[v[0]] = nil
+  $keys.each do |k|
+    $envs[k] = ENV[k]
+    ENV[k] = nil
   end
 end
 
 def randomise_env
-  e = File.readlines '.env'
   $envs = {}
-  e.each do |line|
-    next if line =~ /^$/
-    v = line.split ':'
-    $envs[v[0]] = v[1].strip
-    ENV[v[0]] = Random.rand(10000000).to_s(16)
+  $keys.each do |k|
+    $envs[k] = ENV[k]
+    ENV[k] = Random.rand(10000000).to_s(16)
   end
 end
 
 def reset_env
-  $envs.each_pair do |k, v|
-    ENV[k] = v
+  $keys.each do |k|
+    ENV[k] = $envs[k]
   end
 end
