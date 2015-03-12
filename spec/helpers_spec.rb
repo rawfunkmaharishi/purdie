@@ -16,7 +16,7 @@ module Purdie
       expect(Purdie.get_id 'https://www.youtube.com/watch?v=JCix1XW329g').to eq 'JCix1XW329g'
     end
 
-    it 'gets a basename for a class' do
+    context 'get a basename' do
       module Medeski
         module Martin
           class Wood
@@ -24,8 +24,14 @@ module Purdie
         end
       end
 
-      @mmw = Medeski::Martin::Wood.new
-      expect(Purdie.basename @mmw).to eq 'Wood'
+      it 'for a class' do
+        expect(Purdie.basename Medeski::Martin::Wood).to eq 'Wood'
+      end
+
+      it 'for an object' do
+        @mmw = Medeski::Martin::Wood.new
+        expect(Purdie.basename @mmw).to eq 'Wood'
+      end
     end
   end
 end

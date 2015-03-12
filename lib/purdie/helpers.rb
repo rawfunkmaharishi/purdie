@@ -19,6 +19,10 @@ module Purdie
   end
 
   def Purdie.basename obj
+    if obj.class == Class
+      return obj.name.to_s.split('::').last
+    end
+    
     obj.class.name.to_s.split('::').last
   end
 end

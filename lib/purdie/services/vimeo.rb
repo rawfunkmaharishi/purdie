@@ -18,7 +18,7 @@ module Purdie
         results['title'] = video['name']
         results['id'] = @id
 
-        results.attach_license LicenseManager.get video['license']
+        results.attach_license LicenseManager.get self, video['license']
 
         results
       end

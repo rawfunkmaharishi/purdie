@@ -53,7 +53,7 @@ module Purdie
         results['title'] = video['items'][0]['snippet']['localized']['title']
         results['id'] = Purdie.get_id(url)
 
-        results.attach_license LicenseManager.get video['items'][0]['status']['license']
+        results.attach_license LicenseManager.get self, video['items'][0]['status']['license']
 
         results
       end
