@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="YpYORUeFtA%2B9OywptnAEgr5w3zjr1r%2B0MI0hPkGmV6w%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426167790", oauth_token="",
+        oauth_nonce="7GbvW%2FgHFUvPzTqMtYt5LMHym%2FYizUxxOIpk5n%2BXzSM%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426177527", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Mar 2015 13:43:10 GMT
+      - Thu, 12 Mar 2015 16:25:28 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www3.flickr.bf1.yahoo.com
+      - www42.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r17.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts120.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r01.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -56,7 +56,7 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424289792","taken":"2015-02-18
         16:56:20","takengranularity":"0","takenunknown":"0","lastupdate":"1424289832"},"views":"38","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/15950875724\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 12 Mar 2015 13:43:10 GMT
+  recorded_at: Thu, 12 Mar 2015 16:25:28 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -72,8 +72,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="7%2B8A4damKDshENDKaJxPFfBpLFh2x%2FsHbLMHdapBt%2FE%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426167790", oauth_token="",
+        oauth_nonce="BZiMx05XEiX0zWq%2BfZiGwLqdGNDKj5akPyzym3%2FFA7c%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426177528", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -83,7 +83,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Mar 2015 13:43:11 GMT
+      - Thu, 12 Mar 2015 16:25:28 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -95,14 +95,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www331.flickr.bf1.yahoo.com
+      - www33.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '1'
+      - '0'
       Via:
-      - http/1.1 fts106.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r09.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts110.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r10.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -119,7 +119,7 @@ http_interactions:
         known copyright restrictions","url":"https:\/\/www.flickr.com\/commons\/usage\/"},{"id":"8","name":"United
         States Government Work","url":"http:\/\/www.usa.gov\/copyright.shtml"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 12 Mar 2015 13:43:11 GMT
+  recorded_at: Thu, 12 Mar 2015 16:25:28 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -135,8 +135,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="QimHkejOtGFIV3bwhsGvhNOHyoMCpl2U%2FEWkH%2BEJqq4%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426167791", oauth_token="",
+        oauth_nonce="aL9BP%2BHYDINvEB7NkGW6iSsUevzfHyppVVrPGUE1qBc%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426177528", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -146,7 +146,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Mar 2015 13:43:11 GMT
+      - Thu, 12 Mar 2015 16:25:28 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -158,14 +158,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www58.flickr.bf1.yahoo.com
+      - www9.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts123.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r18.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts103.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r04.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -176,5 +176,5 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424360169","taken":"2015-02-18
         16:28:17","takengranularity":"0","takenunknown":"0","lastupdate":"1424360294"},"views":"25","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/16579675721\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Thu, 12 Mar 2015 13:43:11 GMT
+  recorded_at: Thu, 12 Mar 2015 16:25:28 GMT
 recorded_with: VCR 2.9.3

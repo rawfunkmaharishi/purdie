@@ -14,7 +14,12 @@ module Purdie
     when /\?.*v=/
         return CGI.parse(URI.parse(url).query)['v'].first
       else
-        Purdie.sanitise_url(url).split('/')[-1].to_i
+        sanitised = Purdie.sanitise_url url
+        parts = sanitised.split('/')
+        parts.reverse.each do |part|
+          next if ['in', 'photostream'].include? part
+          return part.to_i
+        end
     end
   end
 
@@ -22,7 +27,7 @@ module Purdie
     if obj.class == Class
       return obj.name.to_s.split('::').last
     end
-    
+
     obj.class.name.to_s.split('::').last
   end
 end

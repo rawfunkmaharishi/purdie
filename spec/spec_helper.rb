@@ -26,3 +26,31 @@ RSpec.configure do |config|
     FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '_sources')
   end
 end
+
+def unset_env
+  e = File.readlines '.env'
+  $envs = {}
+  e.each do |line|
+    next if line =~ /^$/
+    v = line.split ':'
+    $envs[v[0]] = v[1].strip
+    ENV[v[0]] = nil
+  end
+end
+
+def randomise_env
+  e = File.readlines '.env'
+  $envs = {}
+  e.each do |line|
+    next if line =~ /^$/
+    v = line.split ':'
+    $envs[v[0]] = v[1].strip
+    ENV[v[0]] = Random.rand(10000000).to_s(16)
+  end
+end
+
+def reset_env
+  $envs.each_pair do |k, v|
+    ENV[k] = v
+  end
+end

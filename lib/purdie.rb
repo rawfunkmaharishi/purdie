@@ -13,6 +13,7 @@ require 'purdie/config'
 require 'purdie/ingester'
 require 'purdie/source_list'
 require 'purdie/license_manager'
+require 'purdie/exceptions'
 
 require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'

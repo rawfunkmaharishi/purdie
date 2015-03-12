@@ -31,10 +31,10 @@ module Purdie
   end
 
   class LicenseException < Exception
-    attr_reader :status
+    attr_reader :message
 
-    def initialize status
-      @status = status
+    def initialize message
+      @message = message
     end
   end
 end

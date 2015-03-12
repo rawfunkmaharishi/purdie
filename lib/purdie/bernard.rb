@@ -34,7 +34,10 @@ module Purdie
           print "Processing #{line.strip}... "
           grab line
         rescue NoMethodError => nme
-          puts "unrecognised URL [#{line}]" if nme.message == "undefined method `ingest' for nil:NilClass"
+          puts "unrecognised URL [#{line}]" if nme.status == "undefined method `ingest' for nil:NilClass"
+        rescue Purdie::LicenseException => le
+          puts le.inspect
+          puts le.status
         else
           puts 'done'
         end

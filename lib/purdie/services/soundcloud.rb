@@ -11,7 +11,14 @@ module Purdie
       end
 
       def distill url
-        track = client.get '/resolve', url: url
+        begin
+          track = client.get '/resolve', url: url
+        rescue ArgumentError => ae
+          raise CredentialsException.new 'SoundCloud credentials missing'
+        rescue ::SoundCloud::ResponseError => re
+          raise CredentialsException.new 'SoundCloud credentials might be duff'
+        end
+
         results = {}
         results['title'] = track['title']
         results['id'] = track['id']

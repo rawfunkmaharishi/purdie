@@ -14,6 +14,7 @@ module Purdie
     it 'gets an id' do
       expect(Purdie.get_id 'http://foo.bar/654321').to eq 654321
       expect(Purdie.get_id 'https://www.youtube.com/watch?v=JCix1XW329g').to eq 'JCix1XW329g'
+      expect(Purdie.get_id 'https://www.flickr.com/photos/rawfunkmaharishi/15631338195/in/photostream/').to eq 15631338195
     end
 
     context 'get a basename' do
