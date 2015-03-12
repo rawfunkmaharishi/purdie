@@ -37,6 +37,9 @@ module Purdie
         license = licenses.select {|l| l['id'] == photo['license']}[0]
         results['license'] = license['name'].split(' License')[0]
         results['license_url'] = license['url']
+      # require 'pry'
+      #  binding.pry
+#        results.attach_license self, photo['license']
 
         begin
           snapper = photo['tags'].select { |t| t['raw'] =~ /photographer/ }[0]

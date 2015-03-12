@@ -1,3 +1,14 @@
+Flickr:
+  '1':
+    short_name: BY-NC-SA
+    full_name:  Attribution-NonCommercial-ShareAlike
+    url:        https://creativecommons.org/licenses/by-nc-sa/2.0/
+
+  '2':
+    short_name: BY-NC
+    full_name:  Attribution-NonCommercial
+    url:        http://creativecommons.org/licenses/by-nc/2.0/
+
 SoundCloud:
   cc-by-nc-sa:
     short_name: BY-NC-SA
@@ -20,5 +31,3 @@ YouTube:
     short_name: YouTube
     full_name:  YouTube
     url:        https://www.youtube.com/static?gl=GB&template=terms
-
-#Flickr:
