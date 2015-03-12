@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="jGRDygLjXdnc51xHcey9QN4pyuIFU%2F0FLudnedV%2FfFc%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426006403", oauth_token="",
+        oauth_nonce="LsukKQ%2FiWlVraM2EcXR7OqzVKeaNMb%2FqYGZiqVpPAFs%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426093994", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 10 Mar 2015 16:53:23 GMT
+      - Wed, 11 Mar 2015 17:13:14 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www253.flickr.bf1.yahoo.com
+      - www49.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r08.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts112.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r11.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -58,7 +58,7 @@ http_interactions:
         15:54:24","takengranularity":"0","takenunknown":"0","lastupdate":"1416111853"},"views":"94","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"128898522-15631479625-1422028","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"the
         comedy","_content":"thecomedy","machine_tag":0},{"id":"128898522-15631479625-17975","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"gigs","_content":"gigs","machine_tag":0},{"id":"128898522-15631479625-228989594","author":"128943844@N06","authorname":"rawfunkmaharishi","raw":"photographer:kim","_content":"photographerkim","machine_tag":0}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/rawfunkmaharishi\/15631479625\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 16:53:23 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:14 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -74,8 +74,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="HvF6oBbU46ePJNtl7YXkWXE962gAZIzzD%2BO%2Bgka0b5M%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426006403", oauth_token="",
+        oauth_nonce="nAuJ2t3Fy6mPHMkavh1sZyPM%2BQFA%2Fcuzd5XqtOibC1g%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1426093994", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 10 Mar 2015 16:53:23 GMT
+      - Wed, 11 Mar 2015 17:13:15 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -97,14 +97,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www323.flickr.bf1.yahoo.com
+      - www29.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '0'
+      - '1'
       Via:
-      - http/1.1 fts104.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r18.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts121.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r02.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Connection:
@@ -121,5 +121,5 @@ http_interactions:
         known copyright restrictions","url":"https:\/\/www.flickr.com\/commons\/usage\/"},{"id":"8","name":"United
         States Government Work","url":"http:\/\/www.usa.gov\/copyright.shtml"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 10 Mar 2015 16:53:23 GMT
+  recorded_at: Wed, 11 Mar 2015 17:13:15 GMT
 recorded_with: VCR 2.9.3

@@ -5,20 +5,12 @@ module Purdie
     include Enumerable
 
     def initialize sources
-      s = sources
-      s = [sources] unless sources.class == Array
-      @sources = []
-      s.each do |source|
-        case source
-          when /sets/
-            @sources += SourceList.resolve_set source
-          else
-            @sources.push source
-        end
-      end
-
-      @sources.select! { |i| i !~ /^#/ }
-      @sources.uniq! { |item| Purdie.strip_scheme item }
+      @sources = [sources].
+        flatten.
+        select { |i| i !~ /^#/ }.
+        map { |source| SourceList.resolve source }.
+        flatten.
+        uniq { |item| Purdie.strip_scheme item }
     end
 
     def [] key
@@ -39,8 +31,10 @@ module Purdie
       SourceList.new File.readlines(source_file).map { |l| l.strip }
     end
 
-    def self.resolve_set source
-      Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0].resolve_set source
+    def self.resolve source
+      service_class = Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0]
+      return [] unless service_class
+      service_class.resolve source
     end
   end
 end

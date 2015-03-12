@@ -7,6 +7,8 @@ module Purdie
     INGESTERS = []
 
     def self.included base
+      # Voodoo: http://stackoverflow.com/questions/10692961/inheriting-class-methods-from-mixins
+      base.extend ClassMethods
       INGESTERS.push base
     end
 
@@ -64,6 +66,12 @@ module Purdie
         File.open "#{@config['output_dir']}/#{@output_file}", 'w' do |f|
           f.write self.to_yaml
         end
+      end
+    end
+
+    module ClassMethods
+      def resolve url
+        [url]
       end
     end
   end

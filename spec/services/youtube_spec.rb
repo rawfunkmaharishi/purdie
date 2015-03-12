@@ -22,6 +22,19 @@ license_url: https://creativecommons.org/licenses/by/3.0/
 "
         )
       end
+
+      it 'gets the correct license', :vcr do
+        vid = @yt.distill 'https://www.youtube.com/watch?v=baQe6MoSAHw'
+        expect(vid['license']).to eq 'YouTube'
+      end
+
+      context 'resolve a playlist' do
+        it 'resolves a playlist from a shitty YouTube URL', :vcr do
+          list = YouTube.resolve 'https://www.youtube.com/playlist?list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV'
+          expect(list.count).to eq 9
+          expect(list[8]).to eq 'https://youtube.com/watch?v=P842kq0bnOc'
+        end
+      end
     end
   end
 end

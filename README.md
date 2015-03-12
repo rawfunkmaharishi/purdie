@@ -112,7 +112,7 @@ There's no reason I couldn't support other services - I've already added [YouTub
   * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L27)
   * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L13)
   * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb#L15)
-* and optionally a `::resolve_set` class method which takes a set or album URL for the service and returns a list of URLs for individual items
+* and optionally a `::resolve` class method which takes a set or album URL for the service and returns a list of URLs for individual items
 
 then this should all Just Work. There's definitely a blog post in this, because Ruby introspection and metaprogramming is just mind-bogglingly powerful (and dangerous).
 

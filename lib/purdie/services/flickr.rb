@@ -82,7 +82,9 @@ module Purdie
         end
       end
 
-      def self.resolve_set url
+      def self.resolve url
+        return [url] unless url =~ /\/sets\//
+
         flickr.photosets.getPhotos(photoset_id: Purdie.get_id(url))['photo'].
           map { |member| member['id'] }.
           map { |id| flickr.photos.getInfo photo_id: id }.

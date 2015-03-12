@@ -1,0 +1,22 @@
+# SoundCloud
+cc-by-nc-sa:
+  short_name: BY-NC-SA
+  full_name:  Attribution-NonCommercial-ShareAlike
+  url:        http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Vimeo
+by-nc-sa:
+  short_name: BY-NC-SA
+  full_name:  Attribution-NonCommercial-ShareAlike
+  url:        http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+# This one is YouTube. WTF YouTube?
+creativeCommon:
+  short_name: BY
+  full_name:  Attribution
+  url:        https://creativecommons.org/licenses/by/3.0/
+
+youtube:
+  short_name: YouTube
+  full_name:   YouTube
+  url:        https://www.youtube.com/static?gl=GB&template=terms

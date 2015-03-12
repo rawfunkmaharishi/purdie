@@ -21,14 +21,14 @@ module Purdie
 
     context 'resolve sets' do
       it 'resolves a Flickr set', :vcr do
-        resolved = SourceList.resolve_set 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
+        resolved = SourceList.resolve 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
         expect(resolved.count).to eq 8
         expect(resolved[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
         expect(resolved[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
       end
 
       it 'resolves a SoundCloud set', :vcr do
-        resolved = SourceList.resolve_set 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
+        resolved = SourceList.resolve 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
         expect(resolved.count).to eq 4
       end
 
@@ -56,9 +56,19 @@ module Purdie
       expect(sl[3]).to eq 'https://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin'
     end
 
+    it 'can be initialiased from a Vimeo file' do
+      sl = SourceList.from_file 'spec/support/fixtures/vimeo.vids'
+      expect(sl[2]).to eq 'https://vimeo.com/110132671'
+    end
+
     it 'deals with comments in a source file' do
       sl = SourceList.from_file 'spec/support/fixtures/with-comments.source'
       expect(sl.count).to eq 2
+    end
+
+    it 'does something sensible with an unrecognised URL' do
+      sl = SourceList.new 'http://foo.com/bar'
+      expect(sl.count).to eq 0
     end
   end
 end
