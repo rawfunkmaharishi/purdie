@@ -22,6 +22,18 @@ photographer: kim
         )
       end
 
+      it 'licenses items correctly', :vcr do
+        sources = [
+          'https://www.flickr.com/photos/cluttercup/15950875724/',
+          'https://www.flickr.com/photos/cluttercup/16579675721/'
+        ]
+
+        sources.each do |source|
+          dist = @f.distill source
+          expect(dist['license']).to eq 'Attribution-NonCommercial'
+        end
+      end
+
       it 'ingests data for a photo without a specific photographer tag', :vcr do
         @f.ingest 'https://www.flickr.com/photos/pikesley/16649739916/'
         expect(@f[0].to_yaml).to match /photographer: sam/

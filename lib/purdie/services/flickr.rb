@@ -37,8 +37,8 @@ module Purdie
         license = licenses.select {|l| l['id'] == photo['license']}[0]
         results['license'] = license['name'].split(' License')[0]
         results['license_url'] = license['url']
-      # require 'pry'
-      #  binding.pry
+
+# WTF?
 #        results.attach_license self, photo['license']
 
         begin
