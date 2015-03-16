@@ -35,6 +35,8 @@ $keys = [
   'YOUTUBE_API_KEY',
 ]
 
+$envs = {} unless $envs
+
 def unset_env
   $envs = {}
   $keys.each do |k|
