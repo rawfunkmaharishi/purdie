@@ -5,13 +5,13 @@ module Purdie
     LOOKUPS = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', '_config/licenses.yaml')
 
     def self.get service, raw_name
-      License.new raw_name, LOOKUPS[Purdie.basename service][raw_name]
+      License.new service, raw_name, LOOKUPS[Purdie.basename service][raw_name]
     end
   end
 
   class License
-    def initialize raw_name, values
-      raise LicenseException.new "Unknown license type: #{raw_name}" unless values
+    def initialize service, raw_name, values
+      raise LicenseException.new service, raw_name unless values
       @values = values
     end
 
@@ -31,10 +31,11 @@ module Purdie
   end
 
   class LicenseException < Exception
-    attr_reader :message
+    attr_reader :service, :name
 
-    def initialize message
-      @message = message
+    def initialize service, name
+      @service = service
+      @name = name
     end
   end
 end

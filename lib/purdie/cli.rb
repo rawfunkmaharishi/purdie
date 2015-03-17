@@ -19,6 +19,7 @@ module Purdie
       begin
         b.fetch
       rescue Exception => e
+        $stderr.puts "\n"
         $stderr.puts e.message
       #  exit 1
       end
