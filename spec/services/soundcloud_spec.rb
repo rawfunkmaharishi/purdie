@@ -4,7 +4,7 @@ module Purdie
   module Services
     describe SoundCloud do
       before :each do
-        @sc = SoundCloud.new Config.new
+        @sc = SoundCloud.new
       end
 
       it 'has a SoundCloud client' do

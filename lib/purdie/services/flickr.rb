@@ -38,6 +38,7 @@ module Purdie
         results['title'] = @config['default_title'] if photo['title'] == ''
         results['date'] = photo['dates']['taken'].split(' ')[0]
         results['photo_page'] = photo['urls'][0]['_content']
+      #  results['photo_page'] = url
         results['photo_url'] = FlickRaw.send(Flickr.url_for_size(@size), photo)
 
         license = licenses.select {|l| l['id'] == photo['license']}[0]
