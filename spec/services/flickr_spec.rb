@@ -73,6 +73,13 @@ photographer: kim
           expect(set[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
         end
       end
+
+      context 'do the local config lookups' do
+        it 'looks up the default title', :vcr do
+          @f.ingest 'https://www.flickr.com/photos/cluttercup/16393865760/'
+          expect(@f[0]['title']).to eq 'Raw Funk Maharishi'
+        end
+      end
     end
   end
 end

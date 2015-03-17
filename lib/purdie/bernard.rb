@@ -15,6 +15,8 @@ module Purdie
       rescue Errno::ENOENT
         @sources = nil
       end
+
+      Purdie.debug @config.inspect
     end
 
     def source_file= path
@@ -27,6 +29,7 @@ module Purdie
 
     def process list
       bad_creds = []
+      bad_licenses = {}
 
       list.each do |line|
         next if line[0] == '#'
@@ -38,8 +41,7 @@ module Purdie
         rescue NoMethodError => nme
           puts "unrecognised URL [#{line}]" if nme.status == "undefined method `ingest' for nil:NilClass"
         rescue Purdie::LicenseException => le
-          puts le.inspect
-          puts le.status
+          bad_licenses[Purdie.basename le.service].push le.name rescue bad_licenses[Purdie.basename le.service] = [le.name]
           puts 'fail'
         rescue Purdie::CredentialsException => ce
           bad_creds.push Purdie.basename(ce.service)
@@ -49,8 +51,16 @@ module Purdie
         end
       end
 
-      if bad_creds[0]
+      if bad_creds.any?
         raise Purdie::CredentialsException.new self, "Missing or duff credentials for: #{bad_creds.uniq.join ', '}"
+      end
+
+      if bad_licenses.any?
+        bad = bad_licenses.map { |k,v| "#{k}: #{v.uniq.join ', '}" }.join '; '
+        message = "Unknown licenses: #{bad}"
+        message += "\n"
+        message += 'Please consider adding the details for these licenses at https://github.com/rawfunkmaharishi/purdie/blob/master/_config/licenses.yaml'
+        raise Purdie::PurdieException.new message
       end
     end
 

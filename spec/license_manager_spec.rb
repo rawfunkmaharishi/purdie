@@ -12,7 +12,8 @@ module Purdie
     it 'barfs on an unknown license' do
       expect { l = LicenseManager.get Purdie::Services::Vimeo, 'fake-license' }.to raise_exception { |e|
         expect(e).to be_a LicenseException
-        expect(e.message).to eq 'Unknown license type: fake-license'
+        expect(e.service).to eq Purdie::Services::Vimeo
+        expect(e.name).to eq 'fake-license'
       }
     end
   end
