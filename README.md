@@ -71,7 +71,7 @@ And then you can run
 
     purdie fetch
 
-and it will dump out YAML files into *_data*:
+(`fetch` is the default task (in fact currently the only task), so just `purdie` will work) and it will dump out YAML files into *_data*:
     
     flickr.yaml
     soundcloud.yaml
@@ -115,8 +115,6 @@ There's no reason I couldn't support other services - I've already added [YouTub
 * and optionally a `::resolve` class method which takes a set or album URL for the service and returns a list of URLs for individual items
 
 then this should all Just Work. There's definitely a blog post in this, because Ruby introspection and metaprogramming is just mind-bogglingly powerful (and dangerous).
-
-And I might rationalise these [horrible license lookups](https://github.com/rawfunkmaharishi/purdie/blob/master/_config/defaults.yaml#L5) into a module or even a gem of their own.
 
 And of course, known issues are [here](https://github.com/rawfunkmaharishi/purdie/issues).
 
