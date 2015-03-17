@@ -24,5 +24,7 @@ module Purdie
       #  exit 1
       end
     end
+
+    default_task :fetch
   end
 end
