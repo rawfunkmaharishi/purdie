@@ -4,7 +4,7 @@ module Purdie
   module Services
     describe Vimeo do
       before :each do
-        @v = Vimeo.new Config.new
+        @v = Vimeo.new
       end
 
       it 'gets a video', :vcr do

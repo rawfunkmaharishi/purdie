@@ -16,7 +16,8 @@ module Purdie
       INGESTERS
     end
 
-    def initialize config
+    def initialize config = nil
+      config = Config.new unless config
       @config = config
       @items = []
 

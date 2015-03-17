@@ -4,7 +4,7 @@ module Purdie
   module Services
     describe YouTube do
       before :each do
-        @yt = YouTube.new Config.new
+        @yt = YouTube.new
       end
 
       it 'gets a video', :vcr do

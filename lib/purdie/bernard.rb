@@ -26,6 +26,8 @@ module Purdie
     end
 
     def process list
+      bad_creds = []
+
       list.each do |line|
         next if line[0] == '#'
         next if line == ''
@@ -38,9 +40,17 @@ module Purdie
         rescue Purdie::LicenseException => le
           puts le.inspect
           puts le.status
+          puts 'fail'
+        rescue Purdie::CredentialsException => ce
+          bad_creds.push Purdie.basename(ce.service)
+          puts 'fail'
         else
           puts 'done'
         end
+      end
+
+      if bad_creds[0]
+        raise Purdie::CredentialsException.new self, "Missing or duff credentials for: #{bad_creds.uniq.join ', '}"
       end
     end
 

@@ -4,7 +4,7 @@ module Purdie
   module Services
     describe Flickr do
       before :each do
-        @f = Flickr.new Config.new
+        @f = Flickr.new
       end
 
       it 'distills data for a regular photo', :vcr do

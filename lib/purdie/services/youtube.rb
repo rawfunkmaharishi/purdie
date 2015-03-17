@@ -42,8 +42,13 @@ module Purdie
       end
 
       def get url
-        data = get_data Purdie.get_id(url), 'status,snippet'
-        JSON.parse data.body
+        begin
+          data = get_data Purdie.get_id(url), 'status,snippet'
+          JSON.parse data.body
+        rescue Google::APIClient::ClientError => ce
+          raise Purdie::CredentialsException.new self, 'missing' if ce.message.match /Daily Limit for Unauthenticated Use Exceeded/
+          raise Purdie::CredentialsException.new self, 'duff' if ce.message.match /Bad Request/
+        end
       end
 
       def distill url

@@ -21,7 +21,13 @@ module Purdie
       end
 
       def get url
-        flickr.photos.getInfo photo_id: Purdie.get_id(url)
+        begin
+          flickr.photos.getInfo photo_id: Purdie.get_id(url)
+        rescue FlickRaw::FlickrAppNotConfigured => fanc
+          raise Purdie::CredentialsException.new self, 'missing' if fanc.message == 'No API key or secret defined!'
+        rescue FlickRaw::FailedResponse => fr
+          raise Purdie::CredentialsException.new self, 'duff' if fr.message == "'flickr.photos.getInfo' - Invalid API Key (Key has invalid format)"
+        end
       end
 
       def distill url
@@ -32,6 +38,7 @@ module Purdie
         results['title'] = @config['default_title'] if photo['title'] == ''
         results['date'] = photo['dates']['taken'].split(' ')[0]
         results['photo_page'] = photo['urls'][0]['_content']
+      #  results['photo_page'] = url
         results['photo_url'] = FlickRaw.send(Flickr.url_for_size(@size), photo)
 
         license = licenses.select {|l| l['id'] == photo['license']}[0]
