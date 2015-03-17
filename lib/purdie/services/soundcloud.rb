@@ -14,9 +14,9 @@ module Purdie
         begin
           track = client.get '/resolve', url: url
         rescue ArgumentError => ae
-          raise CredentialsException.new 'SoundCloud credentials missing'
+          raise CredentialsException.new self, 'missing'
         rescue ::SoundCloud::ResponseError => re
-          raise CredentialsException.new 'SoundCloud credentials might be duff'
+          raise CredentialsException.new self, 'duff'
         end
 
         results = {}

@@ -44,7 +44,8 @@ module Purdie
         s = SoundCloud.new
         expect { s.distill 'https://soundcloud.com/rawfunkmaharishi/bernard' }.to raise_exception { |e|
           expect(e).to be_a Purdie::CredentialsException
-          expect(e.message).to eq 'SoundCloud credentials missing'
+          expect(e.service.class).to eq Purdie::Services::SoundCloud
+          expect(e.message).to eq 'missing'
         }
       end
 
@@ -53,7 +54,8 @@ module Purdie
         s = SoundCloud.new
         expect { s.distill 'https://soundcloud.com/rawfunkmaharishi/bernard' }.to raise_exception { |e|
           expect(e).to be_a Purdie::CredentialsException
-          expect(e.message).to eq 'SoundCloud credentials might be duff'
+          expect(e.service.class).to eq Purdie::Services::SoundCloud
+          expect(e.message).to eq 'duff'
         }
       end
     end
@@ -68,7 +70,8 @@ module Purdie
         v = Vimeo.new
         expect { v.distill 'https://vimeo.com/111356018' }.to raise_exception { |e|
           expect(e).to be_a Purdie::CredentialsException
-          expect(e.message).to eq 'Vimeo credentials missing and/or duff'
+          expect(e.service.class).to eq Purdie::Services::Vimeo
+          expect(e.message).to eq 'missing and/or duff'
         }
       end
 
@@ -77,7 +80,8 @@ module Purdie
         v = Vimeo.new
           expect { v.distill 'https://vimeo.com/111356018' }.to raise_exception { |e|
           expect(e).to be_a Purdie::CredentialsException
-          expect(e.message).to eq 'Vimeo credentials missing and/or duff'
+          expect(e.service.class).to eq Purdie::Services::Vimeo
+          expect(e.message).to eq 'missing and/or duff'
         }
       end
     end
@@ -92,7 +96,8 @@ module Purdie
         y = YouTube.new
         expect { y.distill 'https://www.youtube.com/watch?v=JCix1XW329g' }.to raise_exception { |e|
           expect(e).to be_a Purdie::CredentialsException
-          expect(e.message).to eq 'YouTube credentials missing'
+          expect(e.service.class).to eq Purdie::Services::YouTube
+          expect(e.message).to eq 'missing'
         }
       end
 
@@ -101,7 +106,8 @@ module Purdie
         y = YouTube.new
         expect { y.distill 'https://www.youtube.com/watch?v=JCix1XW329g' }.to raise_exception { |e|
           expect(e).to be_a Purdie::CredentialsException
-          expect(e.message).to eq 'YouTube credentials might be duff'
+          expect(e.service.class).to eq Purdie::Services::YouTube
+          expect(e.message).to eq 'duff'
         }
       end
     end
