@@ -4,16 +4,18 @@ module Purdie
   module Ingester
     attr_reader :config, :subconfig, :matcher
 
-    INGESTERS = []
+    include Enumerable
+
+    class << self
+      attr_reader :ingesters
+    end
+
+    @ingesters = []
 
     def self.included base
       # Voodoo: http://stackoverflow.com/questions/10692961/inheriting-class-methods-from-mixins
       base.extend ClassMethods
-      INGESTERS.push base
-    end
-
-    def self.ingesters
-      INGESTERS
+      @ingesters.push base
     end
 
     def initialize config = nil
@@ -39,16 +41,14 @@ module Purdie
       @items.push distill url
     end
 
+    def each
+      @items.each do |item|
+        yield item
+      end
+    end
+
     def [] key
       @items[key]
-    end
-
-    def count
-      @items.count
-    end
-
-    def has_items?
-      @items.count > 0
     end
 
     def to_yaml
@@ -56,7 +56,7 @@ module Purdie
     end
 
     def write
-      if self.has_items?
+      if self.any?
         FileUtils.mkdir_p File.dirname @output_file
         File.open @output_file, 'w' do |f|
           f.write self.to_yaml
