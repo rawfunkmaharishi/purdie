@@ -56,6 +56,11 @@ module Purdie
       expect(sl[3]).to eq 'https://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin'
     end
 
+    it 'knows the filename it came from' do
+      sl = SourceList.from_file 'spec/support/fixtures/soundcloud.sounds'
+      expect(sl.filename).to eq 'soundcloud.sounds'
+    end
+
     it 'can be initialiased from a Vimeo file' do
       sl = SourceList.from_file 'spec/support/fixtures/vimeo.vids'
       expect(sl[2]).to eq 'https://vimeo.com/110132671'

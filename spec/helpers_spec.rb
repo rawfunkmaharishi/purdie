@@ -34,5 +34,19 @@ module Purdie
         expect(Purdie.basename @mmw).to eq 'Wood'
       end
     end
+
+    it 'creates a correct out path' do
+      expect(Purdie.create_outpath '_data/flickr.yaml', 'pictures').to eq '_data/pictures.yaml'
+      expect(Purdie.create_outpath '_data/some_path/foo.bar.yaml', 'bernard').to eq '_data/some_path/bernard.yaml'
+    end
+
+    it 'replaces a file extension' do
+      expect(Purdie.add_yaml 'some-file.csv').to eq 'some-file.yaml'
+      expect(Purdie.add_yaml 'this.one.has.dots.purdie').to eq 'this.one.has.dots.yaml'
+    end
+
+    it 'strips an extension' do
+      expect(Purdie.strip_extension 'some.thing.csv').to eq 'some.thing'
+    end
   end
 end

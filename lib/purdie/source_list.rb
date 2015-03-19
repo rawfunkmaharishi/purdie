@@ -2,6 +2,8 @@ require 'purdie'
 
 module Purdie
   class SourceList
+    attr_accessor :filename
+
     include Enumerable
 
     def initialize sources
@@ -28,7 +30,10 @@ module Purdie
     end
 
     def self.from_file source_file
-      SourceList.new File.readlines(source_file).map { |l| l.strip }
+      sl = SourceList.new File.readlines(source_file).map { |l| l.strip }
+      sl.filename = File.basename source_file
+
+      sl
     end
 
     def self.resolve source

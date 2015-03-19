@@ -31,6 +31,21 @@ module Purdie
     obj.class.name.to_s.split('::').last
   end
 
+  def Purdie.create_outpath original_path, infiltrator
+    path = File.dirname original_path
+    leaf = File.basename original_path
+
+    File.join(path, "#{infiltrator}.#{leaf.split('.')[-1]}")
+  end
+
+  def Purdie.add_yaml original
+    "#{strip_extension original}.yaml"
+  end
+
+  def Purdie.strip_extension original
+    original.split('.')[0..-2].join '.'
+  end
+
   def Purdie.debug message
     File.open '../../wtf.log', 'w' do |f|
       f.write message

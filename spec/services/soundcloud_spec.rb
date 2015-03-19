@@ -46,6 +46,13 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
           expect(set[3]).to eq 'http://soundcloud.com/rawfunkmaharishi/bernard'
         end
       end
+
+      it 'sets an outfile using a SourceList' do
+        sl = instance_double('SourceList', filename: 'bernard.purdie')
+
+        @sc.outfile_from_list sl
+        expect(@sc.output_file).to eq '_data/bernard.yaml'
+      end
     end
   end
 end

@@ -3,6 +3,7 @@ require 'purdie'
 module Purdie
   class Bernard
     attr_reader :config
+    attr_accessor :outfiles_from_infiles
 
     def initialize
       @config = Config.new
@@ -15,8 +16,6 @@ module Purdie
       rescue Errno::ENOENT
         @sources = nil
       end
-
-      Purdie.debug @config.inspect
     end
 
     def source_file= path
@@ -37,7 +36,7 @@ module Purdie
 
         begin
           print "Processing #{line.strip}... "
-          grab line
+          grab line, list
         rescue NoMethodError => nme
           puts "unrecognised URL [#{line}]" if nme.status == "undefined method `ingest' for nil:NilClass"
         rescue Purdie::LicenseException => le
@@ -74,8 +73,10 @@ module Purdie
       dump
     end
 
-    def grab url
-      services.select{ |s| url =~ /#{s.class.matcher}/ }[0].ingest url
+    def grab url, list
+      s = services.select{ |s| url =~ /#{s.class.matcher}/ }[0]
+      s.ingest url
+      s.outfile_from_list(list) if @outfiles_from_infiles
     end
 
     def dump

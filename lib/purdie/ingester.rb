@@ -2,7 +2,7 @@ Dotenv.load
 
 module Purdie
   module Ingester
-    attr_reader :config, :subconfig, :matcher
+    attr_reader :config, :subconfig, :matcher, :output_file
 
     include Enumerable
 
@@ -35,6 +35,11 @@ module Purdie
           self.instance_variable_set("@#{key}", value)
         end
       end
+    end
+
+    def outfile_from_list list
+      y = Purdie.strip_extension list.filename
+      @output_file = Purdie.create_outpath @output_file, y
     end
 
     def ingest url
