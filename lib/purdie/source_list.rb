@@ -4,6 +4,8 @@ module Purdie
   class SourceList
     include Enumerable
 
+    attr_accessor :parent_file
+
     def initialize sources
       @sources = [sources].
         flatten.
@@ -28,7 +30,10 @@ module Purdie
     end
 
     def self.from_file source_file
-      SourceList.new File.readlines(source_file).map { |l| l.strip }
+      sl = SourceList.new File.readlines(source_file).map { |l| l.strip }
+      sl.parent_file = source_file
+
+      sl
     end
 
     def self.resolve source

@@ -15,8 +15,6 @@ module Purdie
       rescue Errno::ENOENT
         @sources = nil
       end
-
-      Purdie.debug @config.inspect
     end
 
     def source_file= path

@@ -70,5 +70,10 @@ module Purdie
       sl = SourceList.new 'http://foo.com/bar'
       expect(sl.count).to eq 0
     end
+
+    it 'knows what file it came from' do
+      sl = SourceList.from_file 'spec/support/fixtures/vimeo.vids'
+      expect(sl.parent_file).to eq 'spec/support/fixtures/vimeo.vids'
+    end
   end
 end
