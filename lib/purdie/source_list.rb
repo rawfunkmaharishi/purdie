@@ -38,6 +38,14 @@ module Purdie
       end
     end
 
+    def output_file
+    #  dirname = File.dirname parent_file
+      base = File.basename(parent_file).split '.'
+      base[-1] = 'yaml'
+
+      File.join ['_data', base.join('.')]
+    end
+
     def self.from_file source_file
       sl = SourceList.new File.readlines(source_file).map { |l| l.strip }
       sl.parent_file = source_file

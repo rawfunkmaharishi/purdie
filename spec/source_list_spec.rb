@@ -85,5 +85,15 @@ module Purdie
         expect(sl.items[0]['title']).to eq 'Safety On Board'
       end
     end
+
+    context 'make output' do
+      it 'has the correct output path' do
+        FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/'
+        sl = SourceList.from_file '_sources/soundcloud.sounds'
+        expect(sl.parent_file).to eq '_sources/soundcloud.sounds'
+
+        expect(sl.output_file).to eq '_data/soundcloud.yaml'
+      end
+    end
   end
 end
