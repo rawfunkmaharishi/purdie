@@ -34,7 +34,13 @@ bass: Rainey
     end
 
     it 'knows what service it belongs to' do
-      expect(@i.service).to eq Purdie::Services::SoundCloud
+      expect(@i.service.class).to eq Purdie::Services::SoundCloud
+    end
+
+    it 'populates itself', :vcr do
+      @i.distill
+      expect(@i['title']).to eq 'Hexaflexagon'
+      expect(@i['license']).to eq 'Attribution-NonCommercial-ShareAlike'
     end
   end
 end

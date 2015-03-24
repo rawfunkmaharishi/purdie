@@ -9,6 +9,10 @@ module Purdie
       @datas = {}
     end
 
+    def distill
+      @datas = service.distill @url
+    end
+
     def []= key, value
       @datas[key] = value
     end
@@ -24,7 +28,8 @@ module Purdie
     end
 
     def service
-      Ingester.ingesters.select { |s| url =~ /#{s.matcher}/ }.first
+      c = Ingester.ingesters.select { |s| url =~ /#{s.matcher}/ }.first
+      c.new
     end
 
     def to_yaml
