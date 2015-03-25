@@ -2,7 +2,7 @@ require 'purdie'
 
 module Purdie
   class Item
-    attr_reader :url, :parent_file
+    attr_reader :url, :parent_file, :datas
 
     def initialize url
       @url = url

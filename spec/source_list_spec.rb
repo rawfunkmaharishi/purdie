@@ -94,6 +94,14 @@ module Purdie
 
         expect(sl.output_file).to eq '_data/soundcloud.yaml'
       end
+
+      it 'actually makes output', :vcr do
+        FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/'
+        sl = SourceList.from_file '_sources/soundcloud.sounds'
+
+        sl.write
+        
+      end
     end
   end
 end

@@ -38,6 +38,15 @@ module Purdie
       end
     end
 
+    def write
+      process
+      FileUtils.mkdir_p File.dirname output_file
+      File.open output_file, 'w' do |f|
+        dump = @items.map { |item| item.datas }
+        f.write dump.to_yaml
+      end
+    end
+
     def output_file
     #  dirname = File.dirname parent_file
       base = File.basename(parent_file).split '.'
