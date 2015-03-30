@@ -91,16 +91,30 @@ module Purdie
         FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/'
         sl = SourceList.from_file '_sources/soundcloud.sounds'
         expect(sl.parent_file).to eq '_sources/soundcloud.sounds'
-
         expect(sl.output_file).to eq '_data/soundcloud.yaml'
+      end
+
+      it 'has the correct output path when the source path has no extension' do
+        FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/sounds'
+        sl = SourceList.from_file '_sources/sounds'
+        expect(sl.output_file).to eq '_data/sounds.yaml'
       end
 
       it 'actually makes output', :vcr do
         FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/'
         sl = SourceList.from_file '_sources/soundcloud.sounds'
-
         sl.write
-        
+
+        expect(File).to exist '_data/soundcloud.yaml'
+
+        lines = File.readlines '_data/soundcloud.yaml'
+        expect(lines).to include "- title: Not Bernard\n",
+                                 "  id: 190803089\n",
+                                 "  location: Rogue Studios\n",
+                                 "  date: '2015-02-11'\n",
+                                 "  license: Attribution-NonCommercial-ShareAlike\n",
+                                 "  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/\n"
+
       end
     end
   end

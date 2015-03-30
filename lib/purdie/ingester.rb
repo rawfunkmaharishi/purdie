@@ -19,7 +19,7 @@ module Purdie
     end
 
     def initialize config = nil
-      config = Config.new unless config
+      config = Config.instance.config unless config
       @config = config
       @items = []
 

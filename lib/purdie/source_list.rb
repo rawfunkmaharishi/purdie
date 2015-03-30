@@ -50,6 +50,7 @@ module Purdie
     def output_file
     #  dirname = File.dirname parent_file
       base = File.basename(parent_file).split '.'
+      base.push nil if base.count == 1
       base[-1] = 'yaml'
 
       File.join ['_data', base.join('.')]
