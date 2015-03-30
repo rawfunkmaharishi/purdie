@@ -1,22 +1,31 @@
-require 'purdie'
+require 'singleton'
 
 module Purdie
   class Config
+    include Singleton
+
     def initialize
-      @conf = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', '_config/defaults.yaml')
+      reset!
+    end
+
+    def reset! # testing a singleton is hard
+      @config = OpenStruct.new fetch_yaml 'defaults'
 
       if File.exists? '_config/purdie.yaml'
-        y = YAML.load File.read '_config/purdie.yaml'
-        @conf.deep_merge! y
+        @local = OpenStruct.new YAML.load File.read '_config/purdie.yaml'
+
+        @config = OpenStruct.new (@config.to_h.deep_merge @local)
       end
     end
 
-    def [] key
-      @conf[key]
+    def config
+      @config
     end
 
-    def []= key, value
-      @conf[key] = value
+    private
+
+    def fetch_yaml file
+      YAML.load(File.open(File.join(File.dirname(__FILE__), '..', '..', '_config/%s.yaml' % file)))
     end
   end
 end
