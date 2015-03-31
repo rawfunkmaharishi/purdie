@@ -17,43 +17,20 @@ module Purdie
       ]
       sl = SourceList.new sources
       expect(sl.count).to eq 3
+      expect(sl.first).to be_a Purdie::Item
       expect(sl[0].url).to eq 'https://soundcloud.com/rawfunkmaharishi/bernard'
     end
 
-    context 'resolve sets' do
-      it 'resolves a Flickr set', :vcr do
-        resolved = SourceList.resolve 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
-        expect(resolved.count).to eq 8
-        expect(resolved[0]).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
-        expect(resolved[7]).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
-      end
-
-      it 'resolves a SoundCloud set', :vcr do
-        resolved = SourceList.resolve 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
-        expect(resolved.count).to eq 4
-      end
-
-      it 'constructs a list from a set URL', :vcr do
-        sl = SourceList.new 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
-        expect(sl.count).to eq 8
-        expect(sl[0].url).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
-        expect(sl[7].url).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
-      end
-
-      it 'uniques a list when an item appears multiple times' do
-        sources = [
-          'https://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why',
-        'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
-        ]
-        sl = SourceList.new sources
-        expect(sl.count).to eq 4
-        expect(Purdie.strip_scheme sl[0].url).to eq '//soundcloud.com/rawfunkmaharishi/beer-of-course-but-why'
-        expect(Purdie.strip_scheme sl[2].url).to eq '//soundcloud.com/rawfunkmaharishi/junalbandi-3'
-      end
+    it 'constructs a list from a set URL', :vcr do
+      sl = SourceList.new 'https://www.flickr.com/photos/pikesley/sets/72157649827363868/'
+      expect(sl.count).to eq 12
+      expect(sl[0].url).to eq 'https://www.flickr.com/photos/pikesley/16252009191/'
+      expect(sl[7].url).to eq 'https://www.flickr.com/photos/pikesley/16752239531/'
     end
 
     it 'can be initialiased from a file' do
       sl = SourceList.from_file 'spec/support/fixtures/soundcloud.sounds'
+      expect(sl.first).to be_a Purdie::Item
       expect(sl[3].url).to eq 'https://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin'
     end
 
@@ -82,6 +59,7 @@ module Purdie
         sl = SourceList.from_file 'spec/support/fixtures/vimeo.vids'
         sl.process
 
+        expect(sl.items[0]).to be_a Purdie::Item
         expect(sl.items[0]['title']).to eq 'Safety On Board'
       end
     end
@@ -101,13 +79,13 @@ module Purdie
       end
 
       it 'actually makes output', :vcr do
-        FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/'
-        sl = SourceList.from_file '_sources/soundcloud.sounds'
+        FileUtils.cp 'spec/support/fixtures/output-generator', '_sources/'
+        sl = SourceList.from_file '_sources/output-generator'
         sl.write
 
-        expect(File).to exist '_data/soundcloud.yaml'
+        expect(File).to exist '_data/output-generator.yaml'
 
-        lines = File.readlines '_data/soundcloud.yaml'
+        lines = File.readlines '_data/output-generator.yaml'
         expect(lines).to include "- title: Not Bernard\n",
                                  "  id: 190803089\n",
                                  "  location: Rogue Studios\n",

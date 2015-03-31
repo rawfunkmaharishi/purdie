@@ -1,5 +1,3 @@
-require 'purdie'
-
 module Purdie
   class Item
     attr_reader :url, :parent_file, :datas
@@ -19,12 +17,6 @@ module Purdie
 
     def [] key
       @datas[key]
-    end
-
-    def attach_license service, license
-      l = Purdie::LicenseManager.get service, license
-      @datas['license'] = l['full_name']
-      @datas['license_url'] = l['url']
     end
 
     def service

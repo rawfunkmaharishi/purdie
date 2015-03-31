@@ -8,13 +8,7 @@ module Purdie
     attr_accessor :parent_file
 
     def initialize sources
-      @sources = [sources].
-        flatten.
-        select { |i| i !~ /^#/ }.
-        map { |source| SourceList.resolve source }.
-        flatten.
-        uniq { |item| Purdie.strip_scheme item }.
-        map { |item| Item.new item }
+      @sources = Resolver.resolve(sources).map { |item| Item.new item }
     end
 
     def [] key
@@ -34,12 +28,14 @@ module Purdie
     def process
       @items = []
       @sources.each do |source|
-        @items.push source.distill
+        source.distill
+        @items.push source
       end
     end
 
     def write
       process
+
       FileUtils.mkdir_p File.dirname output_file
       File.open output_file, 'w' do |f|
         dump = @items.map { |item| item.datas }
@@ -48,7 +44,6 @@ module Purdie
     end
 
     def output_file
-    #  dirname = File.dirname parent_file
       base = File.basename(parent_file).split '.'
       base.push nil if base.count == 1
       base[-1] = 'yaml'
@@ -57,16 +52,10 @@ module Purdie
     end
 
     def self.from_file source_file
-      sl = SourceList.new File.readlines(source_file).map { |l| l.strip }
+      sl = SourceList.new File.readlines(source_file).map { |l| l.strip }.select { |i| i !~ /^#/ }
       sl.parent_file = source_file
 
       sl
-    end
-
-    def self.resolve source
-      service_class = Ingester.ingesters.select { |service| source =~ /#{service.matcher}/ }[0]
-      return [] unless service_class
-      service_class.resolve(source) #.map { |item| Item.new item }
     end
   end
 end
