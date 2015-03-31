@@ -22,6 +22,8 @@ module Purdie
     end
 
     def fetch
+      raise Exception.new 'No data sources specified' unless @sources
+
       @sources.map { |s| SourceList.from_file s }.each do |source|
         source.write
       end

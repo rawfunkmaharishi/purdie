@@ -1,4 +1,3 @@
-@wip
 @vcr
 Feature: Handle no _sources directory
 
