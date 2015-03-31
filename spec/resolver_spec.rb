@@ -30,5 +30,11 @@ module Purdie
       expect(Purdie.strip_scheme resolved[0]).to eq '//soundcloud.com/rawfunkmaharishi/beer-of-course-but-why'
       expect(Purdie.strip_scheme resolved[2]).to eq '//soundcloud.com/rawfunkmaharishi/junalbandi-3'
     end
+
+    it 'resolves a YouTube playlist', :vcr do
+      resolved = Resolver.resolve 'https://www.youtube.com/playlist?list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV'
+      expect(resolved.count).to eq 9
+      expect(Purdie.strip_scheme resolved.first).to eq '//youtube.com/watch?v=U23Ezi6q30E'
+    end
   end
 end

@@ -18,5 +18,13 @@ module Purdie
                                "  license: Attribution-NonCommercial-ShareAlike\n",
                                "  license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/\n"
     end
+
+    it 'deals with YouTube', :vcr do
+      FileUtils.cp 'spec/support/fixtures/youtube.tubes', '_sources/'
+      b = Bernard.new
+      b.fetch
+
+      expect(File).to exist '_data/youtube.yaml'
+    end
   end
 end

@@ -17,6 +17,10 @@ module Purdie
       end
     end
 
+    def source_file= path
+      @sources = path
+    end
+
     def fetch
       @sources.map { |s| SourceList.from_file s }.each do |source|
         source.write

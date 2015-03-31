@@ -26,6 +26,8 @@ http_interactions:
       - Tue, 31 Mar 2015 20:04:21 GMT
       Date:
       - Tue, 31 Mar 2015 19:59:21 GMT
+      Cache-Control:
+      - public, max-age=300, must-revalidate, no-transform
       Etag:
       - '"ye6orv2F-1npMW3u9suM3a7C5Bo/HVk1_aaqWFJChNS_pb8qXf9T_6g"'
       Vary:
@@ -43,14 +45,10 @@ http_interactions:
       - 1; mode=block
       Server:
       - GSE
-      Cache-Control:
-      - public, max-age=300, must-revalidate, no-transform
-      Content-Length:
-      - '37876'
-      Age:
-      - '229'
       Alternate-Protocol:
       - 443:quic,p=0.5
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -897,7 +895,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:10 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:21 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/playlistItems?key=<YOUTUBE_API_KEY>&maxResults=50&part=contentDetails&playlistId=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV
@@ -921,9 +919,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:11 GMT
+      - Tue, 31 Mar 2015 19:59:22 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:11 GMT
+      - Tue, 31 Mar 2015 19:59:22 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -968,7 +966,7 @@ http_interactions:
         YkTrefXazeg4f8cKjQMcwiA/Gvpt7XJcrJ+7kcfLeY5KEpWrkvcceHEfjMhp
         3WE8VN+syLQkhhM8/Bc6mf4z+Zj8BALT6z/3CAAA
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:11 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:22 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -1017,7 +1015,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '230'
+      - '1'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -1866,7 +1864,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:11 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:22 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=U23Ezi6q30E&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -1890,9 +1888,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:11 GMT
+      - Tue, 31 Mar 2015 19:59:22 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:11 GMT
+      - Tue, 31 Mar 2015 19:59:22 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -1938,7 +1936,7 @@ http_interactions:
         0ool1RHDfY+T5/on6H5oz/+LegWLGNOUxdsya2mwTriNd/nUA+H6iNDYe7X3
         342nxnemb+9FSgcAAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:12 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:22 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -1987,7 +1985,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '231'
+      - '1'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -2836,7 +2834,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:12 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:22 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=_ZbWTg8G6eM&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -2860,9 +2858,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:12 GMT
+      - Tue, 31 Mar 2015 19:59:22 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:12 GMT
+      - Tue, 31 Mar 2015 19:59:22 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -2906,7 +2904,7 @@ http_interactions:
         oHPiLXYY5rHztjl5YL4W28c4X4HYBd8n7ioOJVLIG67qTT95R+Fph2BlXvXv
         l7W0fgPQkxnIpwYAAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:12 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:22 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -2955,7 +2953,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '231'
+      - '1'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -3804,7 +3802,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:12 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:23 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=zJnnNZk9o0Q&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -3828,9 +3826,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:13 GMT
+      - Tue, 31 Mar 2015 19:59:23 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:13 GMT
+      - Tue, 31 Mar 2015 19:59:23 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -3874,7 +3872,7 @@ http_interactions:
         vS5RM824apFQhS0rTTMocDDZYOh7L1g3K6D6x7G+l8sdmviUEOzPeyKznJYJ
         5/E6n7gB+rxBMJZe1fvDmBk/Ae+GzDKyBgAA
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:13 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:23 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -3923,7 +3921,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '232'
+      - '2'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -4772,7 +4770,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:13 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:23 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=baQe6MoSAHw&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -4796,9 +4794,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:13 GMT
+      - Tue, 31 Mar 2015 19:59:23 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:13 GMT
+      - Tue, 31 Mar 2015 19:59:23 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -4847,7 +4845,7 @@ http_interactions:
         8y2Eu3LEm1KPwd3ZNleicgXyCTBGJ4uKNspCGXDh7+LpMYfZFqCy0orv35Xn
         yr8yq5PILQoAAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:13 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:23 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -4896,7 +4894,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '232'
+      - '2'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -5745,7 +5743,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:14 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:23 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=NLFP1T1e2BA&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -5769,9 +5767,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:14 GMT
+      - Tue, 31 Mar 2015 19:59:24 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:14 GMT
+      - Tue, 31 Mar 2015 19:59:24 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -5814,7 +5812,7 @@ http_interactions:
         YtiHJdzsLgT7Mm8evnIF0gkQgif5JpTQUBbM9baevKUw3yI4RVbz/XKWzh97
         UNNlEwYAAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:14 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:24 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -5863,7 +5861,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '234'
+      - '3'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -6712,7 +6710,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:15 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:24 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=E9E0WxLbqVA&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -6736,9 +6734,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:15 GMT
+      - Tue, 31 Mar 2015 19:59:24 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:15 GMT
+      - Tue, 31 Mar 2015 19:59:24 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -6781,7 +6779,7 @@ http_interactions:
         guXEXx8xzPvgH5rgg3lgD+9XeQLxAigli22tSmRQJtzGm3zSY/B0RLAKr/r7
         Y22svxF4ql3aBQAA
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:15 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:24 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -6830,7 +6828,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '234'
+      - '3'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -7679,7 +7677,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:15 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:24 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=wa-K4LouFVk&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -7703,9 +7701,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:15 GMT
+      - Tue, 31 Mar 2015 19:59:24 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:15 GMT
+      - Tue, 31 Mar 2015 19:59:24 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -7748,7 +7746,7 @@ http_interactions:
         bLnD8O8te94HA//he/6u1CeQxcA5jddjG2Whbriu9/30DcJihxBUXt3vR7AK
         fgO/nSuIcgUAAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:16 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:24 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -7797,7 +7795,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '235'
+      - '4'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -8646,7 +8644,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:16 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:25 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=LatmKZQd7-s&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -8670,9 +8668,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:16 GMT
+      - Tue, 31 Mar 2015 19:59:25 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:16 GMT
+      - Tue, 31 Mar 2015 19:59:25 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -8717,7 +8715,7 @@ http_interactions:
         fv+UFisQT8D3ySRruRIaCsGs3urJewqrnDAlkYRSHtZ8P0qb0i9b21i9ZgYA
         AA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:16 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:25 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest?key=<YOUTUBE_API_KEY>
@@ -8766,7 +8764,7 @@ http_interactions:
       Content-Length:
       - '37876'
       Age:
-      - '235'
+      - '4'
       Alternate-Protocol:
       - 443:quic,p=0.5
     body:
@@ -9615,7 +9613,7 @@ http_interactions:
         UfP1+dljFn31uJT6ZvfpDHUDexfENW8tO/JjerGBI7svdOfJpt6eBnacjBY3
         gLksc1nmsu4lfTIuAa3sfCX+95+v/h+yBiWlaJ0EAA==
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:17 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:25 GMT
 - request:
     method: get
     uri: https://www.googleapis.com/youtube/v3/videos?id=P842kq0bnOc&key=<YOUTUBE_API_KEY>&part=status,snippet
@@ -9639,9 +9637,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Tue, 31 Mar 2015 20:03:17 GMT
+      - Tue, 31 Mar 2015 19:59:25 GMT
       Date:
-      - Tue, 31 Mar 2015 20:03:17 GMT
+      - Tue, 31 Mar 2015 19:59:25 GMT
       Cache-Control:
       - private, max-age=0, must-revalidate, no-transform
       Etag:
@@ -9684,5 +9682,5 @@ http_interactions:
         MV9LFGeCByCl6UPRmEzQnATrI4a9SoJDbwOwd/HhqitXIPUhDIm/baESGkrB
         bb3Vk2MKqyOCU2Q1z09n4/wCNQWk9wUGAAA=
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:03:17 GMT
+  recorded_at: Tue, 31 Mar 2015 19:59:25 GMT
 recorded_with: VCR 2.9.3

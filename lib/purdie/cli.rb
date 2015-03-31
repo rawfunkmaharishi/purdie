@@ -14,7 +14,7 @@ module Purdie
                   :desc => 'Specify source file to process'
     def fetch
       b = Bernard.new
-      #b.source_file = options[:source_file] if options[:source_file]
+      b.source_file = options[:source_file] if options[:source_file]
 
       begin
         b.fetch

@@ -1,8 +1,6 @@
 @vcr
 Feature: YouTube playlists
 
-@announce-stdout
-@announce-stderr
   Scenario: Generate YAML for a YouTube playlist
     Given a file named "_sources/youtube" with:
     """
