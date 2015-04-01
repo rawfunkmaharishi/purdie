@@ -42,17 +42,21 @@ You need to create a *_sources* directory in your Jekyll project, containing fil
 
     https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
     https://soundcloud.com/rawfunkmaharishi/junalbandi-3
-    
-It also resolves sets/albums on Flickr and SoundCloud (and soon Vimeo), so this will work:
+
+It also resolves sets/albums on Flickr and SoundCloud (and soon Vimeo), so this kind of thing will work:
 
     https://www.flickr.com/photos/pikesley/sets/72157648589429938/
-    https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions
 
 ####Notes about *_sources*:
-    
-* Purdie does not care how many files are in *_sources*, nor if the services are all mixed up together in those files - it will simply dump out one file per service
-* If a URL appears multiple times in a resolved list, only the first appearance will be propagated to the output
-* You can specify a source file on the command line with the `-f` flag
+
+* Purdie maps each input file onto an output file, replacing any extension with _.yaml_, something like:
+  * \_sources/flickr.csv -> \_data/flickr.yaml
+  * \_sources/pictures.source -> \_data/pictures.yaml
+  * \_sources/soundcloud.sounds -> \_data/soundcloud.yaml
+  * \_sources/vimeo -> \_data/vimeo.yaml
+
+* Mixing up different services in the same input file makes no sense to Purdie. Don't do this
+* If a URL appears multiple times in a resolved list, only the first appearance will be propagated to the output file
 
 You also need a *.env* file with the relevant credentials in it:
 
@@ -62,7 +66,7 @@ You also need a *.env* file with the relevant credentials in it:
     SOUNDCLOUD_CLIENT_ID: this_a_client_id
 
     VIMEO_BEARER_TOKEN: this_is_bearer_token
-    
+
     YOUTUBE_API_KEY: this_is_key_for_youtube
 
 (get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new), [Vimeo](https://developer.vimeo.com/apps/new) and [YouTube](https://console.developers.google.com/project))
@@ -72,12 +76,12 @@ And then you can run
     purdie fetch
 
 (`fetch` is the default task (in fact currently the only task), so just `purdie` will work) and it will dump out YAML files into *_data*:
-    
+
     flickr.yaml
+    pictures.yaml
     soundcloud.yaml
     vimeo.yaml
-    youtube.yaml
-    
+
 ready for Jekyll to consume.
 
 ###Customisation
