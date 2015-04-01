@@ -1,0 +1,129 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: photo_id=16393865760&method=flickr.photos.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="SnAm55eIbh3QWhS2mO3W0N1qmJvaXcS2Ed%2FDiMyB0bA%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427832605", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2015 20:10:06 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '546'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www250.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      Via:
+      - http/1.1 fts107.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r06.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Strict-Transport-Security:
+      - max-age=259200
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"photo":{"id":"16393865760","secret":"bfbfc1c267","server":"7395","farm":8,"dateuploaded":"1424360186","isfavorite":0,"license":"2","safety_level":"0","rotation":0,"originalsecret":"72a64c9506","originalformat":"jpg","owner":{"nsid":"54115632@N00","username":"cluttercup","realname":"Jane
+        Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424360186","taken":"2015-02-18
+        16:57:45","takengranularity":"0","takenunknown":"0","lastupdate":"1424360361"},"views":"23","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/16393865760\/"}]},"media":"photo"},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 20:10:06 GMT
+- request:
+    method: post
+    uri: https://api.flickr.com/services/rest/
+    body:
+      encoding: US-ASCII
+      string: method=flickr.photos.licenses.getInfo&format=json&nojsoncallback=1
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - FlickRaw/0.9.8
+      Authorization:
+      - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
+        oauth_nonce="9byljofPL4fvvD0tPLSI8TF5F28mAwbiKUipFDjgE6w%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427832606", oauth_token="",
+        oauth_version="1.0"
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2015 20:10:07 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '371'
+      P3p:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Cache-Control:
+      - private
+      X-Served-By:
+      - www282.flickr.bf1.yahoo.com
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '1'
+      Via:
+      - http/1.1 fts117.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r11.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
+      Server:
+      - ATS
+      Strict-Transport-Security:
+      - max-age=259200
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"licenses":{"license":[{"id":"0","name":"All Rights Reserved","url":""},{"id":"4","name":"Attribution
+        License","url":"https:\/\/creativecommons.org\/licenses\/by\/2.0\/"},{"id":"6","name":"Attribution-NoDerivs
+        License","url":"https:\/\/creativecommons.org\/licenses\/by-nd\/2.0\/"},{"id":"3","name":"Attribution-NonCommercial-NoDerivs
+        License","url":"https:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.0\/"},{"id":"2","name":"Attribution-NonCommercial
+        License","url":"https:\/\/creativecommons.org\/licenses\/by-nc\/2.0\/"},{"id":"1","name":"Attribution-NonCommercial-ShareAlike
+        License","url":"https:\/\/creativecommons.org\/licenses\/by-nc-sa\/2.0\/"},{"id":"5","name":"Attribution-ShareAlike
+        License","url":"https:\/\/creativecommons.org\/licenses\/by-sa\/2.0\/"},{"id":"7","name":"No
+        known copyright restrictions","url":"https:\/\/www.flickr.com\/commons\/usage\/"},{"id":"8","name":"United
+        States Government Work","url":"http:\/\/www.usa.gov\/copyright.shtml"},{"id":"9","name":"Public
+        Domain Dedication (CC0)","url":"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/"},{"id":"10","name":"Public
+        Domain Mark","url":"https:\/\/creativecommons.org\/publicdomain\/mark\/1.0\/"}]},"stat":"ok"}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2015 20:10:07 GMT
+recorded_with: VCR 2.9.3

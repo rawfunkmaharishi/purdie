@@ -19,7 +19,7 @@ module Purdie
           raise CredentialsException.new self, 'duff'
         end
 
-        results = {}
+        results = {} 
         results['title'] = track['title']
         results['id'] = track['id']
         results['location'] = track['description']

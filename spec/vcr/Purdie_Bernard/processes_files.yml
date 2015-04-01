@@ -1,0 +1,570 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vimeo.com/albums/3296736/videos/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - bearer <VIMEO_BEARER_TOKEN>
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 20:44:20 GMT
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Expires:
+      - Thu, 27 Mar 2025 20:44:19 GMT
+      Content-Length:
+      - '11559'
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-lcy1126-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1427748259.828497,VS0,VE500
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"total":3,"page":1,"per_page":25,"paging":{"next":null,"previous":null,"first":"/albums/3296736/videos/?page=1","last":"/albums/3296736/videos/?page=1"},"data":[{"uri":"/videos/111356018","name":"Safety
+        On Board","description":null,"link":"https://vimeo.com/rawfunkmaharishi/safetyonboard","duration":186,"width":1280,"language":"en-GB","height":720,"created_time":"2014-11-09T20:14:25+00:00","modified_time":"2015-03-23T22:09:01+00:00","content_rating":["safe"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/111356018/pictures/496005415","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/496005415_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/496005415_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/496005415_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/496005415_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/496005415_960x540.jpg"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/496005415_1280x720.jpg"}]},"tags":[{"uri":"/tags/musicsnakerawfunkmaharishi","name":"music
+        snake rawfunkmaharishi","tag":"music snake rawfunkmaharishi","canonical":"musicsnakerawfunkmaharishi","metadata":{"connections":{"videos":{"uri":"/tags/musicsnakerawfunkmaharishi/videos","options":["GET"],"total":1}}}}],"stats":{"plays":33},"metadata":{"connections":{"comments":{"uri":"/videos/111356018/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/111356018/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/111356018/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/111356018/pictures","options":["GET","POST"],"total":4},"texttracks":{"uri":"/videos/111356018/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/111356018"}}},"user":{"uri":"/users/33772623","name":"Raw
+        Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null},{"uri":"/videos/110133117","name":"Trapped
+        In Hawaii","description":null,"link":"https://vimeo.com/rawfunkmaharishi/trappedinhawaii","duration":227,"width":1280,"language":null,"height":720,"created_time":"2014-10-27T12:17:08+00:00","modified_time":"2015-03-23T22:09:01+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/110133117/pictures/494272000","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/494272000_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/494272000_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/494272000_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/494272000_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/494272000_960x540.jpg"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/494272000_1280x720.jpg"}]},"tags":[],"stats":{"plays":14},"metadata":{"connections":{"comments":{"uri":"/videos/110133117/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/110133117/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/110133117/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/110133117/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/110133117/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/110133117"}}},"user":{"uri":"/users/33772623","name":"Raw
+        Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null},{"uri":"/videos/110132671","name":"Discotheque
+        Metamorphosis","description":null,"link":"https://vimeo.com/rawfunkmaharishi/discotheque-metamorphosis","duration":218,"width":640,"language":null,"height":360,"created_time":"2014-10-27T12:10:13+00:00","modified_time":"2015-03-23T22:08:53+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/110132671/pictures/494269097","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/494269097_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/494269097_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/494269097_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/494269097_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/494269097_960x540.jpg"}]},"tags":[],"stats":{"plays":9},"metadata":{"connections":{"comments":{"uri":"/videos/110132671/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/110132671/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/110132671/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/110132671/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/110132671/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/110132671"}}},"user":{"uri":"/users/33772623","name":"Raw
+        Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null}]}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:20 GMT
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/old-cotswold-legbar-1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:20 GMT
+      Location:
+      - https://api.soundcloud.com/tracks/191432275.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Content-Length:
+      - '129'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/191432275.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:20 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/tracks/191432275.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:20 GMT
+      Etag:
+      - '"7580dc1d959dff9290ec656359500d11"'
+      Last-Modified:
+      - Wed, 25 Mar 2015 09:53:08 GMT
+      Server:
+      - am/2
+      Vary:
+      - Accept-Encoding
+      - Authorization, Accept
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '1542'
+    body:
+      encoding: UTF-8
+      string: '{"kind":"track","id":191432275,"created_at":"2015/02/16 16:21:41 +0000","user_id":56479293,"duration":242569,"commentable":true,"state":"finished","original_content_size":9754086,"last_modified":"2015/03/03
+        20:38:41 +0000","sharing":"public","tag_list":"","permalink":"old-cotswold-legbar-1","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Old
+        Cotswold Legbar","description":"Rogue Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":11,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/191432275","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/old-cotswold-legbar-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/3Wk3SzqzGceh_m.png","stream_url":"https://api.soundcloud.com/tracks/191432275/stream","download_url":"https://api.soundcloud.com/tracks/191432275/download","playback_count":45,"download_count":1,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/191432275/attachments","policy":"ALLOW"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:20 GMT
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/not-bernard
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:21 GMT
+      Location:
+      - https://api.soundcloud.com/tracks/190803089.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Content-Length:
+      - '129'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/190803089.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:21 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/tracks/190803089.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:21 GMT
+      Etag:
+      - '"1bb4d4decee0f18bca2bbf18305541ba"'
+      Last-Modified:
+      - Wed, 25 Mar 2015 09:53:08 GMT
+      Server:
+      - am/2
+      Vary:
+      - Accept-Encoding
+      - Authorization, Accept
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '1534'
+    body:
+      encoding: UTF-8
+      string: '{"kind":"track","id":190803089,"created_at":"2015/02/12 19:05:33 +0000","user_id":56479293,"duration":243745,"commentable":true,"state":"finished","original_content_size":9801108,"last_modified":"2015/03/03
+        20:39:08 +0000","sharing":"public","tag_list":"Jam Funk","permalink":"not-bernard","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"work-in-progress","title":"Not
+        Bernard","description":"Rogue Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":11,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/190803089","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/not-bernard","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/39tsgcZdYQWG_m.png","stream_url":"https://api.soundcloud.com/tracks/190803089/stream","download_url":"https://api.soundcloud.com/tracks/190803089/download","playback_count":57,"download_count":2,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/190803089/attachments","policy":"ALLOW"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:21 GMT
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/safety-on-board
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:21 GMT
+      Location:
+      - https://api.soundcloud.com/tracks/174628735.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Content-Length:
+      - '129'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/174628735.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:21 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/tracks/174628735.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:21 GMT
+      Etag:
+      - '"11044e86e60268401cbff98997967918"'
+      Last-Modified:
+      - Wed, 25 Mar 2015 09:53:08 GMT
+      Server:
+      - am/2
+      Vary:
+      - Accept-Encoding
+      - Authorization, Accept
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '1463'
+    body:
+      encoding: UTF-8
+      string: '{"kind":"track","id":174628735,"created_at":"2014/10/30 23:08:40 +0000","user_id":56479293,"duration":168530,"commentable":true,"state":"finished","original_content_size":6792847,"last_modified":"2015/03/03
+        20:39:32 +0000","sharing":"public","tag_list":"","permalink":"safety-on-board","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Safety
+        On Board","description":"Enterprise Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2014,"release_month":10,"release_day":14,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/174628735","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/safety-on-board","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/yZk068IK0oIW_m.png","stream_url":"https://api.soundcloud.com/tracks/174628735/stream","playback_count":58,"download_count":0,"favoritings_count":1,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/174628735/attachments","policy":"ALLOW"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:22 GMT
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:22 GMT
+      Location:
+      - https://api.soundcloud.com/tracks/174065916.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Content-Length:
+      - '129'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/174065916.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:22 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/tracks/174065916.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Mar 2015 20:44:22 GMT
+      Etag:
+      - '"b95c0337c2f92c17906dd81dde2c461b"'
+      Last-Modified:
+      - Wed, 25 Mar 2015 09:53:08 GMT
+      Server:
+      - am/2
+      Vary:
+      - Accept-Encoding
+      - Authorization, Accept
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '1466'
+    body:
+      encoding: UTF-8
+      string: '{"kind":"track","id":174065916,"created_at":"2014/10/27 13:30:20 +0000","user_id":56479293,"duration":232589,"commentable":true,"state":"finished","original_content_size":9354936,"last_modified":"2015/03/03
+        20:39:52 +0000","sharing":"public","tag_list":"","permalink":"funk-taxi-berlin","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Funk","title":"Funk
+        Taxi Berlin","description":"Enterprise Studios","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2014,"release_month":10,"release_day":14,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/174065916","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/funk-taxi-berlin","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/7b2NG8ej1DrU_m.png","stream_url":"https://api.soundcloud.com/tracks/174065916/stream","playback_count":50,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/174065916/attachments","policy":"ALLOW"}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:22 GMT
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/111356018
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - bearer <VIMEO_BEARER_TOKEN>
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 20:44:22 GMT
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Expires:
+      - Thu, 27 Mar 2025 20:44:22 GMT
+      Content-Length:
+      - '4002'
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-lcy1134-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1427748262.664462,VS0,VE211
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"uri":"/videos/111356018","name":"Safety On Board","description":null,"link":"https://vimeo.com/rawfunkmaharishi/safetyonboard","duration":186,"width":1280,"language":"en-GB","height":720,"created_time":"2014-11-09T20:14:25+00:00","modified_time":"2015-03-23T22:09:01+00:00","content_rating":["safe"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/111356018/pictures/496005415","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/496005415_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/496005415_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/496005415_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/496005415_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/496005415_960x540.jpg"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/496005415_1280x720.jpg"}]},"tags":[{"uri":"/tags/musicsnakerawfunkmaharishi","name":"music
+        snake rawfunkmaharishi","tag":"music snake rawfunkmaharishi","canonical":"musicsnakerawfunkmaharishi","metadata":{"connections":{"videos":{"uri":"/tags/musicsnakerawfunkmaharishi/videos","options":["GET"],"total":1}}}}],"stats":{"plays":33},"metadata":{"connections":{"comments":{"uri":"/videos/111356018/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/111356018/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/111356018/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/111356018/pictures","options":["GET","POST"],"total":4},"texttracks":{"uri":"/videos/111356018/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/111356018"}}},"user":{"uri":"/users/33772623","name":"Raw
+        Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:23 GMT
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/110133117
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - bearer <VIMEO_BEARER_TOKEN>
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 20:44:23 GMT
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Expires:
+      - Thu, 27 Mar 2025 20:44:23 GMT
+      Content-Length:
+      - '3732'
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-lcy1129-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1427748263.167411,VS0,VE201
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"uri":"/videos/110133117","name":"Trapped In Hawaii","description":null,"link":"https://vimeo.com/rawfunkmaharishi/trappedinhawaii","duration":227,"width":1280,"language":null,"height":720,"created_time":"2014-10-27T12:17:08+00:00","modified_time":"2015-03-23T22:09:01+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/110133117/pictures/494272000","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/494272000_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/494272000_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/494272000_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/494272000_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/494272000_960x540.jpg"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/494272000_1280x720.jpg"}]},"tags":[],"stats":{"plays":14},"metadata":{"connections":{"comments":{"uri":"/videos/110133117/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/110133117/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/110133117/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/110133117/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/110133117/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/110133117"}}},"user":{"uri":"/users/33772623","name":"Raw
+        Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:23 GMT
+- request:
+    method: get
+    uri: https://api.vimeo.com/videos/110132671
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - bearer <VIMEO_BEARER_TOKEN>
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Mar 2015 20:44:23 GMT
+      Server:
+      - nginx
+      Content-Type:
+      - application/vnd.vimeo.video+json
+      Cache-Control:
+      - no-cache, max-age=315360000
+      Expires:
+      - Thu, 27 Mar 2025 20:44:23 GMT
+      Content-Length:
+      - '3659'
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-lcy1121-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1427748263.641048,VS0,VE197
+      Vary:
+      - Accept,Vimeo-Client-Id,Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"uri":"/videos/110132671","name":"Discotheque Metamorphosis","description":null,"link":"https://vimeo.com/rawfunkmaharishi/discotheque-metamorphosis","duration":218,"width":640,"language":null,"height":360,"created_time":"2014-10-27T12:10:13+00:00","modified_time":"2015-03-23T22:08:53+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/110132671/pictures/494269097","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/494269097_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/494269097_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/494269097_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/494269097_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/494269097_960x540.jpg"}]},"tags":[],"stats":{"plays":9},"metadata":{"connections":{"comments":{"uri":"/videos/110132671/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/110132671/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/110132671/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/110132671/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/110132671/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/110132671"}}},"user":{"uri":"/users/33772623","name":"Raw
+        Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null}'
+    http_version: 
+  recorded_at: Mon, 30 Mar 2015 20:44:23 GMT
+recorded_with: VCR 2.9.3

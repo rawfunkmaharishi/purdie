@@ -5,6 +5,10 @@ require 'coveralls/rake/task'
 
 Coveralls::RakeTask.new
 RSpec::Core::RakeTask.new
-Cucumber::Rake::Task.new
+#Cucumber::Rake::Task.new
 
-task :default => [:spec, :cucumber, 'coveralls:push']
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "features --tags ~@wip"
+end
+
+task :default => [:spec, :features, 'coveralls:push']

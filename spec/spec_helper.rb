@@ -23,7 +23,7 @@ RSpec.configure do |config|
 
   config.after :each do
     FileUtils.rm File.join(File.dirname(__FILE__), '..', '_config/purdie.yaml')
-    FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '_sources')
+    FileUtils.rm_rf File.join(File.dirname(__FILE__), '..', '_sources')
   end
 end
 

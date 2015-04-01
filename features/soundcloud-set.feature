@@ -7,8 +7,8 @@ Feature: Soundcloud set
     https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions
     """
     When I successfully run `purdie fetch`
-    Then a file named "_data/soundcloud.yaml" should exist
-    And the file "_data/soundcloud.yaml" should contain:
+    Then a file named "_data/soundcloud-set.yaml" should exist
+    And the file "_data/soundcloud-set.yaml" should contain:
     """
     ---
     - title: Hexaflexagon

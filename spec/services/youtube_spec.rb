@@ -28,7 +28,7 @@ license_url: https://creativecommons.org/licenses/by/3.0/
         expect(vid['license']).to eq 'YouTube'
       end
 
-      context 'resolve a playlist' do
+      context 'resolve a playlist', :vcr do
         it 'resolves a playlist from a shitty YouTube URL', :vcr do
           list = YouTube.resolve 'https://www.youtube.com/playlist?list=PLuPLM2FI60-OIgFTc9YCrGgH5XWGT6znV'
           expect(list.count).to eq 9
