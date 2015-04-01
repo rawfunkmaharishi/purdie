@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="7mHvr2xFACCqN%2FEcJh2hZXqg5l2rWylGKhSBFFIMxkE%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427878402", oauth_token="",
+        oauth_nonce="6%2BGrs%2Bn6FZ6ua9eHOBrzYpKVbz%2BNsl8cfLESnFHLe0E%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427833105", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Apr 2015 08:53:20 GMT
+      - Tue, 31 Mar 2015 20:18:26 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www5.flickr.bf1.yahoo.com
+      - www21.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '0'
+      - '2'
       Via:
-      - http/1.1 fts125.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r17.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts122.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r13.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Strict-Transport-Security:
@@ -58,7 +58,7 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424289792","taken":"2015-02-18
         16:56:20","takengranularity":"0","takenunknown":"0","lastupdate":"1424289832"},"views":"39","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/15950875724\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:22 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:26 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -74,8 +74,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="dKos5RnUD01z6UgpcJu4YnL%2FnalshWClcX28G%2BFax6Q%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427878402", oauth_token="",
+        oauth_nonce="dROaFhiz%2FgKYxlHUucU42NAFitV3J6o4YaTsWC%2BTh60%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427833106", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Apr 2015 08:53:20 GMT
+      - Tue, 31 Mar 2015 20:18:26 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -97,14 +97,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www19.flickr.bf1.yahoo.com
+      - www298.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts103.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r04.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts119.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r05.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Strict-Transport-Security:
@@ -125,7 +125,7 @@ http_interactions:
         Domain Dedication (CC0)","url":"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/"},{"id":"10","name":"Public
         Domain Mark","url":"https:\/\/creativecommons.org\/publicdomain\/mark\/1.0\/"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:22 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:26 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -141,8 +141,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="ulEBAhX9BTuFutyTNeDbtVjYs3irvRm%2BybPAsSvMZNM%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427878402", oauth_token="",
+        oauth_nonce="Feaa37TfZQC6n%2Fu%2Bw%2FFvZnvi779gyYcybKXpul1FSyA%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427833106", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -152,7 +152,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Apr 2015 08:53:20 GMT
+      - Tue, 31 Mar 2015 20:18:26 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -164,14 +164,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www219.flickr.bf1.yahoo.com
+      - www313.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '2'
+      - '0'
       Via:
-      - http/1.1 fts113.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r03.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts107.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r05.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Strict-Transport-Security:
@@ -184,7 +184,7 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424360169","taken":"2015-02-18
         16:28:17","takengranularity":"0","takenunknown":"0","lastupdate":"1424360294"},"views":"26","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/16579675721\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:23 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:26 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -200,8 +200,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="Q7Soo%2FUpnDmR3IN8f4L2YpPm5I1HBjt2OODPv1gA2pw%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427878403", oauth_token="",
+        oauth_nonce="xdypdSj8qelXLUVOW8dpku2BnnzAQKiIz%2BYR5PV1ur4%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427833106", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -211,7 +211,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Apr 2015 08:53:21 GMT
+      - Tue, 31 Mar 2015 20:18:27 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -223,14 +223,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www285.flickr.bf1.yahoo.com
+      - www15.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
       - '0'
       Via:
-      - http/1.1 fts116.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r11.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts104.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r09.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Strict-Transport-Security:
@@ -251,7 +251,7 @@ http_interactions:
         Domain Dedication (CC0)","url":"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/"},{"id":"10","name":"Public
         Domain Mark","url":"https:\/\/creativecommons.org\/publicdomain\/mark\/1.0\/"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:23 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:27 GMT
 - request:
     method: get
     uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
@@ -279,7 +279,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Apr 2015 08:53:21 GMT
+      - Tue, 31 Mar 2015 20:18:27 GMT
       Location:
       - https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -290,7 +290,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:23 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:27 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -320,7 +320,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Apr 2015 08:53:21 GMT
+      - Tue, 31 Mar 2015 20:18:27 GMT
       Etag:
       - '"22a8481cd85e1e7be64128c639cc21b0"'
       Last-Modified:
@@ -341,7 +341,7 @@ http_interactions:
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193008299","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":59,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:23 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:27 GMT
 - request:
     method: get
     uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why
@@ -369,7 +369,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Apr 2015 08:53:21 GMT
+      - Tue, 31 Mar 2015 20:18:27 GMT
       Location:
       - https://api.soundcloud.com/tracks/193006525.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -380,7 +380,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/193006525.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:23 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:27 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/193006525.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -410,7 +410,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Apr 2015 08:53:21 GMT
+      - Tue, 31 Mar 2015 20:18:27 GMT
       Etag:
       - '"e670341711b788c7ec34c63c273258db"'
       Last-Modified:
@@ -432,7 +432,7 @@ http_interactions:
         Of Course, But Why","description":"Islington Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193006525","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/qBjvlEuOtgIA_m.png","stream_url":"https://api.soundcloud.com/tracks/193006525/stream","download_url":"https://api.soundcloud.com/tracks/193006525/download","playback_count":47,"download_count":1,"favoritings_count":1,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193006525/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:23 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:28 GMT
 - request:
     method: get
     uri: https://api.vimeo.com/videos/117102891
@@ -450,7 +450,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Apr 2015 08:53:22 GMT
+      - Tue, 31 Mar 2015 20:18:29 GMT
       Server:
       - nginx
       Content-Type:
@@ -458,7 +458,7 @@ http_interactions:
       Cache-Control:
       - no-cache, max-age=315360000
       Expires:
-      - Sat, 29 Mar 2025 08:53:21 GMT
+      - Fri, 28 Mar 2025 20:18:28 GMT
       Content-Length:
       - '3714'
       Accept-Ranges:
@@ -468,13 +468,13 @@ http_interactions:
       Age:
       - '0'
       X-Served-By:
-      - cache-lcy1120-LCY
+      - cache-lcy1126-LCY
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1427878401.754354,VS0,VE330
+      - S1427833108.171735,VS0,VE1051
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
@@ -482,7 +482,7 @@ http_interactions:
       string: '{"uri":"/videos/117102891","name":"Bernard","description":null,"link":"https://vimeo.com/rawfunkmaharishi/bernard","duration":239,"width":1280,"language":null,"height":720,"created_time":"2015-01-18T17:26:10+00:00","modified_time":"2015-03-23T22:11:19+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/117102891/pictures/503683214","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/503683214_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/503683214_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/503683214_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/503683214_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/503683214_960x540.jpg"},{"width":1280,"height":720,"link":"https://i.vimeocdn.com/video/503683214_1280x720.jpg"}]},"tags":[],"stats":{"plays":24},"metadata":{"connections":{"comments":{"uri":"/videos/117102891/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/117102891/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/117102891/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/117102891/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/117102891/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/117102891"}}},"user":{"uri":"/users/33772623","name":"Raw
         Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:24 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:29 GMT
 - request:
     method: get
     uri: https://api.vimeo.com/videos/110132671
@@ -500,7 +500,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Apr 2015 08:53:22 GMT
+      - Tue, 31 Mar 2015 20:18:29 GMT
       Server:
       - nginx
       Content-Type:
@@ -508,7 +508,7 @@ http_interactions:
       Cache-Control:
       - no-cache, max-age=315360000
       Expires:
-      - Sat, 29 Mar 2025 08:53:22 GMT
+      - Fri, 28 Mar 2025 20:18:29 GMT
       Content-Length:
       - '3659'
       Accept-Ranges:
@@ -518,13 +518,13 @@ http_interactions:
       Age:
       - '0'
       X-Served-By:
-      - cache-lcy1126-LCY
+      - cache-lcy1123-LCY
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1427878402.148802,VS0,VE335
+      - S1427833109.387655,VS0,VE193
       Vary:
       - Accept,Vimeo-Client-Id,Accept-Encoding
     body:
@@ -532,5 +532,5 @@ http_interactions:
       string: '{"uri":"/videos/110132671","name":"Discotheque Metamorphosis","description":null,"link":"https://vimeo.com/rawfunkmaharishi/discotheque-metamorphosis","duration":218,"width":640,"language":null,"height":360,"created_time":"2014-10-27T12:10:13+00:00","modified_time":"2015-03-23T22:08:53+00:00","content_rating":["unrated"],"license":"by-nc-sa","privacy":{"view":"anybody","embed":"public","download":true,"add":true,"comments":"anybody"},"pictures":{"uri":"/videos/110132671/pictures/494269097","active":true,"sizes":[{"width":100,"height":75,"link":"https://i.vimeocdn.com/video/494269097_100x75.jpg"},{"width":200,"height":150,"link":"https://i.vimeocdn.com/video/494269097_200x150.jpg"},{"width":295,"height":166,"link":"https://i.vimeocdn.com/video/494269097_295x166.jpg"},{"width":640,"height":360,"link":"https://i.vimeocdn.com/video/494269097_640x360.jpg"},{"width":960,"height":540,"link":"https://i.vimeocdn.com/video/494269097_960x540.jpg"}]},"tags":[],"stats":{"plays":9},"metadata":{"connections":{"comments":{"uri":"/videos/110132671/comments","options":["GET","POST"],"total":0},"credits":{"uri":"/videos/110132671/credits","options":["GET","POST"],"total":1},"likes":{"uri":"/videos/110132671/likes","options":["GET"],"total":0},"pictures":{"uri":"/videos/110132671/pictures","options":["GET","POST"],"total":1},"texttracks":{"uri":"/videos/110132671/texttracks","options":["GET","POST"],"total":0}},"interactions":{"watchlater":{"added":false,"added_time":null,"uri":"/users/33772623/watchlater/110132671"}}},"user":{"uri":"/users/33772623","name":"Raw
         Funk Maharishi","link":"https://vimeo.com/rawfunkmaharishi","location":null,"bio":null,"created_time":"2014-10-27T12:06:25+00:00","account":"basic","pictures":{"uri":"/users/33772623/pictures/8588995","active":true,"sizes":[{"width":30,"height":30,"link":"https://i.vimeocdn.com/portrait/8588995_30x30.jpg"},{"width":75,"height":75,"link":"https://i.vimeocdn.com/portrait/8588995_75x75.jpg"},{"width":100,"height":100,"link":"https://i.vimeocdn.com/portrait/8588995_100x100.jpg"},{"width":300,"height":300,"link":"https://i.vimeocdn.com/portrait/8588995_300x300.jpg"}]},"websites":[{"name":"http://rawfunkmaharishi.uk/","link":"http://rawfunkmaharishi.uk/","description":null}],"metadata":{"connections":{"activities":{"uri":"/users/33772623/activities","options":["GET"]},"albums":{"uri":"/users/33772623/albums","options":["GET"],"total":1},"channels":{"uri":"/users/33772623/channels","options":["GET"],"total":0},"feed":{"uri":"/users/33772623/feed","options":["GET"]},"followers":{"uri":"/users/33772623/followers","options":["GET"],"total":0},"following":{"uri":"/users/33772623/following","options":["GET"],"total":0},"groups":{"uri":"/users/33772623/groups","options":["GET"],"total":0},"likes":{"uri":"/users/33772623/likes","options":["GET"],"total":0},"portfolios":{"uri":"/users/33772623/portfolios","options":["GET"],"total":0},"videos":{"uri":"/users/33772623/videos","options":["GET"],"total":4},"watchlater":{"uri":"/users/33772623/watchlater","options":["GET"],"total":0},"shared":{"uri":"/users/33772623/shared/videos","options":["GET"],"total":0},"pictures":{"uri":"/users/33772623/pictures","options":["GET","POST"],"total":1}}},"content_filter":["language","drugs","violence","nudity","safe","unrated"]},"embed":{"uri":null,"buttons":{"like":true,"watchlater":true,"share":true,"embed":true,"hd":false,"fullscreen":true,"scaling":true},"logos":{"vimeo":true,"custom":{"active":false,"link":null,"sticky":false}},"title":{"name":"user","owner":"user","portrait":"user"},"playbar":true,"volume":true,"color":"00adef"},"app":null,"status":"available","embed_presets":null}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:24 GMT
+  recorded_at: Tue, 31 Mar 2015 20:18:29 GMT
 recorded_with: VCR 2.9.3

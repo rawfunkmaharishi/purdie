@@ -17,6 +17,10 @@ Feature: First contact with the Real World
     https://vimeo.com/117102891
     https://vimeo.com/110132671
     """
+    And a file named "_config/purdie.yaml" with:
+    """
+    default_title: Raw Funk Maharishi
+    """
     When I successfully run `purdie fetch`
     Then a file named "_data/flickr.yaml" should exist
     And the file "_data/flickr.yaml" should contain:

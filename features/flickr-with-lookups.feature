@@ -1,4 +1,3 @@
-@wtf
 @vcr
 Feature: Flickr
 

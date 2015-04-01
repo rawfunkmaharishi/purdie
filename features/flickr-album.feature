@@ -6,6 +6,11 @@ Feature: Flickr album
     """
     https://www.flickr.com/photos/pikesley/sets/72157649827363868/
     """
+    And a file named "_config/purdie.yaml" with:
+    """
+    photographer_lookups:
+      pikesley: sam
+    """  
     When I successfully run `purdie fetch`
     Then a file named "_data/flickr.yaml" should exist
     And the file "_data/flickr.yaml" should contain:

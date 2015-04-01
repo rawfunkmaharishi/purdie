@@ -15,8 +15,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="SnAm55eIbh3QWhS2mO3W0N1qmJvaXcS2Ed%2FDiMyB0bA%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427832605", oauth_token="",
+        oauth_nonce="t%2FbGjfwiWSsHuPub%2FUSfPs7BBo%2BQkytihYAaH49RLRE%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427878400", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -26,7 +26,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 31 Mar 2015 20:10:06 GMT
+      - Wed, 01 Apr 2015 08:53:19 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -38,14 +38,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www250.flickr.bf1.yahoo.com
+      - www284.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '0'
+      - '2'
       Via:
-      - http/1.1 fts107.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r06.ycpi.ir2.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts115.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r14.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Strict-Transport-Security:
@@ -58,7 +58,7 @@ http_interactions:
         Dickson","location":"London, UK","iconserver":"7338","iconfarm":8,"path_alias":"cluttercup"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1424360186","taken":"2015-02-18
         16:57:45","takengranularity":"0","takenunknown":"0","lastupdate":"1424360361"},"views":"23","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/cluttercup\/16393865760\/"}]},"media":"photo"},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:10:06 GMT
+  recorded_at: Wed, 01 Apr 2015 08:53:21 GMT
 - request:
     method: post
     uri: https://api.flickr.com/services/rest/
@@ -74,8 +74,8 @@ http_interactions:
       - FlickRaw/0.9.8
       Authorization:
       - OAuth realm="https://api.flickr.com/services/rest/", oauth_consumer_key="<FLICKR_API_KEY>",
-        oauth_nonce="9byljofPL4fvvD0tPLSI8TF5F28mAwbiKUipFDjgE6w%3D", oauth_signature="<FLICKR_SECRET>%26",
-        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427832606", oauth_token="",
+        oauth_nonce="O%2BPLTXfu67GGVUMOoHofo4skE9jeLqF0U9TmUr2iabA%3D", oauth_signature="<FLICKR_SECRET>%26",
+        oauth_signature_method="PLAINTEXT", oauth_timestamp="1427878401", oauth_token="",
         oauth_version="1.0"
       Content-Type:
       - application/x-www-form-urlencoded
@@ -85,7 +85,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 31 Mar 2015 20:10:07 GMT
+      - Wed, 01 Apr 2015 08:53:19 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -97,14 +97,14 @@ http_interactions:
       Cache-Control:
       - private
       X-Served-By:
-      - www282.flickr.bf1.yahoo.com
+      - www45.flickr.bf1.yahoo.com
       Vary:
       - Accept-Encoding
       Age:
-      - '1'
+      - '0'
       Via:
-      - http/1.1 fts117.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
-        http/1.1 r11.ycpi.ams.yahoo.net (ApacheTrafficServer [cMsSf ])
+      - http/1.1 fts113.flickr.bf1.yahoo.com (ApacheTrafficServer/4.0.2 [cMsSf ]),
+        http/1.1 r14.ycpi.dea.yahoo.net (ApacheTrafficServer [cMsSf ])
       Server:
       - ATS
       Strict-Transport-Security:
@@ -125,5 +125,5 @@ http_interactions:
         Domain Dedication (CC0)","url":"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/"},{"id":"10","name":"Public
         Domain Mark","url":"https:\/\/creativecommons.org\/publicdomain\/mark\/1.0\/"}]},"stat":"ok"}'
     http_version: 
-  recorded_at: Tue, 31 Mar 2015 20:10:07 GMT
+  recorded_at: Wed, 01 Apr 2015 08:53:21 GMT
 recorded_with: VCR 2.9.3
