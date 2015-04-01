@@ -23,11 +23,3 @@ require 'purdie/services/vimeo'
 require 'purdie/services/youtube'
 
 Dotenv.load
-
-class Hash
-  def attach_license service, license
-    l = Purdie::LicenseManager.get service, license
-    self['license'] = l['full_name']
-    self['license_url'] = l['url']
-  end
-end

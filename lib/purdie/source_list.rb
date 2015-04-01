@@ -17,11 +17,7 @@ module Purdie
 
     def each &block
       @sources.each do |source|
-        if block_given?
-          block.call source
-        else
-          yield source
-        end
+        yield source
       end
     end
 
@@ -31,14 +27,25 @@ module Purdie
       @items = []
       @sources.each do |source|
         begin
+          print "Processing #{source.url}..."
           source.distill
+          puts 'done'
         rescue Purdie::CredentialsException => ce
           bad_creds.push Purdie.basename(ce.service)
+          puts 'fail'
         end
         @items.push source
 
         if bad_creds.any?
           raise Purdie::CredentialsException.new self, "Missing or duff credentials for: #{bad_creds.uniq.join ', '}"
+        end
+
+        if bad_licenses.any?
+          bad = bad_licenses.map { |k,v| "#{k}: #{v.uniq.join ', '}" }.join '; '
+          message = "Unknown licenses: #{bad}"
+          message += "\n"
+          message += 'Please consider adding the details for these licenses at https://github.com/rawfunkmaharishi/purdie/blob/master/_config/licenses.yaml'
+          raise Purdie::PurdieException.new message
         end
       end
     end

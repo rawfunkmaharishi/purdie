@@ -17,12 +17,12 @@ module Purdie
       end
     end
 
-    def source_file= path
-      @sources = path
-    end
+#    def source_file= path
+#      @sources = path
+#    end
 
     def fetch
-      raise Exception.new 'No data sources specified' unless @sources
+      raise PurdieException.new 'No data sources specified' unless @sources
 
       @sources.map { |s| SourceList.from_file s }.each do |source|
         source.write
