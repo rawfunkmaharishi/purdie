@@ -1,3 +1,4 @@
+@clearconf
 @vcr
 Feature: First contact with the Real World
 

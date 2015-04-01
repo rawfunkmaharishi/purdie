@@ -26,10 +26,20 @@ module Purdie
     end
 
     def process
+      bad_creds = []
+      bad_licenses = {}
       @items = []
       @sources.each do |source|
-        source.distill
+        begin
+          source.distill
+        rescue Purdie::CredentialsException => ce
+          bad_creds.push Purdie.basename(ce.service)
+        end
         @items.push source
+
+        if bad_creds.any?
+          raise Purdie::CredentialsException.new self, "Missing or duff credentials for: #{bad_creds.uniq.join ', '}"
+        end
       end
     end
 

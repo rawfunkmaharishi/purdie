@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Apr 2015 08:53:23 GMT
+      - Wed, 01 Apr 2015 19:41:12 GMT
       Location:
       - https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>
       Server:
@@ -38,7 +38,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:25 GMT
+  recorded_at: Wed, 01 Apr 2015 19:41:12 GMT
 - request:
     method: get
     uri: https://api.soundcloud.com/tracks/193008299.json?client_id=<SOUNDCLOUD_CLIENT_ID>
@@ -68,15 +68,16 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 01 Apr 2015 08:53:23 GMT
+      - Wed, 01 Apr 2015 19:41:12 GMT
       Etag:
       - '"22a8481cd85e1e7be64128c639cc21b0"'
       Last-Modified:
       - Tue, 31 Mar 2015 16:20:04 GMT
       Server:
-      - ECS (lhr/4BCD)
+      - am/2
       Vary:
       - Accept-Encoding
+      - Authorization, Accept
       X-Cache:
       - HIT
       Content-Length:
@@ -88,5 +89,5 @@ http_interactions:
         Academy","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":2,"release_day":18,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/193008299","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
         Funk Maharishi","last_modified":"2015/03/23 09:26:53 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/CxyZz6RUbqZN_m.png","stream_url":"https://api.soundcloud.com/tracks/193008299/stream","download_url":"https://api.soundcloud.com/tracks/193008299/download","playback_count":59,"download_count":3,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/193008299/attachments","policy":"ALLOW"}'
     http_version: 
-  recorded_at: Wed, 01 Apr 2015 08:53:25 GMT
+  recorded_at: Wed, 01 Apr 2015 19:41:12 GMT
 recorded_with: VCR 2.9.3

@@ -1,5 +1,6 @@
 @wip
 @vcr
+@announce-stdout
 Feature: Missing or bad credentials
 
   Scenario: Attempt to process SoundCloud URLs with missing credentials
@@ -20,14 +21,13 @@ Feature: Missing or bad credentials
     """
     https://vimeo.com/110132671
     https://vimeo.com/110133117
-    https://www.youtube.com/watch?v=Qt_J0jNqtZg&list=PLuPLM2FI60-M0-aWejF9WgB-Dkt1TuQXv&index=2
     """
     And no credentials for Vimeo
     And bad credentials for YouTube
     When I run `purdie fetch`
     Then the stderr should contain:
     """
-    Missing or duff credentials for: Vimeo, YouTube
+    Missing or duff credentials for: Vimeo
     """
     And I restore the credentials for Vimeo
     And I restore the credentials for YouTube
