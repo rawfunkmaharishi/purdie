@@ -5,7 +5,7 @@ module Purdie
     attr_reader :config
 
     def initialize
-      @config = Config.instance.config
+      @config = Config.new
       begin
         @sources = Dir.entries(@config['source_dir']).select { |e|
           e !~ /^\./
