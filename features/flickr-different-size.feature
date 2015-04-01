@@ -1,4 +1,4 @@
-@wtf
+@wip
 @vcr
 Feature: Set Flickr picturesize
 

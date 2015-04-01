@@ -1,4 +1,3 @@
-@wip
 @vcr
 @announce-stdout
 Feature: Missing or bad credentials

@@ -1,4 +1,4 @@
-@clearconf
+@wip
 @vcr
 Feature: Flickr
 
