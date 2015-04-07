@@ -110,12 +110,12 @@ Tread carefully for now, because my metadata hacks aren't fully documented, and 
 
 There's no reason I couldn't support other services - I've already added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) [support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
 
-* includes the `Purdie::Ingester` module, and
+* includes the `Purdie::Service` module, and
 * sports a `::matcher` class method which returns a string which will pick a URL out of an input file, and
 * has a `#distill` method which takes a URL representing an item on the service and returns a hash of metadata, see e.g.
-  * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb#L33)
-  * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb#L13)
-  * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb#L20)
+  * [Flickr](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/flickr.rb)
+  * [SoundCloud](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/soundcloud.rb)
+  * [Vimeo](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/vimeo.rb)
 * and optionally a `::resolve` class method which takes a set or album URL for the service and returns a list of URLs for individual items
 
 then this should all Just Work. There's definitely a blog post in this, because Ruby introspection and metaprogramming is just mind-bogglingly powerful (and dangerous).
