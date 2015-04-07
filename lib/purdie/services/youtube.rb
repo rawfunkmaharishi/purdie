@@ -1,10 +1,9 @@
-require 'purdie'
 require 'google/api_client'
 
 module Purdie
   module Services
     class YouTube
-      include Ingester
+      include Service
 
       API_SERVICE_NAME = 'youtube'
       API_VERSION = 'v3'

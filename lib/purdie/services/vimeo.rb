@@ -1,9 +1,7 @@
-require 'purdie'
-
 module Purdie
   module Services
     class Vimeo
-      include Purdie::Ingester
+      include Purdie::Service
 
       def get url
         @id = Purdie.get_id url

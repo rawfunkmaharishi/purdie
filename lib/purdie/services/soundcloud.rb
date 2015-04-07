@@ -1,10 +1,9 @@
-require 'purdie'
 require 'soundcloud'
 
 module Purdie
   module Services
     class SoundCloud
-      include Purdie::Ingester
+      include Purdie::Service
 
       def client
         @client ||= ::SoundCloud.new client_id: ENV['SOUNDCLOUD_CLIENT_ID']
@@ -19,7 +18,7 @@ module Purdie
           raise CredentialsException.new self, 'duff'
         end
 
-        results = {} 
+        results = {}
         results['title'] = track['title']
         results['id'] = track['id']
         results['location'] = track['description']

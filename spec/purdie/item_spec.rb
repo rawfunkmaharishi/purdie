@@ -27,12 +27,6 @@ bass: Rainey
       )
     end
 
-    it 'knows what file it came from' do
-      sl = instance_double('SourceList', parent_file: 'some/path/bernard.purdie')
-      i.source_list = sl
-      expect(i.parent_file).to eq 'some/path/bernard.purdie'
-    end
-
     it 'knows what service it belongs to' do
       expect(i.service.class).to eq Purdie::Services::SoundCloud
     end

@@ -1,5 +1,3 @@
-require 'purdie'
-
 module Purdie
   class CredentialsException < Exception
     attr_reader :service, :message
@@ -12,7 +10,7 @@ module Purdie
 
   class PurdieException < Exception
     attr_reader :message
-    
+
     def initialize message
       @message = message
     end

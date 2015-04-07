@@ -1,5 +1,3 @@
-require 'purdie'
-
 module Purdie
   class LicenseManager
     LOOKUPS = YAML.load File.read File.join(File.dirname(__FILE__), '..', '..', '_config/licenses.yaml')

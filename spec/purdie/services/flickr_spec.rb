@@ -35,8 +35,8 @@ photographer: kim
       end
 
       it 'ingests data for a photo without a specific photographer tag', :vcr do
-        @f.ingest 'https://www.flickr.com/photos/pikesley/16649739916/'
-        expect(@f[0].to_yaml).to match /photographer: sam/
+        dist = @f.distill 'https://www.flickr.com/photos/pikesley/16649739916/'
+        expect(dist.to_yaml).to match /photographer: sam/
       end
 
       it 'falls back to the default photographer name', :vcr do
@@ -76,8 +76,8 @@ photographer: kim
 
       context 'do the local config lookups' do
         it 'looks up the default title', :vcr do
-          @f.ingest 'https://www.flickr.com/photos/cluttercup/16393865760/'
-          expect(@f[0]['title']).to eq 'Raw Funk Maharishi'
+          dist = @f.distill 'https://www.flickr.com/photos/cluttercup/16393865760/'
+          expect(dist['title']).to eq 'Raw Funk Maharishi'
         end
       end
     end
