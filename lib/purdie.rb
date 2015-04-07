@@ -11,15 +11,13 @@ require 'purdie/helpers'
 require 'purdie/bernard'
 require 'purdie/config'
 require 'purdie/item'
-require 'purdie/ingester'
 require 'purdie/source_list'
 require 'purdie/license_manager'
 require 'purdie/exceptions'
 require 'purdie/resolver'
 
+require 'purdie/service'
 require 'purdie/services/soundcloud'
 require 'purdie/services/flickr'
 require 'purdie/services/vimeo'
 require 'purdie/services/youtube'
-
-Dotenv.load

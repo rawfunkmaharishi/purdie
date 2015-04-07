@@ -1,8 +1,6 @@
-require 'purdie'
-
 module Purdie
   class Bernard
-    attr_reader :config
+    attr_accessor :verbose
 
     def initialize
       @config = Config.instance.config
@@ -24,7 +22,7 @@ module Purdie
     def fetch
       raise PurdieException.new 'No data sources specified' unless @sources
 
-      @sources.map { |s| SourceList.from_file s }.each do |source|
+      @sources.map { |s| SourceList.from_file s, @verbose }.each do |source|
         source.write
       end
     end

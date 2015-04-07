@@ -25,20 +25,6 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
         )
       end
 
-      it 'ingests a track', :vcr do
-        @sc.ingest 'https://soundcloud.com/rawfunkmaharishi/bernard'
-        expect(@sc[0].to_yaml).to eq(
-"---
-title: Bernard
-id: 192841052
-location: Islington Academy
-date: '2015-02-18'
-license: Attribution-NonCommercial-ShareAlike
-license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
-"
-        )
-      end
-
       context 'resolve a set' do
         it 'resolves a set from a url', :vcr do
           set = SoundCloud.resolve 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'

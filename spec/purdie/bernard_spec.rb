@@ -2,6 +2,12 @@ require 'spec_helper'
 
 module Purdie
   describe Bernard do
+    it 'does not throw a fit when initialized with no _sources dir' do
+      FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '..', '_sources')
+      b = Bernard.new
+      expect {b.fetch}.to raise_error
+    end
+
     it 'processes files', :vcr do
       FileUtils.cp 'spec/support/fixtures/soundcloud.sounds', '_sources/'
       FileUtils.cp 'spec/support/fixtures/vimeo.vids', '_sources/'

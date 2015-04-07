@@ -11,9 +11,9 @@ module Purdie
         expect(@v.get 'https://vimeo.com/117102891').to be_a Hash
       end
 
-      it 'ingests a video', :vcr do
-        @v.ingest 'https://vimeo.com/117102891'
-        expect(@v[0].to_yaml).to eq(
+      it 'has yaml for a video', :vcr do
+        dist = @v.distill 'https://vimeo.com/117102891'
+        expect(dist.to_yaml).to eq(
 "---
 title: Bernard
 id: 117102891

@@ -1,4 +1,3 @@
-require 'purdie'
 require 'flickraw-cached'
 
 FlickRaw.api_key = ENV['FLICKR_API_KEY']
@@ -9,7 +8,7 @@ module Purdie
     class Flickr
       attr_accessor :size
 
-      include Purdie::Ingester
+      include Purdie::Service
 
       def configure
         @size = 240 # pixels
@@ -37,8 +36,7 @@ module Purdie
         results['title'] = photo['title']
         results['title'] = @config['default_title'] if photo['title'] == ''
         results['date'] = photo['dates']['taken'].split(' ')[0]
-        results['photo_page'] = photo['urls'][0]['_content']
-      #  results['photo_page'] = url
+        results['photo_page'] = url
         results['photo_url'] = FlickRaw.send(Flickr.url_for_size(@size), photo)
 
         license = licenses.select {|l| l['id'] == photo['license']}[0]
