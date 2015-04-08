@@ -13,6 +13,7 @@ module Purdie
 
       it 'distills the data', :vcr do
         distilled = @sc.distill 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
+    #    distilled = SoundCloud.distill 'https://soundcloud.com/rawfunkmaharishi/hexaflexagon-1'
         expect(distilled.to_yaml).to eq(
 "---
 title: Hexaflexagon
