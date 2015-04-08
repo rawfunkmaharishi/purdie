@@ -1,4 +1,3 @@
-### @wtf
 ### @vcr
 ### Feature: Select a file to process
 ###
