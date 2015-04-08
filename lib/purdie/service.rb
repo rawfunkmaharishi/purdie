@@ -14,17 +14,13 @@ module Purdie
       @services.push base
     end
 
-    def initialize config = nil
-      config = Config.instance.config unless config
-      @config = config
-
+    def initialize
+      @config = Config.instance.config
       configure
     end
 
     def configure
-      @output_file = "#{@config['output_dir']}/#{Purdie.basename(self).downcase}.yaml"
       specific_config = @config['services'][Purdie.basename self] rescue nil
-
       if specific_config
         specific_config.each_pair do |key, value|
           self.instance_variable_set("@#{key}", value)
