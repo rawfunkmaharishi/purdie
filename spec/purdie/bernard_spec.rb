@@ -5,7 +5,10 @@ module Purdie
     it 'does not throw a fit when initialized with no _sources dir' do
       FileUtils.rmdir File.join(File.dirname(__FILE__), '..', '..', '_sources')
       b = Bernard.new
-      expect {b.fetch}.to raise_error
+      expect {b.fetch}.to raise_exception { |e|
+        expect(e).to be_a Purdie::PurdieException
+        expect(e.message).to eq 'No data sources specified'
+      }
     end
 
     it 'processes files', :vcr do
