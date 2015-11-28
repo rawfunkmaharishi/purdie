@@ -1,5 +1,6 @@
 @clearconf
 @vcr
+@broken
 Feature: First contact with the Real World
 
   Scenario: Generate YAML for the Raw Funk Maharishi
