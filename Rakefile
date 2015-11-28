@@ -8,7 +8,7 @@ RSpec::Core::RakeTask.new
 #Cucumber::Rake::Task.new
 
 Cucumber::Rake::Task.new(:features) do |t|
-  t.cucumber_opts = "features --tags ~@wip"
+  t.cucumber_opts = "features --tags ~@broken"
 end
 
 task :default => [:spec, :features, 'coveralls:push']

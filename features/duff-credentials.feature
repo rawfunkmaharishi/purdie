@@ -1,5 +1,7 @@
 @vcr
 @announce-stdout
+@announce-stderr
+@broken
 Feature: Missing or bad credentials
 
   Scenario: Attempt to process SoundCloud URLs with missing credentials

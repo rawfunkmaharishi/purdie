@@ -1,4 +1,5 @@
 @vcr
+@broken
 Feature: Flickr album
 
   Scenario: Generate Flickr YAML for an album
@@ -10,7 +11,7 @@ Feature: Flickr album
     """
     photographer_lookups:
       pikesley: sam
-    """  
+    """
     When I successfully run `purdie fetch`
     Then a file named "_data/flickr.yaml" should exist
     And the file "_data/flickr.yaml" should contain:

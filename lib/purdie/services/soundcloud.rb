@@ -21,7 +21,16 @@ module Purdie
         results = {}
         results['title'] = track['title']
         results['id'] = track['id']
-        results['location'] = track['description']
+
+        description = YAML.load track['description']
+        if description.class == Hash
+          description.keys.each do |k|
+            results[k] = description[k]
+          end
+        else
+          results['location'] = track['description']
+        end
+
         results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
 
         results.attach_license self, track['license']
