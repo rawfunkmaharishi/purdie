@@ -1,3 +1,3 @@
 module Purdie
-  VERSION = "0.1.1al"
+  VERSION = "0.1.1"
 end
