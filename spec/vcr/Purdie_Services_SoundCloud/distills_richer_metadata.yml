@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/don-the-crown-1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.5
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 28 Nov 2015 15:10:36 GMT
+      Location:
+      - https://api.soundcloud.com/tracks/234830006.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Status:
+      - 302 Found
+      Content-Length:
+      - '129'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/234830006.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version: 
+  recorded_at: Sat, 28 Nov 2015 15:10:36 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/tracks/234830006.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 28 Nov 2015 15:10:36 GMT
+      Etag:
+      - '"3a287099571f2e48b5bfa83b9685d28d"'
+      Server:
+      - am/2
+      Status:
+      - 200 OK
+      Vary:
+      - Authorization, Accept
+      Content-Length:
+      - '1553'
+    body:
+      encoding: UTF-8
+      string: '{"kind":"track","id":234830006,"created_at":"2015/11/26 16:51:16 +0000","user_id":56479293,"duration":210252,"commentable":true,"state":"finished","original_content_size":9134081,"last_modified":"2015/11/28
+        15:08:31 +0000","sharing":"public","tag_list":"","permalink":"don-the-crown-1","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"funk
+        #rogue_sessions","title":"Don The Crown","description":"location: Rogue Studios\nengineer:
+        Alessio","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2015,"release_month":11,"release_day":25,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/234830006","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/08/03 13:56:52 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/don-the-crown-1","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/PFnqq7zCEB7e_m.png","stream_url":"https://api.soundcloud.com/tracks/234830006/stream","download_url":"https://api.soundcloud.com/tracks/234830006/download","playback_count":14,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/234830006/attachments"}'
+    http_version: 
+  recorded_at: Sat, 28 Nov 2015 15:10:36 GMT
+recorded_with: VCR 2.9.3

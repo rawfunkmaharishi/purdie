@@ -25,6 +25,21 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
         )
       end
 
+      it 'distills richer metadata', :vcr do
+        distilled = @sc.distill 'https://soundcloud.com/rawfunkmaharishi/don-the-crown-1'
+        expect(distilled.to_yaml).to eq(
+"---
+title: Don The Crown
+id: 234830006
+location: Rogue Studios
+engineer: Alessio
+date: '2015-11-25'
+license: Attribution-NonCommercial-ShareAlike
+license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
+"
+        )
+      end
+
       context 'resolve a set' do
         it 'resolves a set from a url', :vcr do
           set = SoundCloud.resolve 'https://soundcloud.com/rawfunkmaharishi/sets/islington-academy-sessions'
