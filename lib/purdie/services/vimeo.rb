@@ -8,7 +8,7 @@ module Purdie
         target = "#{Vimeo.host}/videos/#{@id}"
         response = HTTParty.get target, headers: Vimeo.headers
         response = JSON.parse response.body
-        if response['error'] == 'A valid user token must be passed.'
+        if response['error'] == 'You must provide a valid authenticated access token.'
           raise CredentialsException.new self, 'missing and/or duff'
         else
           response
