@@ -18,7 +18,7 @@ Up until now, the Hand-Crafted YAML (which sounds like a thing you may be able t
 
 ###Moving the hacks upstream
 
-Moving the metadata is not 100% foolproof, however: for example, we have photos on [our Flickr account](https://www.flickr.com/photos/rawfunkmaharishi/) which were not taken by us, but by our friend [Kim](http://www.kimberlycabbott.com/). But the Flickr API has no way of knowing this, so I've added a tag to those pictures which looks like `photographer:kim` and then I'm looking for and extracting that in this gem. Similarly, for the SoundCloud music, I'd like to tag them with a recording location but this is not supported, so I'm nailing that straight into the _Description_ field.
+Moving the metadata is not 100% foolproof, however: for example, we have photos on [our Flickr account](https://www.flickr.com/photos/rawfunkmaharishi/) which were not taken by us, but by our friend [Kim](http://www.kimberlycabbott.com/). But the Flickr API has no way of knowing this, so I've added a tag to those pictures which looks like `photographer:kim` and then I'm looking for and extracting that in this gem. Similarly, for the SoundCloud music, I'd like to tag them with a recording location (and now an engineer's name) but this is not supported, so I'm nailing those into the _Description_ field as something YAML-ish.
 
 Am I going to regret these decisions? Almost certainly.
 
