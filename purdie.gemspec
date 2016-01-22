@@ -25,7 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'flickraw-cached',   '= 20120701'
   spec.add_dependency 'soundcloud',        '~> 0.3'
   spec.add_dependency 'activesupport',     '~> 4.2'
-  spec.add_dependency 'google-api-client', '~> 0.8'
 
   spec.add_development_dependency 'bundler',                 '~> 1.7'
   spec.add_development_dependency 'rake',                    '~> 10.0'
