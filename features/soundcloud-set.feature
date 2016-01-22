@@ -13,24 +13,28 @@ Feature: Soundcloud set
     ---
     - title: Hexaflexagon
       id: 193008299
+      url: http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
       location: Islington Academy
       date: '2015-02-18'
       license: Attribution-NonCommercial-ShareAlike
       license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
     - title: Beer, Of Course, But Why
       id: 193006525
+      url: http://soundcloud.com/rawfunkmaharishi/beer-of-course-but-why
       location: Islington Academy
       date: '2015-02-18'
       license: Attribution-NonCommercial-ShareAlike
       license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
     - title: Junalbandi
       id: 193005357
+      url: http://soundcloud.com/rawfunkmaharishi/junalbandi-3
       location: Islington Academy
       date: '2015-02-18'
       license: Attribution-NonCommercial-ShareAlike
       license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
     - title: Bernard
       id: 192841052
+      url: http://soundcloud.com/rawfunkmaharishi/bernard
       location: Islington Academy
       date: '2015-02-18'
       license: Attribution-NonCommercial-ShareAlike
