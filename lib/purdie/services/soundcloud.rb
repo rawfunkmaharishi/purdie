@@ -21,7 +21,8 @@ module Purdie
         results = {}
         results['title'] = track['title']
         results['id'] = track['id']
-
+        results['url'] = track['permalink_url']
+        
         description = YAML.load track['description']
         if description.class == Hash
           description.keys.each do |k|

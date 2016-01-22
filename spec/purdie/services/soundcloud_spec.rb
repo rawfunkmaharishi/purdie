@@ -17,6 +17,7 @@ module Purdie
 "---
 title: Hexaflexagon
 id: 193008299
+url: http://soundcloud.com/rawfunkmaharishi/hexaflexagon-1
 location: Islington Academy
 date: '2015-02-18'
 license: Attribution-NonCommercial-ShareAlike
@@ -31,6 +32,7 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
 "---
 title: Don The Crown
 id: 234830006
+url: http://soundcloud.com/rawfunkmaharishi/don-the-crown-1
 location: Rogue Studios
 engineer: Alessio
 date: '2015-11-25'

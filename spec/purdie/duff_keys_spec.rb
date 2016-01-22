@@ -85,31 +85,5 @@ module Purdie
         }
       end
     end
-
-    describe YouTube do
-      after :each do
-        reset_env
-      end
-
-      it 'responds usefully in the face of no credentials' do
-        unset_env
-        y = YouTube.new
-        expect { y.distill 'https://www.youtube.com/watch?v=JCix1XW329g' }.to raise_exception { |e|
-          expect(e).to be_a Purdie::CredentialsException
-          expect(e.service.class).to eq Purdie::Services::YouTube
-          expect(e.message).to eq 'missing'
-        }
-      end
-
-      it 'responds usefully in the face of duff credentials' do
-        randomise_env
-        y = YouTube.new
-        expect { y.distill 'https://www.youtube.com/watch?v=JCix1XW329g' }.to raise_exception { |e|
-          expect(e).to be_a Purdie::CredentialsException
-          expect(e.service.class).to eq Purdie::Services::YouTube
-          expect(e.message).to eq 'duff'
-        }
-      end
-    end
   end
 end
