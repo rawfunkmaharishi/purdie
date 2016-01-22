@@ -4,7 +4,6 @@
 [![Code Climate](http://img.shields.io/codeclimate/github/rawfunkmaharishi/purdie.svg?style=flat-square)](https://codeclimate.com/github/rawfunkmaharishi/purdie)
 [![Gem Version](http://img.shields.io/gem/v/purdie.svg?style=flat-square)](https://rubygems.org/gems/purdie)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://rawfunkmaharishi.mit-license.org)
-[![Badges](http://img.shields.io/:badges-7/7-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
 
 #Purdie
 
@@ -67,9 +66,7 @@ You also need a *.env* file with the relevant credentials in it:
 
     VIMEO_BEARER_TOKEN: this_is_bearer_token
 
-    YOUTUBE_API_KEY: this_is_key_for_youtube
-
-(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new), [Vimeo](https://developer.vimeo.com/apps/new) and [YouTube](https://console.developers.google.com/project))
+(get those things from [Flickr](https://www.flickr.com/services/apps/create/apply), [SoundCloud](http://soundcloud.com/you/apps/new) and [Vimeo](https://developer.vimeo.com/apps/new)
 
 And then you can run
 
@@ -108,7 +105,7 @@ Tread carefully for now, because my metadata hacks aren't fully documented, and 
 
 ##What next?
 
-There's no reason I couldn't support other services - I've already added [YouTube](https://github.com/rawfunkmaharishi/purdie/blob/master/spec/services/youtube_spec.rb) [support](https://github.com/rawfunkmaharishi/purdie/blob/master/lib/purdie/services/youtube.rb) and others should be fairly simple. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
+There's no reason I couldn't support other services. There's some introspection magic at the heart of all of this which means that as long as each service is represented by a class that:
 
 * includes the `Purdie::Service` module, and
 * sports a `::matcher` class method which returns a string which will pick a URL out of an input file, and
