@@ -49,6 +49,24 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
           expect(set[3]).to eq 'http://soundcloud.com/rawfunkmaharishi/bernard'
         end
       end
+
+      context 'handle missing fields' do
+        it 'behaves gracefully when there is no date', :vcr do
+          expect { @sc.distill 'https://soundcloud.com/rawfunkmaharishi/nrf' }.to raise_exception { |exception|
+            expect(exception).to be_a Purdie::MetadataException
+            expect(exception.service.class).to eq Purdie::Services::SoundCloud
+            expect(exception.message).to eq ("'https://soundcloud.com/rawfunkmaharishi/nrf' does not have a release date")
+          }
+        end
+
+        it 'is fine when there is no location', :vcr do
+          expect { @sc.distill 'https://soundcloud.com/rawfunkmaharishi/nrf' }.to raise_exception { |exception|
+            expect(exception).to be_a Purdie::MetadataException
+            expect(exception.service.class).to eq Purdie::Services::SoundCloud
+            expect(exception.message).to eq ("'https://soundcloud.com/rawfunkmaharishi/nrf' does not have a location")
+          }
+        end
+      end
     end
   end
 end
