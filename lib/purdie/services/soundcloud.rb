@@ -22,7 +22,7 @@ module Purdie
         results['title'] = track['title']
         results['id'] = track['id']
         results['url'] = track['permalink_url']
-        
+
         description = YAML.load track['description']
         if description.class == Hash
           description.keys.each do |k|
@@ -32,7 +32,11 @@ module Purdie
           results['location'] = track['description']
         end
 
-        results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
+        begin
+          results['date'] = "%4d-%02d-%02d" % [ track['release_year'], track['release_month'], track['release_day'] ]
+        rescue TypeError => te
+          raise MetadataException.new self, "'#{url}' does not have a release date" if te.message == "can't convert nil into Integer"
+        end
 
         results.attach_license self, track['license']
 
