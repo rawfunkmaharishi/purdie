@@ -1,6 +1,8 @@
 require 'purdie'
 require_relative 'support/vcr_setup'
 require 'timecop'
+require 'coveralls'
+Coveralls.wear_merged!
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
