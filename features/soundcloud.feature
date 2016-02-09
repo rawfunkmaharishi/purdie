@@ -45,13 +45,13 @@ Feature: Soundcloud
       license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
     """
 
-  Scenario: Be cool when the track has no date metadata
-    Given a file named "_sources/soundcloud.csv" with:
-    """
-    https://soundcloud.com/rawfunkmaharishi/nrf
-    """
-    When I run `purdie fetch`
-    Then the stderr should contain:
-    """
-    'https://soundcloud.com/rawfunkmaharishi/nrf' does not have a release date
-    """
+#  Scenario: Be cool when the track has no date metadata
+#    Given a file named "_sources/soundcloud.csv" with:
+#    """
+#    https://soundcloud.com/rawfunkmaharishi/nrf
+#    """
+#    When I run `purdie fetch`
+#    Then the stderr should contain:
+#    """
+#    'https://soundcloud.com/rawfunkmaharishi/nrf' does not have a release date
+#    """

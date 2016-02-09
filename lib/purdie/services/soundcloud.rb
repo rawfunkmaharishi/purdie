@@ -23,13 +23,18 @@ module Purdie
         results['id'] = track['id']
         results['url'] = track['permalink_url']
 
-        description = YAML.load track['description']
-        if description.class == Hash
-          description.keys.each do |k|
-            results[k] = description[k]
+        begin
+          description = YAML.load track['description']
+      
+          if description.class == Hash
+            description.keys.each do |k|
+              results[k] = description[k]
+            end
+          else
+            results['location'] = track['description']
           end
-        else
-          results['location'] = track['description']
+        rescue TypeError => te
+          raise MetadataException.new self, "'#{url}' does not have a location" if te.message == "no implicit conversion of nil into String"
         end
 
         begin

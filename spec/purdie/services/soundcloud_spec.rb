@@ -58,6 +58,14 @@ license_url: http://creativecommons.org/licenses/by-nc-sa/4.0/
             expect(exception.message).to eq ("'https://soundcloud.com/rawfunkmaharishi/nrf' does not have a release date")
           }
         end
+
+        it 'is fine when there is no location', :vcr do
+          expect { @sc.distill 'https://soundcloud.com/rawfunkmaharishi/nrf' }.to raise_exception { |exception|
+            expect(exception).to be_a Purdie::MetadataException
+            expect(exception.service.class).to eq Purdie::Services::SoundCloud
+            expect(exception.message).to eq ("'https://soundcloud.com/rawfunkmaharishi/nrf' does not have a location")
+          }
+        end
       end
     end
   end

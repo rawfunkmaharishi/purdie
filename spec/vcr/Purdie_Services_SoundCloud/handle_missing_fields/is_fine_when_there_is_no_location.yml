@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.soundcloud.com/resolve?client_id=<SOUNDCLOUD_CLIENT_ID>&format=json&url=https://soundcloud.com/rawfunkmaharishi/nrf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.7
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 17:32:27 GMT
+      Location:
+      - https://api.soundcloud.com/tracks/246202062.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+      Server:
+      - am/2
+      Status:
+      - 302 Found
+      Content-Length:
+      - '129'
+    body:
+      encoding: UTF-8
+      string: '{"status":"302 - Found","location":"https://api.soundcloud.com/tracks/246202062.json?client_id=<SOUNDCLOUD_CLIENT_ID>"}'
+    http_version:
+  recorded_at: Tue, 09 Feb 2016 17:32:27 GMT
+- request:
+    method: get
+    uri: https://api.soundcloud.com/tracks/246202062.json?client_id=<SOUNDCLOUD_CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.7
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Age:
+      - '61'
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 17:32:27 GMT
+      Etag:
+      - '"01a0d88ce6fb396420926e507972c77e"'
+      Last-Modified:
+      - Tue, 09 Feb 2016 17:31:26 GMT
+      Server:
+      - ECS (lhr/4745)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '1494'
+    body:
+      encoding: UTF-8
+      string: '{"kind":"track","id":246202062,"created_at":"2016/02/09 14:37:34 +0000","user_id":56479293,"duration":184701,"commentable":true,"state":"finished","original_content_size":7439637,"last_modified":"2016/02/09
+        17:23:47 +0000","sharing":"public","tag_list":"","permalink":"nrf","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"work
+        in progress","title":"NRF","description":null,"label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":2016,"release_month":1,"release_day":20,"original_format":"mp3","license":"cc-by-nc-sa","uri":"https://api.soundcloud.com/tracks/246202062","user":{"id":56479293,"kind":"user","permalink":"rawfunkmaharishi","username":"Raw
+        Funk Maharishi","last_modified":"2015/11/30 21:40:23 +0000","uri":"https://api.soundcloud.com/users/56479293","permalink_url":"http://soundcloud.com/rawfunkmaharishi","avatar_url":"https://i1.sndcdn.com/avatars-000110957821-ac80gy-large.jpg"},"permalink_url":"http://soundcloud.com/rawfunkmaharishi/nrf","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/1RTdZJuRNZex_m.png","stream_url":"https://api.soundcloud.com/tracks/246202062/stream","download_url":"https://api.soundcloud.com/tracks/246202062/download","playback_count":5,"download_count":0,"favoritings_count":0,"comment_count":0,"attachments_uri":"https://api.soundcloud.com/tracks/246202062/attachments"}'
+    http_version:
+  recorded_at: Tue, 09 Feb 2016 17:32:27 GMT
+recorded_with: VCR 2.9.3
